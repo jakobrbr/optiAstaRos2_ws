@@ -1,4 +1,0 @@
-
-string rigid_body_name
-geometry_msgs/Point pose
-geometry_msgs/Point rot

@@ -8,6 +8,7 @@ setup.py
 ../../build/optiastaros2/optiastaros2.egg-info/requires.txt
 ../../build/optiastaros2/optiastaros2.egg-info/top_level.txt
 ../../build/optiastaros2/optiastaros2.egg-info/zip-safe
+optiastaros2/NatNetClient.py
 optiastaros2/__init__.py
 optiastaros2/pubdata_node.py
 resource/optiastaros2
