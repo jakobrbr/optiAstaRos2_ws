@@ -1,3 +1,5 @@
+import NatNetClient
+
 def main():
     print('Hi from optiastaros2.')
 
