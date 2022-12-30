@@ -2,7 +2,7 @@
 import rclpy
 import timeit
 from rclpy.node import Node
-from rigidbody_msgs import RigidBody
+from rigidbody_msgs.msg import RigidBody
 #from geometry_msgs.msg import Pose2D
 from NatNetClient import NatNetClient
 id_dict = dict() # dictionary for positions of rigid bodies
