@@ -21,7 +21,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'pubdata_node = optiastaros2.pubdata_node:main'
+            'pubdata_node = optiastaros2.pubdata_node:main',
+            'controller_node = optiastaros2.controller_node:main'
         ],
     },
 )
