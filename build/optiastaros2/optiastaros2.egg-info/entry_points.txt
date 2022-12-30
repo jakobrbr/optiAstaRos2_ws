@@ -1,0 +1,3 @@
+[console_scripts]
+pubdata_node = optiastaros2.pubdata_node:main
+
