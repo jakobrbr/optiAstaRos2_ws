@@ -1,0 +1,6 @@
+{
+  "package_name": "rigidbody_msgs",
+  "non_idl_tuples": [
+    "/home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs:msg/RigidBody.msg"
+  ]
+}

@@ -1,0 +1,81 @@
+[0.057s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs
+[0.316s] -- The C compiler identification is GNU 11.3.0
+[0.576s] -- The CXX compiler identification is GNU 11.3.0
+[0.608s] -- Detecting C compiler ABI info
+[0.922s] -- Detecting C compiler ABI info - done
+[0.949s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.950s] -- Detecting C compile features
+[0.951s] -- Detecting C compile features - done
+[0.962s] -- Detecting CXX compiler ABI info
+[1.308s] -- Detecting CXX compiler ABI info - done
+[1.336s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.336s] -- Detecting CXX compile features
+[1.338s] -- Detecting CXX compile features - done
+[1.360s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.151s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[2.667s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.745s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.054s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.357s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.328s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.528s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[6.558s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[6.719s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[6.720s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.720s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.721s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[6.818s] -- Found PythonExtra: .so  
+[6.995s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.240s] -- Added test 'lint_cmake' to check CMake code style
+[7.253s] -- Added test 'xmllint' to check XML markup files
+[7.281s] -- Configuring done
+[7.441s] -- Generating done
+[7.455s] -- Build files have been written to: /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs
+[7.475s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs
+[7.484s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4
+[7.647s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.693s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.733s] [  6%] Built target ament_cmake_python_copy_rigidbody_msgs
+[8.972s] [  6%] Built target rigidbody_msgs__cpp
+[9.023s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[9.026s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.058s] [ 16%] [32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o[0m
+[9.246s] In file included from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h:19[m[K,
+[9.247s]                  from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c:4[m[K:
+[9.248s] [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__struct.h:25:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/detail/point__struct.h: No such file or directory
+[9.248s]    25 | #include [01;31m[K"geometry_msgs/msg/detail/point__struct.h"[m[K
+[9.249s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.250s] compilation terminated.
+[9.256s] gmake[2]: *** [CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/build.make:105: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o] Error 1
+[9.256s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/all] Error 2
+[9.257s] gmake[1]: *** Waiting for unfinished jobs....
+[9.365s] running egg_info
+[9.370s] creating rigidbody_msgs.egg-info
+[9.371s] writing rigidbody_msgs.egg-info/PKG-INFO
+[9.372s] writing dependency_links to rigidbody_msgs.egg-info/dependency_links.txt
+[9.373s] writing top-level names to rigidbody_msgs.egg-info/top_level.txt
+[9.375s] writing manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'
+[9.385s] reading manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'
+[9.388s] writing manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'
+[9.545s] [ 16%] Built target ament_cmake_python_build_rigidbody_msgs_egg
+[10.113s] [ 19%] [32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp.o[0m
+[10.224s] [ 22%] [32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o[0m
+[10.624s] In file included from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp:7[m[K:
+[10.625s] [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/detail/point__struct.hpp: No such file or directory
+[10.625s]    21 | #include [01;31m[K"geometry_msgs/msg/detail/point__struct.hpp"[m[K
+[10.626s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.626s] In file included from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[10.627s]                  from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp:4[m[K:
+[10.628s] [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/detail/point__struct.hpp: No such file or directory
+[10.629s]    21 | #include [01;31m[K"geometry_msgs/msg/detail/point__struct.hpp"[m[K
+[10.630s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.630s] compilation terminated.
+[10.630s] compilation terminated.
+[10.634s] gmake[2]: *** [CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp.o] Error 1
+[10.634s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+[10.635s] gmake[2]: *** [CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o] Error 1
+[10.635s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[10.636s] gmake: *** [Makefile:146: all] Error 2
+[10.642s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4

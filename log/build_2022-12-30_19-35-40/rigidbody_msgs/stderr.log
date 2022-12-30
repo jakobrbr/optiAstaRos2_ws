@@ -1,0 +1,25 @@
+In file included from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h:19[m[K,
+                 from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c:4[m[K:
+[01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__struct.h:25:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/detail/point__struct.h: No such file or directory
+   25 | #include [01;31m[K"geometry_msgs/msg/detail/point__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/build.make:105: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp:7[m[K:
+[01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msgs/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp:4[m[K:
+[01m[K/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp:21:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/detail/point__struct.hpp: No such file or directory
+   21 | #include [01;31m[K"geometry_msgs/msg/detail/point__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/build.make:86: CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:91: CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

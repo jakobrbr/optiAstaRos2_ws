@@ -25,7 +25,15 @@ _colcon_package_bash_source_script() {
 }
 
 # source sh script of this package
-_colcon_package_bash_source_script "$_colcon_package_bash_COLCON_CURRENT_PREFIX/share/RigidBody_msgs/package.sh"
+_colcon_package_bash_source_script "$_colcon_package_bash_COLCON_CURRENT_PREFIX/share/rigidbody_msgs/package.sh"
+
+# setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced scripts
+COLCON_CURRENT_PREFIX="$_colcon_package_bash_COLCON_CURRENT_PREFIX"
+
+# source bash hooks
+_colcon_package_bash_source_script "$COLCON_CURRENT_PREFIX/share/rigidbody_msgs/local_setup.bash"
+
+unset COLCON_CURRENT_PREFIX
 
 unset _colcon_package_bash_source_script
 unset _colcon_package_bash_COLCON_CURRENT_PREFIX

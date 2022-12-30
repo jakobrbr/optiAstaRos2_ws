@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs
+Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs -DCMAKE_INSTALL_PREFIX=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs
+Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4
+Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4

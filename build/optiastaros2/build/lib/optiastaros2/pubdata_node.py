@@ -2,7 +2,7 @@
 import rclpy
 import timeit
 from rclpy.node import Node
-from rigidbody_msgs import rigidbody
+from rigidbody_msgs.msg import RigidBody
 #from geometry_msgs.msg import Pose2D
 from NatNetClient import NatNetClient
 id_dict = dict() # dictionary for positions of rigid bodies
@@ -14,7 +14,7 @@ class PublishDataNode(Node):
 
     def __init__(self):
         super().__init__("pubdata_node")
-        self.cmd_vel_pub_ = self.create_publisher(rigidbody, "/data", 10)
+        self.cmd_vel_pub_ = self.create_publisher(RigidBody, "/data", 10)
         self.timer_ = self.create_timer(0.005, self.send_data)
         self.get_logger().info("NatNet data publisher node has been started")
 
@@ -22,7 +22,7 @@ class PublishDataNode(Node):
         streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
         streamingClient.rigidBodyListener = receiveRigidBodyFrame
         streamingClient.run()
-        msg = rigidbody()
+        msg = RigidBody()
         for i in id_dict.keys():
             pos,rot = id_dict[i]
             msg.pose.x = pos[0]

@@ -1,0 +1,8 @@
+setup.py
+rigidbody_msgs/__init__.py
+rigidbody_msgs.egg-info/PKG-INFO
+rigidbody_msgs.egg-info/SOURCES.txt
+rigidbody_msgs.egg-info/dependency_links.txt
+rigidbody_msgs.egg-info/top_level.txt
+rigidbody_msgs/msg/__init__.py
+rigidbody_msgs/msg/_rigid_body.py
