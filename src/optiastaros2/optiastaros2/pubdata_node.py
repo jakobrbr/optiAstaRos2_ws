@@ -14,7 +14,7 @@ class PublishDataNode(Node):
 
     def __init__(self):
         super().__init__("pubdata_node")
-        self.cmd_vel_pub_ = self.create_publisher(RigidBody, "/data", 10)
+        self.cmd_vel_pub_ = self.create_publisher(RigidBody, "/data", 200)
         self.timer_ = self.create_timer(0.005, self.send_data)
         self.get_logger().info("NatNet data publisher node has been started")
 
