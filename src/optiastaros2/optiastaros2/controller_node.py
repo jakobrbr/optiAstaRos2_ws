@@ -9,7 +9,7 @@ class ControllerNode(Node):
         super().__init__("controller_node")
         self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 200)
 
-    def pose_callback(self, msg: Pose):
+    def pose_callback(self, msg: RigidBody):
         self.get_logger().info(str(msg.pose.x))
 
 def main(args=None):
