@@ -9,7 +9,7 @@
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
-  <depend>RigidBody_msgs</depend>
+  <depend>rigidbody_msgs</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
