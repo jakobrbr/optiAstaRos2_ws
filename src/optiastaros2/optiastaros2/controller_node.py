@@ -52,6 +52,7 @@ class ControllerNode(Node):
         cmd.angular = angle
         cmd.rigid_body_name = msg.rigid_body_name
         self.cmd_vel_pub_.publish(cmd)
+        # test
 
         # test print
         self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
