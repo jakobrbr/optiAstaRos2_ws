@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from rigidbody_msgs.msg import RigidBody
+from rigidbody_msgs.msg import RigidBody, RobotCmd
 
 import numpy as np
 import sys
@@ -17,7 +17,7 @@ class ControllerNode(Node):
     def __init__(self):
         super().__init__("controller_node")
         self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 200)
-        self.cmd_publisher_node_ = self.create_publisher(RigidBody, "/cmd_vel", 200)
+        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 200)
         
         # controller parameters:
         svg_path = "heart.svg"
@@ -26,7 +26,7 @@ class ControllerNode(Node):
         controller = PID_controller(1.5,0.2,0.01,0.1)
         self.get_logger().info("Controller node has been started")
 
-    def pose_callback(self, msg: RigidBody, targetPosArr, controller):
+    def pose_callback(self, msg: RigidBody, cmd: RobotCmd, targetPosArr, controller):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
         #self.get_logger().info(str(msg.pose.x)) # test print x coord
@@ -54,10 +54,7 @@ class ControllerNode(Node):
         self.cmd_vel_pub_.publish(cmd)
 
         # test print
-        self.get_logger().info(" vel and angle:")
-        self.get_logger().info(str(velocity))
-        self.get_logger().info(str(angle))
-
+        self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
         # update last angle and target index
         last_angle = angle
 
