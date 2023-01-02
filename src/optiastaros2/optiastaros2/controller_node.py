@@ -17,7 +17,7 @@ class ControllerNode(Node):
     def __init__(self):
         super().__init__("controller_node")
         self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 200)
-        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 200)
+        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 200) # input self.pose_callback??
         
         # controller parameters:
         svg_file_path = input("Write path to route svg.\n")
@@ -32,6 +32,7 @@ class ControllerNode(Node):
 
 
     # create seperate function for publishing and call it up ind self.cmd_publisher?
+    # we got an error about something with the inputs in pose_callback 
 
     def pose_callback(self, msg: RigidBody, cmd: RobotCmd, targetPosArr, controller):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
