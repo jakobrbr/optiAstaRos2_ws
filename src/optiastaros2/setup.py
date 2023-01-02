@@ -12,6 +12,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('lib/' + package_name, [package_name+'/NatNetClient.py']),
         ('lib/' + package_name, [package_name+'/purePursuit.py']),
+        ('lib/' + package_name, [package_name+'/generateRobotPath.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
