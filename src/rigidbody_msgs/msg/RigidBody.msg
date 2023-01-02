@@ -1,3 +1,3 @@
 string rigid_body_name
-geometry_msgs/Point linear
-geometry_msgs/Point angular
+geometry_msgs/Point pose
+geometry_msgs/Point rot
