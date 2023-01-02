@@ -20,7 +20,12 @@ class ControllerNode(Node):
         self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 200)
         
         # controller parameters:
-        svg_str = "heart.svg"
+        svg_file_path = input("Write path to route svg.\n")
+        with open(svg_file_path, "r") as f:
+            # Read the contents of the file into a string variable
+            svg_path = f.read()
+        svg_str = minidom.parseString(svg_path)
+
         targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
         controller = PID_controller(1.5,0.2,0.01,0.1)
         self.get_logger().info("Controller node has been started")
