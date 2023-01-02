@@ -41,7 +41,7 @@ def pointsFromDoc(doc, density=5, scale=1):
     for element in doc.getElementsByTagName("path"):
         # Append the colour of the path to seperate the paths for different robots
         style = element.getAttribute("stroke")
-        print(style)
+        #print(style)
         # make sure the colors are given as basic strings in the svg file
         # Find the marker for the start and stop part of the stroke section
         colour_code = style
@@ -50,7 +50,7 @@ def pointsFromDoc(doc, density=5, scale=1):
 
         if colour_code != {colour_code}:
             point_matrix.insert(point_matrix[color_dict[colour_code]], route_points)
-        print(point_matrix)
+        #print(point_matrix)
     # Serches for orientation and stop point lines in the svg file and appends to the orientation_vector list
     # The start of the line will mark the stop point, and the end point will function as a turning point for the robot to orient
     # itself towards.
