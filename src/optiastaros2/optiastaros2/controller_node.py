@@ -30,6 +30,9 @@ class ControllerNode(Node):
         controller = PID_controller(1.5,0.2,0.01,0.1)
         self.get_logger().info("Controller node has been started")
 
+
+    # create seperate function for publishing and call it up ind self.cmd_publisher?
+
     def pose_callback(self, msg: RigidBody, cmd: RobotCmd, targetPosArr, controller):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
@@ -55,7 +58,7 @@ class ControllerNode(Node):
         cmd.linear = velocity # we temporarily use the rigidbody message instead of cmd_vel
         cmd.angular = angle
         cmd.rigid_body_name = msg.rigid_body_name
-        self.cmd_vel_pub_.publish(cmd)
+        self.cmd_publisher_node_.publish(cmd)
         # test
 
         # test print
