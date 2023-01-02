@@ -66,27 +66,3 @@ def pointsFromDoc(doc, density=5, scale=1):
         stop_points.append(stop_point)
     return point_matrix, stop_points, orientation_vectors
 
-# Convert an SVG path to a sequence of coordinates
-# and return them as numpy arrays
-def print_test(test_svg):
-    svg_file_path = test_svg
-    with open(svg_file_path, "r") as f:
-        # Read the contents of the file into a string variable
-        svg_path = f.read()
-    doc = minidom.parseString(svg_path)
-    route, stop, orientation= pointsFromDoc(doc,density=0.1, scale=1)
-    print(route[0])
-    # Plot options
-    plt.figure()
-    # print('stroke %s' % route[])
-    for i in range(0,len(route)):
-        if route[i] != 0:
-            plt.scatter(*zip(*route[i]),s=10,c='b', marker='x', label='way points ' + str(i+1))
-    if stop != [] and orientation != []:
-        plt.scatter(*zip(*stop),s=10,c='r', marker='o', label='stop points')
-        plt.scatter(*zip(*orientation),s=20,c='g',marker='+',label='orientation point')
-    plt.legend(loc='upper left')
-    plt.xlabel('x-axis')
-    plt.ylabel('y-axis')
-    plt.show()
-print_test("SvgTest/star.svg")
