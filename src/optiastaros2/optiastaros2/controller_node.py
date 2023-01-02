@@ -48,8 +48,8 @@ class ControllerNode(Node):
         
         # set target values and publish them
         cmd = RigidBody()
-        cmd.pose.x = velocity # we temporarily use the rigidbody message instead of cmd_vel
-        cmd.rot.y = angle
+        cmd.linear = velocity # we temporarily use the rigidbody message instead of cmd_vel
+        cmd.angular = angle
         cmd.rigid_body_name = msg.rigid_body_name
         self.cmd_vel_pub_.publish(cmd)
 
