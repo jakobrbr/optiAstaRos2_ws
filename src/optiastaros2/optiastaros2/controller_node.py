@@ -40,8 +40,7 @@ class ControllerNode(Node):
         # probably also rewrite publisher node?
         #self.get_logger().info(str(msg.pose.x)) # test print x coord
         controller = PID_controller(1.5,0.2,0.01,0.1)
-
-        i += 1
+        global i 
         dt = 0.01
         # get current position data and save as tuple
         currentPos = (msg.pose.x, msg.pose.y)
@@ -67,6 +66,7 @@ class ControllerNode(Node):
         # test print
         #self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
         # update last angle and target index
+        i += 1
         last_angle = angle
 
 
