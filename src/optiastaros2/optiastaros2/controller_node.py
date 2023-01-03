@@ -11,13 +11,14 @@ import generateRobotPath
 import time
 i = 0
 last_angle = 0
+targetPosArr = []
 
 class ControllerNode(Node):
 
     def __init__(self):
         super().__init__("controller_node")
-        self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 200)
-        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 200) # input self.pose_callback??
+        self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1) # try setting to queue size 1, only care about newest
+        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1) # input self.pose_callback??
         
         # controller parameters:
         svg_file_path = input("Write path to route svg.\n")
@@ -27,17 +28,18 @@ class ControllerNode(Node):
         svg_str = minidom.parseString(svg_path)
 
         targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
-        controller = PID_controller(1.5,0.2,0.01,0.1)
+        #controller = PID_controller(1.5,0.2,0.01,0.1)
         self.get_logger().info("Controller node has been started")
 
 
     # create seperate function for publishing and call it up ind self.cmd_publisher?
     # we got an error about something with the inputs in pose_callback 
 
-    def pose_callback(self, msg: RigidBody, cmd: RobotCmd, targetPosArr, controller):
+    def pose_callback(self, msg: RigidBody):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
         #self.get_logger().info(str(msg.pose.x)) # test print x coord
+        controller = PID_controller(1.5,0.2,0.01,0.1)
 
         i += 1
         dt = 0.01
@@ -66,6 +68,7 @@ class ControllerNode(Node):
         self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
         # update last angle and target index
         last_angle = angle
+
 
 def main(args=None):
     rclpy.init(args=args)
