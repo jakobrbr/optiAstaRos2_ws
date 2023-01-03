@@ -35,6 +35,8 @@ class ControllerNode(Node):
     # create seperate function for publishing and call it up ind self.cmd_publisher?
     # we got an error about something with the inputs in pose_callback 
 
+    # try publishing debug messages of the targetposition array and the current position.
+
     def pose_callback(self, msg: RigidBody):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
@@ -48,8 +50,7 @@ class ControllerNode(Node):
         # get target angle and velocity values
         current_time = time.time() # time for simulation
         target_time = time.time() + 3 # same
-        # error in pure_purusuit, tried adding index to targetposarr
-        angle = pure_pursuit(currentPos,targetPosArr[i], lookahead_distance=2) # Apply pursuit algorithm
+        angle = pure_pursuit(currentPos,targetPosArr, lookahead_distance=2) # Apply pursuit algorithm
         if np.isnan(angle) == 1:
             angle = 0
         velocity = controller.update(currentPos, targetPosArr[i], current_time, target_time, dt) # for constant vel set velocity = 1
