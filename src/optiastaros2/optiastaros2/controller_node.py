@@ -65,7 +65,7 @@ class ControllerNode(Node):
         # test
 
         # test print
-        self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
+        #self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
         # update last angle and target index
         last_angle = angle
 
