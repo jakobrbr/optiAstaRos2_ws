@@ -51,6 +51,7 @@ class ControllerNode(Node):
         # get current position data and save as tuple
         currentPos = (msg.pose.x, msg.pose.y)
 
+
         # get target angle and velocity values
         current_time = time.time() # time for simulation
         target_time = time.time() + 3 # same
