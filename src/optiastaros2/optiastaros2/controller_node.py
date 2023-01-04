@@ -11,7 +11,11 @@ import generateRobotPath
 import time
 i = 0
 last_angle = 0
-targetPosArr = []
+targetPosArr = [0,0,0,0,0,0,0,0] # maybe we dont need to initialize with the zeros
+
+# Notes:
+# Try changing the queue size to something bigger if there are still issues.
+# Change the msg files to contain coordinates of 8 robots by default, and publish to them according to rigid body number
 
 class ControllerNode(Node):
 
@@ -55,7 +59,7 @@ class ControllerNode(Node):
         # get target angle and velocity values
         current_time = time.time() # time for simulation
         target_time = time.time() + 3 # same
-        angle = pure_pursuit(currentPos,targetPosArr[1], lookahead_distance=2) # Apply pursuit algorithm
+        angle = pure_pursuit(currentPos,targetPosArr[0], lookahead_distance=2) # Apply pursuit algorithm
         if np.isnan(angle) == 1:
             angle = 0
         velocity = controller.update(currentPos, targetPosArr[i], current_time, target_time, dt) # for constant vel set velocity = 1
@@ -68,7 +72,8 @@ class ControllerNode(Node):
         cmd.angular = angle
         cmd.rigid_body_name = msg.rigid_body_name
         self.cmd_publisher_node_.publish(cmd)
-        # test
+        
+        # the messages should be changed so that the coordinates and velocities are linked and accessible through their names
 
         # test print
         #self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
