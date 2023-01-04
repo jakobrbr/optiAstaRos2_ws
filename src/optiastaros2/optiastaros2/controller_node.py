@@ -29,6 +29,7 @@ class ControllerNode(Node):
 
         targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
         #controller = PID_controller(1.5,0.2,0.01,0.1)
+        print(targetPosArr)
         self.get_logger().info("Controller node has been started")
 
 
