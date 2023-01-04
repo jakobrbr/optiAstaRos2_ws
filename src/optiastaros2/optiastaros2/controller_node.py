@@ -87,7 +87,7 @@ class ControllerNode(Node):
         # the messages should be changed so that the coordinates and velocities are linked and accessible through their names
 
         # test print
-        #self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
+        self.get_logger().info("vel and angle:" + cmd.linear + " " + cmd.angular)
         # update last angle and target index
         self.i += 1
         self.last_angle = angle
