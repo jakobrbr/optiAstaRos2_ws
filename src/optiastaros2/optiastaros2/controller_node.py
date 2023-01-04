@@ -38,6 +38,7 @@ class ControllerNode(Node):
         #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
         print(len(targetPosArr))
         print(len(targetPosArr[0]))
+        print(len(targetPosArr[1]))
         #print(targetPosDF)
         self.get_logger().info("Controller node has been started")
 
