@@ -20,7 +20,7 @@ last_angle = 0
 
 class ControllerNode(Node):
 
-    def __init__(self, targetPosArr):
+    def __init__(self):
         super().__init__("controller_node")
         self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1) # try setting to queue size 1, only care about newest
         self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1) # input self.pose_callback??
