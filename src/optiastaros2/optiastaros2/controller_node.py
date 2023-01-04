@@ -12,7 +12,7 @@ import generateRobotPath
 import time
 i = 0
 last_angle = 0
-targetPosArr = [0,0,0,0,0,0,0,0] # maybe we dont need to initialize with the zeros
+#targetPosArr = [0,0,0,0,0,0,0,0] # maybe we dont need to initialize with the zeros
 
 # Notes:
 # Try changing the queue size to something bigger if there are still issues.
@@ -50,12 +50,13 @@ class ControllerNode(Node):
 
     # try publishing debug messages of the targetposition array and the current position.
 
-    def pose_callback(self, msg: RigidBody):
+    def pose_callback(self, msg: RigidBody, targetPosArr):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
         #self.get_logger().info(str(msg.pose.x)) # test print x coord
 
         # robot names are 1-8, their paths are #-1 (get it from index in targetposarr)
+
 
         controller = PID_controller(1.5,0.2,0.01,0.1)
         global i 
