@@ -10,8 +10,8 @@ from xml.dom import minidom
 from purePursuit import pure_pursuit, pure_pursuit_turn_speed, PID_controller
 import generateRobotPath
 import time
-i = 0
-last_angle = 0
+#i = 0
+#last_angle = 0
 #targetPosArr = [0,0,0,0,0,0,0,0] # maybe we dont need to initialize with the zeros
 
 # Notes:
@@ -33,6 +33,8 @@ class ControllerNode(Node):
         svg_str = minidom.parseString(svg_path)
 
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
+        self.i = 0
+        self.last_angle = 0
 
         # convert list of tuples to dataframe of floats
         #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
@@ -59,7 +61,7 @@ class ControllerNode(Node):
 
 
         controller = PID_controller(1.5,0.2,0.01,0.1)
-        global i 
+        #global i 
         dt = 0.01
         # get current position data and save as tuple
         currentPos = (msg.pose.x, msg.pose.y)
@@ -71,8 +73,8 @@ class ControllerNode(Node):
         angle = pure_pursuit(currentPos,self.targetPosArr[0], lookahead_distance=2) # Apply pursuit algorithm
         if np.isnan(angle) == 1:
             angle = 0
-        velocity = controller.update(currentPos, self.targetPosArr[i], current_time, target_time, dt) # for constant vel set velocity = 1
-        velocity *= pure_pursuit_turn_speed(last_angle,angle)
+        velocity = controller.update(currentPos, self.targetPosArr[self.i], current_time, target_time, dt) # for constant vel set velocity = 1
+        velocity *= pure_pursuit_turn_speed(self.last_angle,angle)
         #print("position error %f" % np.linalg.norm(np.subtract(targetPosArr[i],currentPos)))
         
         # set target values and publish them
@@ -87,8 +89,8 @@ class ControllerNode(Node):
         # test print
         #self.get_logger().info("vel and angle:" + str(velocity) + " " + str(angle))
         # update last angle and target index
-        i += 1
-        last_angle = angle
+        self.i += 1
+        self.last_angle = angle
 
 
 def main(args=None):
