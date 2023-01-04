@@ -29,7 +29,7 @@ class ControllerNode(Node):
 
         targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
         #controller = PID_controller(1.5,0.2,0.01,0.1)
-        print(targetPosArr)
+        print(targetPosArr[0])
         self.get_logger().info("Controller node has been started")
 
 
@@ -42,6 +42,9 @@ class ControllerNode(Node):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
         #self.get_logger().info(str(msg.pose.x)) # test print x coord
+
+        # robot names are 1-8, their paths are #-1 (get it from index in targetposarr)
+
         controller = PID_controller(1.5,0.2,0.01,0.1)
         global i 
         dt = 0.01
