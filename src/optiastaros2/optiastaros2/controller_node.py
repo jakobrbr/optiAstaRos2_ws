@@ -36,14 +36,16 @@ class ControllerNode(Node):
         self.i = 0
         self.last_angle = 0
 
+        # debug messages:
         # convert list of tuples to dataframe of floats
         #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
-        print(len(self.targetPosArr))
-        print(len(self.targetPosArr[0]))
-        col1 = self.targetPosArr[0]
-        print(col1)
-        print(col1[0])
+        #print(len(self.targetPosArr))
+        #print(len(self.targetPosArr[0]))
+        #col1 = self.targetPosArr[0]
+        #print(col1)
+        #print(col1[0])
         #print(targetPosDF)
+        
         self.get_logger().info("Controller node has been started")
 
 
