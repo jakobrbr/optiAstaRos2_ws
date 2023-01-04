@@ -50,7 +50,7 @@ class ControllerNode(Node):
 
     # try publishing debug messages of the targetposition array and the current position.
 
-    def pose_callback(self, msg: RigidBody, targetPosArr):
+    def pose_callback(self, msg: RigidBody):
         # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # probably also rewrite publisher node?
         #self.get_logger().info(str(msg.pose.x)) # test print x coord
