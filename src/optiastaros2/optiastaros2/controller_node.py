@@ -10,20 +10,23 @@ from xml.dom import minidom
 from purePursuit import pure_pursuit, pure_pursuit_turn_speed, PID_controller
 import generateRobotPath
 import time
-#i = 0
-#last_angle = 0
-#targetPosArr = [0,0,0,0,0,0,0,0] # maybe we dont need to initialize with the zeros
 
-# Notes:
-# Try changing the queue size to something bigger if there are still issues.
+# Notes/to do:
+# Try changing the queue sizes to something bigger (10) if there are still issues. (We tried setting to queue size 1 => only care about newest)
 # Change the msg files to contain coordinates of 8 robots by default, and publish to them according to rigid body number
+    # Change indexing of targetposarr; we index robot numbers and not points
+    # In purepursuit.py line 46; change axis?
+    # Do we wait for the robot to reach the point before we give new goal?
+# rewrite for more robots, do it for each rigidbody/name/robot number out of 8
+        # Probably also rewrite the publisher function to accomodate and sort more rigid bodies.
+        # robot names are 1-8, their paths are "number minus 1" (get it from index in targetposarr)
 
 class ControllerNode(Node):
 
     def __init__(self):
         super().__init__("controller_node")
-        self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1) # try setting to queue size 1, only care about newest
-        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1) # input self.pose_callback??
+        self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1)
+        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
         
         # controller parameters:
         svg_file_path = input("Write path to route svg.\n")
@@ -39,8 +42,8 @@ class ControllerNode(Node):
         # debug messages:
         # convert list of tuples to dataframe of floats
         #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
-        print(len(self.targetPosArr))
-        print(len(self.targetPosArr[0]))
+        print(len(self.targetPosArr)) # length is 9
+        print(len(self.targetPosArr[0])) # length is 32
         #col1 = self.targetPosArr[0]
         #print(col1)
         #print(col1[0])
@@ -49,25 +52,11 @@ class ControllerNode(Node):
         self.get_logger().info("Controller node has been started")
 
 
-    # create seperate function for publishing and call it up ind self.cmd_publisher?
-    # we got an error about something with the inputs in pose_callback 
-
-    # try publishing debug messages of the targetposition array and the current position.
-
     def pose_callback(self, msg: RigidBody):
-        # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
-        # probably also rewrite publisher node?
-        #self.get_logger().info(str(msg.pose.x)) # test print x coord
-
-        # robot names are 1-8, their paths are #-1 (get it from index in targetposarr)
-
-
         controller = PID_controller(1.5,0.2,0.01,0.1)
-        #global i 
         dt = 0.01
         # get current position data and save as tuple
         currentPos = (msg.pose.x, msg.pose.y)
-
 
         # get target angle and velocity values
         current_time = time.time() # time for simulation
@@ -81,16 +70,17 @@ class ControllerNode(Node):
         
         # set target values and publish them
         cmd = RobotCmd()
-        cmd.linear = velocity # we temporarily use the rigidbody message instead of cmd_vel
+        cmd.linear = velocity
         cmd.angular = angle
         cmd.rigid_body_name = msg.rigid_body_name
         self.cmd_publisher_node_.publish(cmd)
         
-        # the messages should be changed so that the coordinates and velocities are linked and accessible through their names
+        # the messages should be changed so that the coordinates and velocities are linked and accessible through the robot names
 
         # test print
         self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
-        # update last angle and target index
+        
+        # update last angle and target index:
         self.i += 1
         self.last_angle = angle
 
