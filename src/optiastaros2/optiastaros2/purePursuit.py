@@ -53,7 +53,7 @@ def pure_pursuit(current_pos, path,lookahead_distance=1):
     # Find the lookahead point on the path
     lookahead_index = target_index
     lookahead_distance_remaining = lookahead_distance
-    while lookahead_distance_remaining > 0 and lookahead_index < 32 - 1: # change len(path) to 32 --------------------
+    while lookahead_distance_remaining > 0 and lookahead_index < len(path) - 1: # changed len(path) to 32 --------------------
         diff = np.subtract(path[lookahead_index], path[lookahead_index + 1])
         lookahead_distance_remaining -= np.linalg.norm(diff)
         lookahead_index += 1
