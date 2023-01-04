@@ -46,6 +46,8 @@ def pure_pursuit(current_pos, path,lookahead_distance=1):
     distances = np.linalg.norm(diff, axis=1)
     target_index = np.argmin(distances)
 
+    print("debug, inside pure pursuit")
+
     # Find the lookahead point on the path
     lookahead_index = target_index
     lookahead_distance_remaining = lookahead_distance
