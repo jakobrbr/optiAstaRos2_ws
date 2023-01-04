@@ -43,7 +43,7 @@ class PID_controller:
 def pure_pursuit(current_pos, path,lookahead_distance=1):
     # Find the closest point on the path to the current position
     diff = np.subtract(path, current_pos)
-    distances = np.linalg.norm(diff, axis=1)
+    distances = np.linalg.norm(diff, axis=0) # changed from 1 to 0 in test because we only have one array right now ----------------
     target_index = np.argmin(distances)
 
     print("debug, inside pure pursuit")
