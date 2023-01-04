@@ -12,14 +12,18 @@ import generateRobotPath
 import time
 
 # Notes/to do:
-# Try changing the queue sizes to something bigger (10) if there are still issues. (We tried setting to queue size 1 => only care about newest)
-# Change the msg files to contain coordinates of 8 robots by default, and publish to them according to rigid body number
-    # Change indexing of targetposarr; we index robot numbers and not points
+    # Try changing the queue sizes to something bigger (10) if there are still issues. (We tried setting to queue size 1 => only care about newest)
+    # Change the msg files to contain coordinates of 8 robots by default, and publish to them according to rigid body number
+    
+    # Change indexing of targetposarr; we should index points, not robots!
+        # do not index outside the length of the target array, only index when we set a new goal!
     # In purepursuit.py line 46; change axis?
     # Do we wait for the robot to reach the point before we give new goal?
-# rewrite for more robots, do it for each rigidbody/name/robot number out of 8
+    
+    # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # Probably also rewrite the publisher function to accomodate and sort more rigid bodies.
         # robot names are 1-8, their paths are "number minus 1" (get it from index in targetposarr)
+    # 
 
 class ControllerNode(Node):
 
@@ -29,7 +33,7 @@ class ControllerNode(Node):
         self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
         
         # controller parameters:
-        svg_file_path = input("Write path to route svg.\n")
+        svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
         with open(svg_file_path, "r") as f:
             # Read the contents of the file into a string variable
             svg_path = f.read()
@@ -79,7 +83,7 @@ class ControllerNode(Node):
 
         # test print
         self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
-        
+
         # update last angle and target index:
         self.i += 1
         self.last_angle = angle
