@@ -4,6 +4,7 @@ from rclpy.node import Node
 from rigidbody_msgs.msg import RigidBody, RobotCmd
 
 import numpy as np
+import pandas as pd
 import sys
 from xml.dom import minidom
 from purePursuit import pure_pursuit, pure_pursuit_turn_speed, PID_controller
@@ -33,7 +34,10 @@ class ControllerNode(Node):
 
         targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
         #controller = PID_controller(1.5,0.2,0.01,0.1)
-        print(targetPosArr[0])
+        # convert list of tuples to dataframe of floats
+        targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
+        #print(targetPosArr[0])
+        print(targetPosDF)
         self.get_logger().info("Controller node has been started")
 
 
