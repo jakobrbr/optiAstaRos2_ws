@@ -20,7 +20,7 @@ last_angle = 0
 
 class ControllerNode(Node):
 
-    def __init__(self):
+    def __init__(self, targetPosArr):
         super().__init__("controller_node")
         self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1) # try setting to queue size 1, only care about newest
         self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1) # input self.pose_callback??
@@ -32,13 +32,13 @@ class ControllerNode(Node):
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
 
-        targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
+        self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
 
         # convert list of tuples to dataframe of floats
         #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
-        print(len(targetPosArr))
-        print(len(targetPosArr[0]))
-        col1 = targetPosArr[0]
+        print(len(self.targetPosArr))
+        print(len(self.targetPosArr[0]))
+        col1 = self.targetPosArr[0]
         print(col1)
         print(col1[0])
         #print(targetPosDF)
@@ -68,10 +68,10 @@ class ControllerNode(Node):
         # get target angle and velocity values
         current_time = time.time() # time for simulation
         target_time = time.time() + 3 # same
-        angle = pure_pursuit(currentPos,targetPosArr[0], lookahead_distance=2) # Apply pursuit algorithm
+        angle = pure_pursuit(currentPos,self.targetPosArr[0], lookahead_distance=2) # Apply pursuit algorithm
         if np.isnan(angle) == 1:
             angle = 0
-        velocity = controller.update(currentPos, targetPosArr[i], current_time, target_time, dt) # for constant vel set velocity = 1
+        velocity = controller.update(currentPos, self.targetPosArr[i], current_time, target_time, dt) # for constant vel set velocity = 1
         velocity *= pure_pursuit_turn_speed(last_angle,angle)
         #print("position error %f" % np.linalg.norm(np.subtract(targetPosArr[i],currentPos)))
         
