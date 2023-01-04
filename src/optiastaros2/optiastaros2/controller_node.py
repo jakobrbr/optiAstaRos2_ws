@@ -78,7 +78,7 @@ class ControllerNode(Node):
         #print("position error %f" % np.linalg.norm(np.subtract(targetPosArr[i],currentPos)))
         
         # set target values and publish them
-        cmd = RigidBody()
+        cmd = RobotCmd()
         cmd.linear = velocity # we temporarily use the rigidbody message instead of cmd_vel
         cmd.angular = angle
         cmd.rigid_body_name = msg.rigid_body_name
