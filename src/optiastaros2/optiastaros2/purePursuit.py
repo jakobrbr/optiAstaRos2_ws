@@ -46,6 +46,7 @@ def pure_pursuit(current_pos, path,lookahead_distance=1):
     distances = np.linalg.norm(diff, axis=0) # changed from 1 to 0 in test because we only have one array right now ----------------
     target_index = np.argmin(distances)
 
+    print("This is the path:")
     print(path)
     #print(len(path))
 
