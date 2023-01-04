@@ -36,7 +36,7 @@ class ControllerNode(Node):
         #controller = PID_controller(1.5,0.2,0.01,0.1)
         # convert list of tuples to dataframe of floats
         targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
-        print(targetPosArr[0])
+        #print(targetPosArr[0])
         print(targetPosDF)
         self.get_logger().info("Controller node has been started")
 
