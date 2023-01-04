@@ -59,7 +59,7 @@ class ControllerNode(Node):
         # get target angle and velocity values
         current_time = time.time() # time for simulation
         target_time = time.time() + 3 # same
-        angle = pure_pursuit(currentPos,targetPosArr[0], lookahead_distance=2) # Apply pursuit algorithm
+        angle = pure_pursuit(currentPos,targetPosArr, lookahead_distance=2) # Apply pursuit algorithm
         if np.isnan(angle) == 1:
             angle = 0
         velocity = controller.update(currentPos, targetPosArr[i], current_time, target_time, dt) # for constant vel set velocity = 1
