@@ -15,10 +15,10 @@ class PublishDataNode(Node):
     def __init__(self):
         super().__init__("pubdata_node")
         # create 8 publishers, publishing to different topics
-        self.publishers = []
+        self.set_publishers = []
         for i in range(8):
             publisher = self.create_publisher(RigidBody, "robot{}/data".format(i), 10)
-            self.publishers.append(publisher)
+            self.set_publishers.append(publisher)
             self.get_logger().info("Created publisher #{}".format(i))
 
         #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot1/data", 200)
@@ -37,7 +37,7 @@ class PublishDataNode(Node):
         streamingClient.rigidBodyListener = receiveRigidBodyFrame
         streamingClient.run()
 
-        for i, publisher in enumerate(self.publishers):
+        for i, publisher in enumerate(self.set_publishers):
             msg = RigidBody()
             pos,rot = id_dict[i]
             msg.pose.x = pos[0]
