@@ -27,10 +27,10 @@ class PublishDataNode(Node):
             pos,rot = id_dict[i]
             msg.pose.x = pos[0]
             msg.pose.y = pos[1]
-            msg.pose.z = pos[2]
-            msg.rot.x = rot[0]
-            msg.rot.y = rot[1]
-            msg.rot.z = rot[2]
+            #msg.pose.z = pos[2]
+            #msg.rot.x = rot[0]
+            #msg.rot.y = rot[1]
+            #msg.rot.z = rot[2]
             msg.rigid_body_name = i
         self.cmd_vel_pub_.publish(msg)
 

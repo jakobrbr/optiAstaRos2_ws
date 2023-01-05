@@ -11,7 +11,7 @@ class PID_controller:
 
     def update(self, current_position, target_position, current_time, target_time=1,update_time=0.1,breakforce = 0.1):
 
-            error = np.linalg.norm(np.subtract(target_position,current_position)) # Calculate the error
+            error = np.argmin(np.linalg.norm(np.subtract(target_position,current_position))) # Calculate the error
             elapsed_time = current_time - target_time # Calculate the elapsed time
 
             p_position = self.kp * error # Proportional term
@@ -39,22 +39,20 @@ class PID_controller:
 #   output = controller.update(current_position, target_position, current_time, target_time, dt)
 # Check if target_pos has been reached:
 #  if abs(current_position - target_position) < 0.01: Break
-        
+# ------------------------------------------------------------------
+
+# takes a position the robot is currently and a path as input (a touple and a list of touples)
+# and outputs the angle for pointing the robot at the next waypoint
 def pure_pursuit(current_pos, path,lookahead_distance=1):
     # Find the closest point on the path to the current position
     diff = np.subtract(path, current_pos)
-    distances = np.linalg.norm(diff, axis=0) # changed from 1 to 0 in test because we only have one array right now ----------------
+    distances = np.linalg.norm(diff, axis=1)
     target_index = np.argmin(distances)
-
-    # debug messages:
-    #print("This is the path:")
-    #print(path)
-    #print(len(path))
 
     # Find the lookahead point on the path
     lookahead_index = target_index
     lookahead_distance_remaining = lookahead_distance
-    while lookahead_distance_remaining > 0 and lookahead_index < len(path) - 1: 
+    while lookahead_distance_remaining > 0 and lookahead_index < len(path) - 1:
         diff = np.subtract(path[lookahead_index], path[lookahead_index + 1])
         lookahead_distance_remaining -= np.linalg.norm(diff)
         lookahead_index += 1
@@ -76,27 +74,15 @@ def pure_pursuit_turn_speed(current_angle,previous_angle):
     if np.abs(delta_angle) > np.pi/2:
         # Return a negative speed for angles above pi/2 or below 4/3pi
         velocity_scalar = mapFromTo(np.abs(delta_angle),np.pi,np.pi/2,-1,0)
-        print("velocity scalar %f" % velocity_scalar)
+        #print("velocity scalar %f" % velocity_scalar)
         return velocity_scalar
     elif np.abs(delta_angle) < np.pi/2:
         # Return the speed calculated
         velocity_scalar = mapFromTo(np.abs(delta_angle),np.pi/2,0,0,1)
-        print("velocity scalar %f" % velocity_scalar)
+        #print("velocity scalar %f" % velocity_scalar)
         return velocity_scalar
     else:
         # Return a positive speed for all other angles
-        return 0
-
-
-# Legacy function, no longer used
-def waypoint_change(current_position,target_position, threshold):
-    #calculate the distance from the current postition, to the target postition
-    direction = target_position - current_position
-    distance = np.linalg.norm(direction)
-    # If we are close enough to the waypoint, increment the index
-    if threshold > distance:
-        return 1
-    else:
         return 0
 
 # Mapping helper function

@@ -23,31 +23,44 @@ import time
     # rewrite for more robots, do it for each rigidbody/name/robot number out of 8
         # Probably also rewrite the publisher function to accomodate and sort more rigid bodies.
         # robot names are 1-8, their paths are "number minus 1" (get it from index in targetposarr)
-    # 
+    # Kill node when we reach the end
+    # create a launch directiory and file!
+    # lav egen fortolkning af dansen ift robottens begræsninger, det er ikke ideelt at lave præcise menneskelige bevægelser for en robot
+    # skriv et afsnit om vores valg der og find andre folks papers om dans/menneskelig bevægelse af robotter
+    # med vores styring er det svært, men man kunne lave dansen ved at give kommandoer og koordinater
+    # Vi tegner for at bedre visualisere osv
+    # pure pursuit giver flydende bevægelser
+
+    # vi kan muligvis først teste om det virker med flere når vi er i optitrack
 
 class ControllerNode(Node):
 
     def __init__(self):
         super().__init__("controller_node")
+        # create subscriber to topic "/data"
         self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1)
+        # create publisher to topic "/cmd_vel"
         self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
         
-        # controller parameters:
+        # import svg file
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
         with open(svg_file_path, "r") as f:
             # Read the contents of the file into a string variable
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
-
+        # generate path from svg file
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
-        self.i = 0
-        self.last_angle = 0
+        # initialize arrays
+        self.last_angle = [0,0,0,0,0,0,0,0]
+        self.currentPos = [0,0,0,0,0,0,0,0]
+        self.angle = [0,0,0,0,0,0,0,0]
+        self.velocity = [0,0,0,0,0,0,0,0]
 
         # debug messages:
         # convert list of tuples to dataframe of floats
         #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
-        print(len(self.targetPosArr)) # length is 9
-        print(len(self.targetPosArr[0])) # length is 32
+        #print(len(self.targetPosArr)) # length is 9
+        #print(len(self.targetPosArr[0])) # length is 32
         #col1 = self.targetPosArr[0]
         #print(col1)
         #print(col1[0])
@@ -57,36 +70,40 @@ class ControllerNode(Node):
 
 
     def pose_callback(self, msg: RigidBody):
-        controller = PID_controller(1.5,0.2,0.01,0.1)
-        dt = 0.01
-        # get current position data and save as tuple
-        currentPos = (msg.pose.x, msg.pose.y)
+        # this function is called whenever we get data from optitrack
 
-        # get target angle and velocity values
-        current_time = time.time() # time for simulation
-        target_time = time.time() + 3 # same
-        angle = pure_pursuit(currentPos,self.targetPosArr[0], lookahead_distance=2) # Apply pursuit algorithm
-        if np.isnan(angle) == 1:
-            angle = 0
-        velocity = controller.update(currentPos, self.targetPosArr[self.i], current_time, target_time, dt) # for constant vel set velocity = 1
-        velocity *= pure_pursuit_turn_speed(self.last_angle,angle)
-        #print("position error %f" % np.linalg.norm(np.subtract(targetPosArr[i],currentPos)))
-        
-        # set target values and publish them
-        cmd = RobotCmd()
-        cmd.linear = velocity
-        cmd.angular = angle
-        cmd.rigid_body_name = msg.rigid_body_name
-        self.cmd_publisher_node_.publish(cmd)
-        
-        # the messages should be changed so that the coordinates and velocities are linked and accessible through the robot names
+        # Apply pure pursuit algorithm to get target angle and velocity values for each robot
+        for j in range(0,len(self.targetPosArr)):
+            if self.targetPosArr[j]:
+                    # update current position of robot 'j'
+                    self.currentPos[j] = (msg.pose.x, msg.pose.y)
+                    # calculate angle
+                    self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
+                    #Purify ang array from NaN values
+                    if np.isnan(self.angle[j]) == 1:
+                        self.angle[j] = 0
+                    #print("angle : {}".format(angle[j]))
+                    #print("current posistion : {}".format(turt[j].pos))
+                    #print("target position : {}".format(targetPosArr[0][j+1]))
 
+                    self.velocity[j] = 3 #controller.update(currentPos[j], targetPosArr[j], current_time, target_time) # for constant velocity set: velocyty = 1 
+                    self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
+
+                    #print("velocity : {}".format(velocity[j]))
+                    
+                    # set target values and publish them
+                    cmd = RobotCmd()
+                    cmd.linear = self.velocity[j]
+                    cmd.angular = self.angle[j]
+                    cmd.rigid_body_name = msg.rigid_body_name
+                    self.cmd_publisher_node_.publish(cmd)
+
+                    # update last angle
+                    self.last_angle = angle
+                    #currentPos[j] = turt[j].pos() # move robot, the optitrack system should do this part in the future
+                    #last_angle[j] = angle[j] # Sets the new angle, the optitrack system should do this part in the futures
         # test print
-        self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
-
-        # update last angle and target index:
-        self.i += 1
-        self.last_angle = angle
+        #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
 def main(args=None):
