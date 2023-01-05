@@ -47,7 +47,7 @@ class ControllerNode(Node):
         # create publishers to topic "/cmd_vel"
         self.set_publishers = []
         for i in range(8):
-            publisher = self.create_publisher(RigidBody, "robot{}/cmd_vel".format(i), 10)
+            publisher = self.create_publisher(RobotCmd, "robot{}/cmd_vel".format(i), 10)
             self.set_publishers.append(publisher)
 
         # old sub and pub:
