@@ -37,10 +37,22 @@ class ControllerNode(Node):
 
     def __init__(self):
         super().__init__("controller_node")
-        # create subscriber to topic "/data"
-        self.controller_node_ = self.create_subscription(RigidBody, "/robot1/data", self.pose_callback, 1)
-        # create publisher to topic "/cmd_vel"
-        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
+        # create a subscriber for each robot data topic
+        self.sub_array = []
+        self.msg_array = [None]*8 # kunne også være en array med 8 nuller
+        self.currentPos = [None]*8
+        for i in range(8):
+            self.sub_array.append(self.create_subscription(RigidBody, "/robot{}/data".format(i), self.pose_callback, i)) # hvorfor er der et i til sidst??
+        
+        # create publishers to topic "/cmd_vel"
+        self.set_publishers = []
+        for i in range(8):
+            publisher = self.create_publisher(RigidBody, "robot{}/cmd_vel".format(i), 10)
+            self.set_publishers.append(publisher)
+
+        # old sub and pub:
+        #self.controller_node_ = self.create_subscription(RigidBody, "/robot1/data", self.pose_callback, 1)
+        #self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
         
         # import svg file
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
@@ -52,7 +64,7 @@ class ControllerNode(Node):
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
         # initialize arrays
         self.last_angle = [0,0,0,0,0,0,0,0]
-        self.currentPos = [0,0,0,0,0,0,0,0]
+        #self.currentPos = [0,0,0,0,0,0,0,0]
         self.angle = [0,0,0,0,0,0,0,0]
         self.velocity = [0,0,0,0,0,0,0,0]
 
@@ -76,7 +88,10 @@ class ControllerNode(Node):
         for j in range(0,len(self.targetPosArr)):
             if self.targetPosArr[j]:
                     # update current position of robot 'j'
-                    self.currentPos[j] = (msg.pose.x, msg.pose.y)
+                    self.msg_array[j] = msg.data
+                    self.currentPos[j] = (self.msg_array[j],)
+                    #self.currentPos[j] = (msg.pose.x, msg.pose.y)
+
                     # calculate angle
                     self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
                     #Purify ang array from NaN values
@@ -90,20 +105,21 @@ class ControllerNode(Node):
                     self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
                     #print("velocity : {}".format(velocity[j]))
-                    
-                    # set target values and publish them
-                    cmd = RobotCmd()
-                    cmd.linear = self.velocity[j]
-                    cmd.angular = self.angle[j]
-                    cmd.rigid_body_name = msg.rigid_body_name
-                    self.cmd_publisher_node_.publish(cmd)
+
+                    # set target values and publish to each robot
+                    for i, publisher in enumerate(self.set_publishers):
+                        cmd = RobotCmd()
+                        cmd.linear = self.velocity[j]
+                        cmd.angular = self.angle[j]
+                        cmd.rigid_body_name = msg.rigid_body_name
+                        publisher.publish(cmd)
 
                     # update last angle
                     self.last_angle = self.angle
                     #currentPos[j] = turt[j].pos() # move robot, the optitrack system should do this part in the future
                     #last_angle[j] = angle[j] # Sets the new angle, the optitrack system should do this part in the futures
         # test print
-        self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+        #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
 def main(args=None):
