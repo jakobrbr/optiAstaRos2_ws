@@ -38,7 +38,7 @@ class ControllerNode(Node):
     def __init__(self):
         super().__init__("controller_node")
         # create subscriber to topic "/data"
-        self.controller_node_ = self.create_subscription(RigidBody, "/data", self.pose_callback, 1)
+        self.controller_node_ = self.create_subscription(RigidBody, "/robot1/data", self.pose_callback, 1)
         # create publisher to topic "/cmd_vel"
         self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
         
