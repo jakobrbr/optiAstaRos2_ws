@@ -43,7 +43,7 @@ class PublishDataNode(Node):
             print(publisher)
             if i in id_dict:
                 print("its here")
-            pos,rot = id_dict[str(i+1)]
+            pos,rot = id_dict[str(i)]
             msg.pose.x = pos[0]
             msg.pose.y = pos[1]
             #msg.pose.z = pos[2]
