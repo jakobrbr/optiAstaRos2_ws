@@ -39,6 +39,10 @@ class PublishDataNode(Node):
 
         for i, publisher in enumerate(self.set_publishers):
             msg = RigidBody()
+            print(i)
+            print(publisher)
+            if i in id_dict:
+                print("its here")
             pos,rot = id_dict[str(i+1)]
             msg.pose.x = pos[0]
             msg.pose.y = pos[1]
