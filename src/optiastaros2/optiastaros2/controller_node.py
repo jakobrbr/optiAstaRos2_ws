@@ -99,7 +99,7 @@ class ControllerNode(Node):
                     self.cmd_publisher_node_.publish(cmd)
 
                     # update last angle
-                    self.last_angle = angle
+                    self.last_angle = self.angle
                     #currentPos[j] = turt[j].pos() # move robot, the optitrack system should do this part in the future
                     #last_angle[j] = angle[j] # Sets the new angle, the optitrack system should do this part in the futures
         # test print
