@@ -1,0 +1,24 @@
+[7.586s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2': PYTHONPATH=/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optiastaros2 build --build-base /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build install --record /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log --single-version-externally-managed
+[10.595s] running egg_info
+[10.603s] writing ../../build/optiastaros2/optiastaros2.egg-info/PKG-INFO
+[10.605s] writing dependency_links to ../../build/optiastaros2/optiastaros2.egg-info/dependency_links.txt
+[10.608s] writing entry points to ../../build/optiastaros2/optiastaros2.egg-info/entry_points.txt
+[10.611s] writing requirements to ../../build/optiastaros2/optiastaros2.egg-info/requires.txt
+[10.612s] writing top-level names to ../../build/optiastaros2/optiastaros2.egg-info/top_level.txt
+[10.632s] reading manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'
+[10.644s] writing manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'
+[10.646s] running build
+[10.647s] running build_py
+[10.654s] running install
+[10.657s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[10.658s]   warnings.warn(
+[10.660s] running install_lib
+[10.680s] running install_data
+[10.689s] running install_egg_info
+[10.706s] removing '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info' (and everything under it)
+[10.712s] Copying ../../build/optiastaros2/optiastaros2.egg-info to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info
+[10.733s] running install_scripts
+[10.941s] Installing controller_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2
+[10.943s] Installing pubdata_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2
+[10.948s] writing list of installed files to '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log'
+[11.176s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2' returned '0': PYTHONPATH=/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optiastaros2 build --build-base /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build install --record /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log --single-version-externally-managed

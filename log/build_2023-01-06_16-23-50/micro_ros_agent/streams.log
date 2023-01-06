@@ -1,0 +1,307 @@
+[0.248s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake /home/ubuntu/optiAstaRos2_ws/src/micro_ros_agent -DCMAKE_INSTALL_PREFIX=/home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent
+[1.556s] -- The C compiler identification is GNU 11.3.0
+[1.679s] -- Detecting C compiler ABI info
+[2.628s] -- Detecting C compiler ABI info - done
+[2.703s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.710s] -- Detecting C compile features
+[2.717s] -- Detecting C compile features - done
+[3.350s] -- The CXX compiler identification is GNU 11.3.0
+[3.432s] -- Detecting CXX compiler ABI info
+[4.166s] -- Detecting CXX compiler ABI info - done
+[4.241s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.244s] -- Detecting CXX compile features
+[4.249s] -- Detecting CXX compile features - done
+[5.028s] -- Configuring done
+[5.083s] -- Generating done
+[5.094s] -- Build files have been written to: /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent
+[5.126s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake /home/ubuntu/optiAstaRos2_ws/src/micro_ros_agent -DCMAKE_INSTALL_PREFIX=/home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent
+[5.138s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent -- -j4 -l4
+[5.628s] [  6%] [34m[1mCreating directories for 'xrceagent'[0m
+[6.192s] [ 12%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[6.396s] Cloning into 'xrceagent'...
+[11.781s] Switched to a new branch 'ros2'
+[11.782s] Branch 'ros2' set up to track remote branch 'ros2' from 'origin'.
+[12.358s] [ 18%] [34m[1mPerforming update step for 'xrceagent'[0m
+[13.966s] HEAD is now at 3eb56b5 Release v2.3.0
+[14.381s] [ 25%] [34m[1mNo patch step for 'xrceagent'[0m
+[14.635s] [ 31%] [34m[1mPerforming configure step for 'xrceagent'[0m
+[14.733s] loading initial cache file /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake
+[15.248s] -- The C compiler identification is GNU 11.3.0
+[15.329s] -- Detecting C compiler ABI info
+[16.247s] -- Detecting C compiler ABI info - done
+[16.324s] -- Check for working C compiler: /usr/bin/cc - skipped
+[16.327s] -- Detecting C compile features
+[16.330s] -- Detecting C compile features - done
+[16.938s] -- The CXX compiler identification is GNU 11.3.0
+[17.015s] -- Detecting CXX compiler ABI info
+[17.908s] -- Detecting CXX compiler ABI info - done
+[17.985s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[17.988s] -- Detecting CXX compile features
+[17.992s] -- Detecting CXX compile features - done
+[18.101s] -- Looking for pthread.h
+[18.816s] -- Looking for pthread.h - found
+[18.819s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[19.711s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[19.720s] -- Found Threads: TRUE  
+[19.856s] -- Configuring done
+[19.869s] -- Generating done
+[19.873s] -- Build files have been written to: /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[19.954s] [ 37%] [34m[1mPerforming build step for 'xrceagent'[0m
+[20.127s] [ 12%] [34m[1mCreating directories for 'uagent'[0m
+[20.407s] [ 25%] [34m[1mNo download step for 'uagent'[0m
+[20.503s] [ 37%] [34m[1mNo update step for 'uagent'[0m
+[20.602s] [ 50%] [34m[1mNo patch step for 'uagent'[0m
+[20.830s] [ 62%] [34m[1mPerforming configure step for 'uagent'[0m
+[20.921s] loading initial cache file /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake
+[20.973s] -- Setting build type to 'Release' as none was specified.
+[21.953s] [33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[21.955s]   The package name passed to `find_package_handle_standard_args` (tinyxml2)
+[21.955s]   does not match the name of the calling package (TinyXML2).  This can lead
+[21.956s]   to problems in calling code that expects `find_package` result variables
+[21.957s]   (e.g., `_FOUND`) to follow a certain pattern.
+[21.958s] Call Stack (most recent call first):
+[21.959s]   cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)
+[21.959s]   /opt/ros/humble/share/fastrtps/cmake/fastrtps-config.cmake:51 (find_package)
+[21.960s]   CMakeLists.txt:153 (find_package)
+[21.961s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[21.962s] [0m
+[21.963s] -- Found tinyxml2: /usr/lib/aarch64-linux-gnu/libtinyxml2.so  
+[22.243s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[22.287s] -- Configuring done
+[22.338s] -- Generating done
+[22.344s] -- Build files have been written to: /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent/agent/src/xrceagent-build
+[22.518s] [ 75%] [34m[1mPerforming build step for 'uagent'[0m
+[22.970s] [  2%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o[0m
+[22.975s] [  4%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o[0m
+[22.988s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o[0m
+[22.989s] [  9%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o[0m
+[132.828s] [ 11%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o[0m
+[132.987s] [ 14%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o[0m
+[152.416s] [ 16%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o[0m
+[162.539s] [ 19%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o[0m
+[167.925s] [ 21%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o[0m
+[183.003s] [ 23%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o[0m
+[184.124s] [ 26%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o[0m
+[189.735s] [ 28%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o[0m
+[212.723s] [ 30%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o[0m
+[223.950s] [ 33%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o[0m
+[224.330s] [ 35%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o[0m
+[230.585s] [ 38%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o[0m
+[232.670s] [ 40%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o[0m
+[236.602s] [ 42%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o[0m
+[238.830s] [ 45%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o[0m
+[254.921s] [ 47%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o[0m
+[277.047s] [ 50%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o[0m
+[278.119s] [ 52%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o[0m
+[279.223s] [ 54%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o[0m
+[280.349s] [ 57%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o[0m
+[281.907s] [ 59%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o[0m
+[318.965s] [ 61%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o[0m
+[320.997s] [ 64%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o[0m
+[325.487s] [ 66%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o[0m
+[345.890s] [ 69%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o[0m
+[363.422s] [ 71%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o[0m
+[383.183s] [ 73%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o[0m
+[384.289s] [ 76%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o[0m
+[385.409s] [ 78%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o[0m
+[399.753s] [ 80%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o[0m
+[420.950s] [ 83%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o[0m
+[421.265s] [ 85%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o[0m
+[427.547s] [ 88%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o[0m
+[430.283s] [ 90%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o[0m
+[440.219s] [ 92%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o[0m
+[440.276s] [ 95%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o[0m
+[456.004s] [ 97%] [32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o[0m
+[525.496s] [100%] [32m[1mLinking CXX shared library libmicroxrcedds_agent.so[0m
+[528.219s] [100%] Built target microxrcedds_agent
+[528.356s] [34m[1mNo install step for 'uagent'[0m
+[528.455s] [34m[1mCompleted 'uagent'[0m
+[528.613s] Built target uagent
+[528.903s] [ 43%] [34m[1mPerforming install step for 'xrceagent'[0m
+[529.675s] [35m[1mConsolidate compiler generated dependencies of target microxrcedds_agent[0m
+[530.240s] [100%] Built target microxrcedds_agent
+[530.318s] [36mInstall the project...[0m
+[530.354s] -- Install configuration: "Release"
+[530.360s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.3.0
+[530.388s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.3
+[530.390s] -- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.3.0" to ""
+[530.391s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so
+[530.391s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent
+[530.395s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/Agent.hpp
+[530.398s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport
+[530.400s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/util
+[530.401s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp
+[530.403s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp
+[530.405s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/custom
+[530.407s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp
+[530.409s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/udp
+[530.410s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp
+[530.412s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp
+[530.414s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp
+[530.416s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp
+[530.419s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp
+[530.421s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial
+[530.422s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp
+[530.424s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp
+[530.427s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp
+[530.429s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h
+[530.431s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp
+[530.433s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp
+[530.435s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp
+[530.437s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/can
+[530.438s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp
+[530.440s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint
+[530.441s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp
+[530.443s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp
+[530.445s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp
+[530.447s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp
+[530.449s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp
+[530.451s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp
+[530.453s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp
+[530.455s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p
+[530.457s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp
+[530.459s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp
+[530.461s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing
+[530.462s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp
+[530.465s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp
+[530.467s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp
+[530.469s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp
+[530.471s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp
+[530.473s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp
+[530.475s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp
+[530.477s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp
+[530.479s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery
+[530.481s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp
+[530.483s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp
+[530.486s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp
+[530.488s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp
+[530.490s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/reader
+[530.490s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp
+[530.493s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/types
+[530.494s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp
+[530.496s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp
+[530.498s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp
+[530.511s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp
+[530.514s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp
+[530.518s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/logger
+[530.520s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp
+[530.522s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/visibility.hpp
+[530.524s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/message
+[530.525s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp
+[530.527s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp
+[530.530s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp
+[530.532s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils
+[530.533s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp
+[530.535s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp
+[530.537s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp
+[530.539s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp
+[530.541s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp
+[530.543s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp
+[530.545s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp
+[530.548s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp
+[530.550s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp
+[530.552s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/datareader
+[530.553s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp
+[530.555s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/requester
+[530.556s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp
+[530.558s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/replier
+[530.559s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp
+[530.561s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client
+[530.562s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp
+[530.565s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/session
+[530.565s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream
+[530.567s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp
+[530.569s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp
+[530.573s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp
+[530.578s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp
+[530.582s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/datawriter
+[530.585s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp
+[530.589s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/publisher
+[530.591s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp
+[530.595s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/subscriber
+[530.598s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp
+[530.601s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware
+[530.603s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds
+[530.606s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp
+[530.611s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp
+[530.615s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced
+[530.618s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp
+[530.623s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp
+[530.628s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils
+[530.630s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp
+[530.637s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast
+[530.639s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp
+[530.644s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp
+[530.649s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp
+[530.653s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/p2p
+[530.657s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp
+[530.660s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp
+[530.664s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/topic
+[530.667s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp
+[530.670s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/processor
+[530.673s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp
+[530.677s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/Root.hpp
+[530.680s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/object
+[530.683s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp
+[530.687s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/scheduler
+[530.690s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp
+[530.694s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp
+[530.698s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/participant
+[530.699s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp
+[530.711s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake
+[530.717s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake
+[530.722s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/include/uxr/agent/config.hpp
+[530.727s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/share/microxrcedds_agent/LICENSE
+[530.732s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake
+[530.737s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake
+[530.927s] [ 50%] [34m[1mCompleted 'xrceagent'[0m
+[531.272s] [ 50%] Built target xrceagent
+[531.384s] [ 56%] [34m[1mCreating directories for 'micro_ros_agent'[0m
+[531.685s] [ 62%] [34m[1mNo download step for 'micro_ros_agent'[0m
+[531.907s] [ 68%] [34m[1mNo update step for 'micro_ros_agent'[0m
+[532.151s] [ 75%] [34m[1mNo patch step for 'micro_ros_agent'[0m
+[532.393s] [ 81%] [34m[1mPerforming configure step for 'micro_ros_agent'[0m
+[532.493s] loading initial cache file /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake
+[532.638s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[533.876s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[535.833s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[535.886s] -- Looking for C++ include pthread.h
+[536.454s] -- Looking for C++ include pthread.h - found
+[536.458s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[536.851s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[536.856s] -- Found Threads: TRUE  
+[536.933s] -- Found rosidl_cmake: 3.1.4 (/opt/ros/humble/share/rosidl_cmake/cmake)
+[536.965s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[537.206s] -- Found fastrtps_cmake_module: 2.2.0 (/opt/ros/humble/share/fastrtps_cmake_module/cmake)
+[537.242s] -- Found rmw_dds_common: 1.6.0 (/opt/ros/humble/share/rmw_dds_common/cmake)
+[537.640s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[537.730s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[537.812s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[537.941s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[538.097s] -- Found rmw_fastrtps_shared_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake)
+[539.185s] -- Found FastRTPS: /opt/ros/humble/include  
+[539.271s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[539.358s] -- Found ament_cmake_gtest: 1.3.3 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[539.560s] [31mCMake Error at CMakeLists.txt:51 (find_package):
+[539.561s] -- Configuring incomplete, errors occurred!
+[539.561s] See also "/home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent/CMakeFiles/CMakeOutput.log".
+[539.561s]   By not providing "Findmicro_ros_msgs.cmake" in CMAKE_MODULE_PATH this
+[539.562s]   project has asked CMake to find a package configuration file provided by
+[539.562s]   "micro_ros_msgs", but CMake did not find one.
+[539.562s] 
+[539.562s]   Could not find a package configuration file provided by "micro_ros_msgs"
+[539.563s]   with any of the following names:
+[539.563s] 
+[539.563s]     micro_ros_msgsConfig.cmake
+[539.563s]     micro_ros_msgs-config.cmake
+[539.563s] 
+[539.564s]   Add the installation prefix of "micro_ros_msgs" to CMAKE_PREFIX_PATH or set
+[539.564s]   "micro_ros_msgs_DIR" to a directory containing one of the above files.  If
+[539.564s]   "micro_ros_msgs" provides a separate development package or SDK, be sure it
+[539.565s]   has been installed.
+[539.565s] 
+[539.566s] [0m
+[539.589s] gmake[2]: *** [CMakeFiles/micro_ros_agent.dir/build.make:94: micro_ros_agent-prefix/src/micro_ros_agent-stamp/micro_ros_agent-configure] Error 1
+[539.590s] gmake[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/micro_ros_agent.dir/all] Error 2
+[539.593s] gmake: *** [Makefile:91: all] Error 2
+[539.654s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/micro_ros_agent -- -j4 -l4
