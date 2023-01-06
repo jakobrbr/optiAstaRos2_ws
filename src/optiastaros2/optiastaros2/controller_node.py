@@ -30,8 +30,15 @@ import time
     # med vores styring er det svært, men man kunne lave dansen ved at give kommandoer og koordinater
     # Vi tegner for at bedre visualisere osv
     # pure pursuit giver flydende bevægelser
+    # den kører bedre med mange punkter
+
+    # regulated pure pursuit (with velocity controller)
+    # weighted pure pursuit (choose path with least angle change if at crossroad)
+    
+    # afstand mellem to linjer må ikke være mindre end afstanden mellem linjepunkterne
 
     # vi kan muligvis først teste om det virker med flere når vi er i optitrack
+    # saml 8 pcb'er og vis at kommunikationen er hurtig nok, brug to robotter til at demonstrere synkronitet
 
 class ControllerNode(Node):
 
