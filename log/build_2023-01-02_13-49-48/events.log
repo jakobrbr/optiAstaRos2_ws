@@ -1,0 +1,714 @@
+[0.000000] (-) TimerEvent: {}
+[0.001765] (rigidbody_msgs) JobQueued: {'identifier': 'rigidbody_msgs', 'dependencies': OrderedDict()}
+[0.002356] (optiastaros2) JobQueued: {'identifier': 'optiastaros2', 'dependencies': OrderedDict([('rigidbody_msgs', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs')])}
+[0.004542] (rigidbody_msgs) JobStarted: {'identifier': 'rigidbody_msgs'}
+[0.054111] (rigidbody_msgs) JobProgress: {'identifier': 'rigidbody_msgs', 'progress': 'cmake'}
+[0.057233] (rigidbody_msgs) JobProgress: {'identifier': 'rigidbody_msgs', 'progress': 'build'}
+[0.060746] (rigidbody_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.1.39 59493 22'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('PWD', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs'), ('SSH_CONNECTION', '192.168.1.39 59493 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble')]), 'shell': False}
+[0.099207] (-) TimerEvent: {}
+[0.195682] (rigidbody_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199344] (-) TimerEvent: {}
+[0.300067] (-) TimerEvent: {}
+[0.400675] (-) TimerEvent: {}
+[0.501350] (-) TimerEvent: {}
+[0.601988] (-) TimerEvent: {}
+[0.702694] (-) TimerEvent: {}
+[0.803523] (-) TimerEvent: {}
+[0.904320] (-) TimerEvent: {}
+[0.932946] (rigidbody_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.004491] (-) TimerEvent: {}
+[1.105189] (-) TimerEvent: {}
+[1.129872] (rigidbody_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.145258] (rigidbody_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.182553] (rigidbody_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.205359] (-) TimerEvent: {}
+[1.285378] (rigidbody_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.305530] (-) TimerEvent: {}
+[1.371305] (rigidbody_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.405755] (-) TimerEvent: {}
+[1.506478] (-) TimerEvent: {}
+[1.607246] (-) TimerEvent: {}
+[1.707953] (-) TimerEvent: {}
+[1.808633] (-) TimerEvent: {}
+[1.845325] (rigidbody_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.908813] (-) TimerEvent: {}
+[2.009477] (-) TimerEvent: {}
+[2.110169] (-) TimerEvent: {}
+[2.210792] (-) TimerEvent: {}
+[2.311638] (-) TimerEvent: {}
+[2.412565] (-) TimerEvent: {}
+[2.513296] (-) TimerEvent: {}
+[2.614114] (-) TimerEvent: {}
+[2.714835] (-) TimerEvent: {}
+[2.815514] (-) TimerEvent: {}
+[2.916175] (-) TimerEvent: {}
+[3.016980] (-) TimerEvent: {}
+[3.118006] (-) TimerEvent: {}
+[3.160352] (rigidbody_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.218199] (-) TimerEvent: {}
+[3.318880] (-) TimerEvent: {}
+[3.419600] (-) TimerEvent: {}
+[3.520305] (-) TimerEvent: {}
+[3.621046] (-) TimerEvent: {}
+[3.721713] (-) TimerEvent: {}
+[3.822434] (-) TimerEvent: {}
+[3.923321] (-) TimerEvent: {}
+[4.024102] (-) TimerEvent: {}
+[4.124771] (-) TimerEvent: {}
+[4.225497] (-) TimerEvent: {}
+[4.326209] (-) TimerEvent: {}
+[4.426982] (-) TimerEvent: {}
+[4.527658] (-) TimerEvent: {}
+[4.628349] (-) TimerEvent: {}
+[4.729006] (-) TimerEvent: {}
+[4.829782] (-) TimerEvent: {}
+[4.930566] (-) TimerEvent: {}
+[5.031226] (-) TimerEvent: {}
+[5.067812] (rigidbody_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.131416] (-) TimerEvent: {}
+[5.232442] (-) TimerEvent: {}
+[5.333179] (-) TimerEvent: {}
+[5.433967] (-) TimerEvent: {}
+[5.534695] (-) TimerEvent: {}
+[5.635318] (-) TimerEvent: {}
+[5.735965] (-) TimerEvent: {}
+[5.800443] (rigidbody_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.836124] (-) TimerEvent: {}
+[5.916998] (rigidbody_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[5.936275] (-) TimerEvent: {}
+[6.028151] (rigidbody_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.028937] (rigidbody_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.029396] (rigidbody_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[6.036460] (-) TimerEvent: {}
+[6.137191] (-) TimerEvent: {}
+[6.186184] (rigidbody_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.237373] (-) TimerEvent: {}
+[6.279535] (rigidbody_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.291929] (rigidbody_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.325801] (rigidbody_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.337549] (-) TimerEvent: {}
+[6.438368] (-) TimerEvent: {}
+[6.539757] (-) TimerEvent: {}
+[6.604929] (rigidbody_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[6.637887] (rigidbody_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs\n'}
+[6.640064] (-) TimerEvent: {}
+[6.741045] (-) TimerEvent: {}
+[6.793593] (rigidbody_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.841171] (-) TimerEvent: {}
+[6.941784] (-) TimerEvent: {}
+[7.042464] (-) TimerEvent: {}
+[7.143146] (-) TimerEvent: {}
+[7.243803] (-) TimerEvent: {}
+[7.344512] (-) TimerEvent: {}
+[7.445226] (-) TimerEvent: {}
+[7.545888] (-) TimerEvent: {}
+[7.646465] (-) TimerEvent: {}
+[7.747117] (-) TimerEvent: {}
+[7.847998] (-) TimerEvent: {}
+[7.949025] (-) TimerEvent: {}
+[8.049773] (-) TimerEvent: {}
+[8.144262] (rigidbody_msgs) StdoutLine: {'line': b'[  2%] Built target rigidbody_msgs__cpp\n'}
+[8.149939] (-) TimerEvent: {}
+[8.250722] (-) TimerEvent: {}
+[8.272792] (rigidbody_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_rigidbody_msgs\n'}
+[8.317782] (rigidbody_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.350903] (-) TimerEvent: {}
+[8.451722] (-) TimerEvent: {}
+[8.552614] (-) TimerEvent: {}
+[8.653555] (-) TimerEvent: {}
+[8.754198] (-) TimerEvent: {}
+[8.854830] (-) TimerEvent: {}
+[8.955485] (-) TimerEvent: {}
+[9.056168] (-) TimerEvent: {}
+[9.156765] (-) TimerEvent: {}
+[9.257634] (-) TimerEvent: {}
+[9.358804] (-) TimerEvent: {}
+[9.458827] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[9.459348] (-) TimerEvent: {}
+[9.521798] (rigidbody_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[9.559626] (-) TimerEvent: {}
+[9.660492] (-) TimerEvent: {}
+[9.761168] (-) TimerEvent: {}
+[9.861845] (-) TimerEvent: {}
+[9.962555] (-) TimerEvent: {}
+[10.063349] (-) TimerEvent: {}
+[10.164143] (-) TimerEvent: {}
+[10.264917] (-) TimerEvent: {}
+[10.365666] (-) TimerEvent: {}
+[10.466415] (-) TimerEvent: {}
+[10.567286] (-) TimerEvent: {}
+[10.668305] (-) TimerEvent: {}
+[10.769065] (-) TimerEvent: {}
+[10.869766] (-) TimerEvent: {}
+[10.970575] (-) TimerEvent: {}
+[11.071488] (-) TimerEvent: {}
+[11.172454] (-) TimerEvent: {}
+[11.197398] (rigidbody_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rigidbody_msgs/msg/detail/dds_fastrtps/robot_cmd__type_support.cpp.o\x1b[0m\n'}
+[11.272638] (-) TimerEvent: {}
+[11.373380] (-) TimerEvent: {}
+[11.474533] (-) TimerEvent: {}
+[11.575537] (-) TimerEvent: {}
+[11.676269] (-) TimerEvent: {}
+[11.777057] (-) TimerEvent: {}
+[11.877824] (-) TimerEvent: {}
+[11.978615] (-) TimerEvent: {}
+[12.079413] (-) TimerEvent: {}
+[12.180232] (-) TimerEvent: {}
+[12.280985] (-) TimerEvent: {}
+[12.381725] (-) TimerEvent: {}
+[12.482547] (-) TimerEvent: {}
+[12.583411] (-) TimerEvent: {}
+[12.684128] (-) TimerEvent: {}
+[12.784850] (-) TimerEvent: {}
+[12.869688] (rigidbody_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX shared library librigidbody_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.885081] (-) TimerEvent: {}
+[12.985925] (-) TimerEvent: {}
+[13.086751] (-) TimerEvent: {}
+[13.178281] (rigidbody_msgs) StdoutLine: {'line': b'[ 12%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[13.187040] (-) TimerEvent: {}
+[13.227454] (rigidbody_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[13.287237] (-) TimerEvent: {}
+[13.387956] (-) TimerEvent: {}
+[13.488641] (-) TimerEvent: {}
+[13.589331] (-) TimerEvent: {}
+[13.689999] (-) TimerEvent: {}
+[13.790725] (-) TimerEvent: {}
+[13.891383] (-) TimerEvent: {}
+[13.992075] (-) TimerEvent: {}
+[14.092770] (-) TimerEvent: {}
+[14.193466] (-) TimerEvent: {}
+[14.294260] (-) TimerEvent: {}
+[14.299103] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[14.361198] (rigidbody_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[14.394512] (-) TimerEvent: {}
+[14.495392] (-) TimerEvent: {}
+[14.596098] (-) TimerEvent: {}
+[14.696806] (-) TimerEvent: {}
+[14.797540] (-) TimerEvent: {}
+[14.898337] (-) TimerEvent: {}
+[14.999120] (-) TimerEvent: {}
+[15.100008] (-) TimerEvent: {}
+[15.200769] (-) TimerEvent: {}
+[15.301553] (-) TimerEvent: {}
+[15.402309] (-) TimerEvent: {}
+[15.503139] (-) TimerEvent: {}
+[15.603932] (-) TimerEvent: {}
+[15.704692] (-) TimerEvent: {}
+[15.805505] (-) TimerEvent: {}
+[15.906254] (-) TimerEvent: {}
+[15.957276] (rigidbody_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o\x1b[0m\n'}
+[16.006438] (-) TimerEvent: {}
+[16.107147] (-) TimerEvent: {}
+[16.207835] (-) TimerEvent: {}
+[16.308542] (-) TimerEvent: {}
+[16.409288] (-) TimerEvent: {}
+[16.510235] (-) TimerEvent: {}
+[16.611030] (-) TimerEvent: {}
+[16.711793] (-) TimerEvent: {}
+[16.812571] (-) TimerEvent: {}
+[16.913339] (-) TimerEvent: {}
+[17.014219] (-) TimerEvent: {}
+[17.114979] (-) TimerEvent: {}
+[17.215710] (-) TimerEvent: {}
+[17.316516] (-) TimerEvent: {}
+[17.417272] (-) TimerEvent: {}
+[17.518098] (-) TimerEvent: {}
+[17.537571] (rigidbody_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX shared library librigidbody_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[17.618355] (-) TimerEvent: {}
+[17.719272] (-) TimerEvent: {}
+[17.820384] (-) TimerEvent: {}
+[17.826749] (rigidbody_msgs) StdoutLine: {'line': b'[ 23%] Built target rigidbody_msgs__rosidl_typesupport_introspection_cpp\n'}
+[17.920536] (-) TimerEvent: {}
+[18.021209] (-) TimerEvent: {}
+[18.121881] (-) TimerEvent: {}
+[18.222515] (-) TimerEvent: {}
+[18.323174] (-) TimerEvent: {}
+[18.423809] (-) TimerEvent: {}
+[18.524459] (-) TimerEvent: {}
+[18.625050] (-) TimerEvent: {}
+[18.725652] (-) TimerEvent: {}
+[18.826263] (-) TimerEvent: {}
+[18.884659] (rigidbody_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[18.887962] (rigidbody_msgs) StdoutLine: {'line': b'writing rigidbody_msgs.egg-info/PKG-INFO\n'}
+[18.889088] (rigidbody_msgs) StdoutLine: {'line': b'writing dependency_links to rigidbody_msgs.egg-info/dependency_links.txt\n'}
+[18.890076] (rigidbody_msgs) StdoutLine: {'line': b'writing top-level names to rigidbody_msgs.egg-info/top_level.txt\n'}
+[18.899688] (rigidbody_msgs) StdoutLine: {'line': b"reading manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'\n"}
+[18.902179] (rigidbody_msgs) StdoutLine: {'line': b"writing manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'\n"}
+[18.926654] (-) TimerEvent: {}
+[19.027819] (-) TimerEvent: {}
+[19.031078] (rigidbody_msgs) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_build_rigidbody_msgs_egg\n'}
+[19.076133] (rigidbody_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.128043] (-) TimerEvent: {}
+[19.228979] (-) TimerEvent: {}
+[19.330115] (-) TimerEvent: {}
+[19.430996] (-) TimerEvent: {}
+[19.531750] (-) TimerEvent: {}
+[19.632487] (-) TimerEvent: {}
+[19.733141] (-) TimerEvent: {}
+[19.833827] (-) TimerEvent: {}
+[19.934626] (-) TimerEvent: {}
+[20.034930] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[20.035583] (-) TimerEvent: {}
+[20.096372] (rigidbody_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[20.135899] (-) TimerEvent: {}
+[20.236917] (-) TimerEvent: {}
+[20.337616] (-) TimerEvent: {}
+[20.438324] (-) TimerEvent: {}
+[20.539091] (-) TimerEvent: {}
+[20.639829] (-) TimerEvent: {}
+[20.740687] (-) TimerEvent: {}
+[20.841387] (-) TimerEvent: {}
+[20.942151] (-) TimerEvent: {}
+[21.042979] (-) TimerEvent: {}
+[21.143707] (-) TimerEvent: {}
+[21.231287] (rigidbody_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/robot_cmd__type_support.cpp.o\x1b[0m\n'}
+[21.243884] (-) TimerEvent: {}
+[21.344542] (-) TimerEvent: {}
+[21.445294] (-) TimerEvent: {}
+[21.546012] (-) TimerEvent: {}
+[21.646902] (-) TimerEvent: {}
+[21.747745] (-) TimerEvent: {}
+[21.848606] (-) TimerEvent: {}
+[21.949469] (-) TimerEvent: {}
+[22.050268] (-) TimerEvent: {}
+[22.151054] (-) TimerEvent: {}
+[22.251786] (-) TimerEvent: {}
+[22.352790] (-) TimerEvent: {}
+[22.363647] (rigidbody_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library librigidbody_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[22.453030] (-) TimerEvent: {}
+[22.526332] (rigidbody_msgs) StdoutLine: {'line': b'[ 33%] Built target rigidbody_msgs__rosidl_typesupport_cpp\n'}
+[22.553344] (-) TimerEvent: {}
+[22.572160] (rigidbody_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[22.653490] (-) TimerEvent: {}
+[22.754218] (-) TimerEvent: {}
+[22.854880] (-) TimerEvent: {}
+[22.955472] (-) TimerEvent: {}
+[23.056167] (-) TimerEvent: {}
+[23.156813] (-) TimerEvent: {}
+[23.257449] (-) TimerEvent: {}
+[23.358088] (-) TimerEvent: {}
+[23.458742] (-) TimerEvent: {}
+[23.559427] (-) TimerEvent: {}
+[23.660180] (-) TimerEvent: {}
+[23.761019] (-) TimerEvent: {}
+[23.861722] (-) TimerEvent: {}
+[23.962489] (-) TimerEvent: {}
+[24.033477] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_generator_c\x1b[0m\n'}
+[24.062692] (-) TimerEvent: {}
+[24.089631] (rigidbody_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o\x1b[0m\n'}
+[24.162873] (-) TimerEvent: {}
+[24.263667] (-) TimerEvent: {}
+[24.332330] (rigidbody_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o\x1b[0m\n'}
+[24.364035] (-) TimerEvent: {}
+[24.464901] (-) TimerEvent: {}
+[24.565689] (-) TimerEvent: {}
+[24.575916] (rigidbody_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking C shared library librigidbody_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[24.665935] (-) TimerEvent: {}
+[24.748016] (rigidbody_msgs) StdoutLine: {'line': b'[ 43%] Built target rigidbody_msgs__rosidl_generator_c\n'}
+[24.766191] (-) TimerEvent: {}
+[24.797128] (rigidbody_msgs) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[24.866350] (-) TimerEvent: {}
+[24.967040] (-) TimerEvent: {}
+[25.067740] (-) TimerEvent: {}
+[25.168458] (-) TimerEvent: {}
+[25.269220] (-) TimerEvent: {}
+[25.369906] (-) TimerEvent: {}
+[25.470661] (-) TimerEvent: {}
+[25.571326] (-) TimerEvent: {}
+[25.671966] (-) TimerEvent: {}
+[25.772696] (-) TimerEvent: {}
+[25.873699] (-) TimerEvent: {}
+[25.924986] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[25.973954] (-) TimerEvent: {}
+[25.986275] (rigidbody_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rigidbody_msgs/msg/detail/rigid_body__type_support_c.cpp.o\x1b[0m\n'}
+[26.074145] (-) TimerEvent: {}
+[26.174869] (-) TimerEvent: {}
+[26.275566] (-) TimerEvent: {}
+[26.376293] (-) TimerEvent: {}
+[26.477026] (-) TimerEvent: {}
+[26.577800] (-) TimerEvent: {}
+[26.678643] (-) TimerEvent: {}
+[26.779737] (-) TimerEvent: {}
+[26.880540] (-) TimerEvent: {}
+[26.981343] (-) TimerEvent: {}
+[27.082247] (-) TimerEvent: {}
+[27.183003] (-) TimerEvent: {}
+[27.283756] (-) TimerEvent: {}
+[27.384650] (-) TimerEvent: {}
+[27.485758] (-) TimerEvent: {}
+[27.550441] (rigidbody_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rigidbody_msgs/msg/detail/robot_cmd__type_support_c.cpp.o\x1b[0m\n'}
+[27.585994] (-) TimerEvent: {}
+[27.686806] (-) TimerEvent: {}
+[27.787625] (-) TimerEvent: {}
+[27.888378] (-) TimerEvent: {}
+[27.989065] (-) TimerEvent: {}
+[28.089810] (-) TimerEvent: {}
+[28.190570] (-) TimerEvent: {}
+[28.291339] (-) TimerEvent: {}
+[28.392210] (-) TimerEvent: {}
+[28.492963] (-) TimerEvent: {}
+[28.593730] (-) TimerEvent: {}
+[28.694597] (-) TimerEvent: {}
+[28.795341] (-) TimerEvent: {}
+[28.896149] (-) TimerEvent: {}
+[28.974541] (rigidbody_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library librigidbody_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[28.996361] (-) TimerEvent: {}
+[29.097242] (-) TimerEvent: {}
+[29.198121] (-) TimerEvent: {}
+[29.286631] (rigidbody_msgs) StdoutLine: {'line': b'[ 53%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_c\n'}
+[29.298333] (-) TimerEvent: {}
+[29.332332] (rigidbody_msgs) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[29.398679] (-) TimerEvent: {}
+[29.499763] (-) TimerEvent: {}
+[29.600615] (-) TimerEvent: {}
+[29.701276] (-) TimerEvent: {}
+[29.801959] (-) TimerEvent: {}
+[29.902723] (-) TimerEvent: {}
+[30.003450] (-) TimerEvent: {}
+[30.104171] (-) TimerEvent: {}
+[30.204875] (-) TimerEvent: {}
+[30.274736] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[30.305042] (-) TimerEvent: {}
+[30.329289] (rigidbody_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rigidbody_msgs/msg/rigid_body__type_support.cpp.o\x1b[0m\n'}
+[30.405222] (-) TimerEvent: {}
+[30.485875] (rigidbody_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/rigidbody_msgs/msg/robot_cmd__type_support.cpp.o\x1b[0m\n'}
+[30.505437] (-) TimerEvent: {}
+[30.606285] (-) TimerEvent: {}
+[30.644359] (rigidbody_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library librigidbody_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[30.706608] (-) TimerEvent: {}
+[30.807436] (-) TimerEvent: {}
+[30.812846] (rigidbody_msgs) StdoutLine: {'line': b'[ 64%] Built target rigidbody_msgs__rosidl_typesupport_c\n'}
+[30.858342] (rigidbody_msgs) StdoutLine: {'line': b'[ 66%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[30.907595] (-) TimerEvent: {}
+[31.008287] (-) TimerEvent: {}
+[31.108917] (-) TimerEvent: {}
+[31.209587] (-) TimerEvent: {}
+[31.310351] (-) TimerEvent: {}
+[31.411073] (-) TimerEvent: {}
+[31.511818] (-) TimerEvent: {}
+[31.612526] (-) TimerEvent: {}
+[31.713148] (-) TimerEvent: {}
+[31.818591] (-) TimerEvent: {}
+[31.919838] (-) TimerEvent: {}
+[31.973649] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[32.020074] (-) TimerEvent: {}
+[32.026498] (rigidbody_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rigidbody_msgs/msg/detail/rigid_body__type_support.c.o\x1b[0m\n'}
+[32.120232] (-) TimerEvent: {}
+[32.211051] (rigidbody_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.c.o\x1b[0m\n'}
+[32.220424] (-) TimerEvent: {}
+[32.321281] (-) TimerEvent: {}
+[32.396873] (rigidbody_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking C shared library librigidbody_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[32.421394] (-) TimerEvent: {}
+[32.522190] (-) TimerEvent: {}
+[32.535575] (rigidbody_msgs) StdoutLine: {'line': b'[ 74%] Built target rigidbody_msgs__rosidl_typesupport_introspection_c\n'}
+[32.622398] (-) TimerEvent: {}
+[32.624693] (rigidbody_msgs) StdoutLine: {'line': b'[ 74%] Built target rigidbody_msgs\n'}
+[32.722619] (rigidbody_msgs) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[32.723248] (-) TimerEvent: {}
+[32.823990] (-) TimerEvent: {}
+[32.924746] (-) TimerEvent: {}
+[33.025534] (-) TimerEvent: {}
+[33.126188] (-) TimerEvent: {}
+[33.226872] (-) TimerEvent: {}
+[33.327610] (-) TimerEvent: {}
+[33.428384] (-) TimerEvent: {}
+[33.529055] (-) TimerEvent: {}
+[33.629750] (-) TimerEvent: {}
+[33.730438] (-) TimerEvent: {}
+[33.831085] (-) TimerEvent: {}
+[33.931829] (-) TimerEvent: {}
+[34.032509] (-) TimerEvent: {}
+[34.133246] (-) TimerEvent: {}
+[34.234296] (-) TimerEvent: {}
+[34.335106] (-) TimerEvent: {}
+[34.385180] (rigidbody_msgs) StdoutLine: {'line': b'[ 76%] Built target rigidbody_msgs__py\n'}
+[34.431205] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_generator_py\x1b[0m\n'}
+[34.435180] (-) TimerEvent: {}
+[34.494059] (rigidbody_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c.o\x1b[0m\n'}
+[34.535512] (-) TimerEvent: {}
+[34.636418] (-) TimerEvent: {}
+[34.737136] (-) TimerEvent: {}
+[34.837839] (-) TimerEvent: {}
+[34.938579] (-) TimerEvent: {}
+[34.973963] (rigidbody_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o\x1b[0m\n'}
+[35.038768] (-) TimerEvent: {}
+[35.139520] (-) TimerEvent: {}
+[35.240348] (-) TimerEvent: {}
+[35.341279] (-) TimerEvent: {}
+[35.442086] (-) TimerEvent: {}
+[35.452068] (rigidbody_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[35.542381] (-) TimerEvent: {}
+[35.643471] (-) TimerEvent: {}
+[35.658334] (rigidbody_msgs) StdoutLine: {'line': b'[ 84%] Built target rigidbody_msgs__rosidl_generator_py\n'}
+[35.706559] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[35.743667] (-) TimerEvent: {}
+[35.768823] (rigidbody_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[35.843890] (-) TimerEvent: {}
+[35.944594] (-) TimerEvent: {}
+[36.045295] (-) TimerEvent: {}
+[36.146078] (-) TimerEvent: {}
+[36.246804] (-) TimerEvent: {}
+[36.306395] (rigidbody_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[36.347052] (-) TimerEvent: {}
+[36.447910] (-) TimerEvent: {}
+[36.508094] (rigidbody_msgs) StdoutLine: {'line': b'[ 89%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[36.548049] (-) TimerEvent: {}
+[36.552928] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[36.612996] (rigidbody_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[36.648295] (-) TimerEvent: {}
+[36.749150] (-) TimerEvent: {}
+[36.850115] (-) TimerEvent: {}
+[36.950981] (-) TimerEvent: {}
+[37.051995] (-) TimerEvent: {}
+[37.139092] (rigidbody_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[37.152218] (-) TimerEvent: {}
+[37.253135] (-) TimerEvent: {}
+[37.339981] (rigidbody_msgs) StdoutLine: {'line': b'[ 94%] Built target rigidbody_msgs__rosidl_typesupport_c__pyext\n'}
+[37.353378] (-) TimerEvent: {}
+[37.384932] (rigidbody_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rigidbody_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[37.448011] (rigidbody_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[37.453626] (-) TimerEvent: {}
+[37.554317] (-) TimerEvent: {}
+[37.655098] (-) TimerEvent: {}
+[37.755795] (-) TimerEvent: {}
+[37.856509] (-) TimerEvent: {}
+[37.957225] (-) TimerEvent: {}
+[37.985321] (rigidbody_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[38.057472] (-) TimerEvent: {}
+[38.158432] (-) TimerEvent: {}
+[38.187107] (rigidbody_msgs) StdoutLine: {'line': b'[100%] Built target rigidbody_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[38.231663] (rigidbody_msgs) CommandEnded: {'returncode': 0}
+[38.258647] (-) TimerEvent: {}
+[38.359377] (-) TimerEvent: {}
+[38.460097] (-) TimerEvent: {}
+[38.560826] (-) TimerEvent: {}
+[38.661499] (-) TimerEvent: {}
+[38.682307] (rigidbody_msgs) JobProgress: {'identifier': 'rigidbody_msgs', 'progress': 'install'}
+[38.717445] (rigidbody_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs'], 'cwd': '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.1.39 59493 22'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('PWD', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs'), ('SSH_CONNECTION', '192.168.1.39 59493 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble')]), 'shell': False}
+[38.755996] (rigidbody_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.756636] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/rosidl_interfaces/rigidbody_msgs\n'}
+[38.757868] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[38.758387] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[38.758764] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rigid_body.h\n'}
+[38.759956] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[38.760476] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[38.760832] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__functions.h\n'}
+[38.761587] (-) TimerEvent: {}
+[38.762025] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__struct.h\n'}
+[38.763217] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__functions.c\n'}
+[38.764540] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__functions.h\n'}
+[38.765832] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__struct.h\n'}
+[38.767030] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__functions.c\n'}
+[38.768605] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__type_support.h\n'}
+[38.769732] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.h\n'}
+[38.770995] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/robot_cmd.h\n'}
+[38.772245] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/library_path.sh\n'}
+[38.772711] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/library_path.dsv\n'}
+[38.774735] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_c.so\n'}
+[38.777376] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_c.so" to ""\n'}
+[38.777898] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[38.778297] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[38.778654] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[38.779035] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[38.779428] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_fastrtps_c.h\n'}
+[38.780720] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h\n'}
+[38.782956] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[38.785827] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[38.786345] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[38.786722] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[38.787102] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rigid_body.hpp\n'}
+[38.788287] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/robot_cmd.hpp\n'}
+[38.789251] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[38.789796] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__traits.hpp\n'}
+[38.791092] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__traits.hpp\n'}
+[38.792214] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__struct.hpp\n'}
+[38.793344] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__builder.hpp\n'}
+[38.794625] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__builder.hpp\n'}
+[38.795704] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__struct.hpp\n'}
+[38.797130] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[38.797599] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[38.797985] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[38.798372] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[38.798710] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[38.800233] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[38.801365] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/dds_fastrtps\n'}
+[38.802822] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[38.805600] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[38.806104] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[38.806484] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[38.806836] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[38.807236] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[38.807600] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_introspection_c.h\n'}
+[38.808817] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h\n'}
+[38.810222] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__type_support.c\n'}
+[38.811382] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.c\n'}
+[38.813716] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_c.so\n'}
+[38.816238] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[38.817241] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_c.so\n'}
+[38.819612] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_c.so" to ""\n'}
+[38.820150] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[38.820550] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[38.820914] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[38.821297] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp\n'}
+[38.822458] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp\n'}
+[38.823944] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[38.825182] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp\n'}
+[38.827397] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[38.830119] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[38.831107] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_cpp.so\n'}
+[38.833652] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[38.834168] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/pythonpath.sh\n'}
+[38.834566] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/pythonpath.dsv\n'}
+[38.835654] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info\n'}
+[38.836153] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[38.837484] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[38.838735] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[38.839988] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[38.841469] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs\n'}
+[38.842050] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[38.843532] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[38.845011] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.846424] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg\n'}
+[38.846917] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_robot_cmd_s.c\n'}
+[38.848436] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body_s.c\n'}
+[38.849714] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_robot_cmd.py\n'}
+[38.850809] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body.py\n'}
+[38.852141] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/__init__.py\n'}
+[38.853370] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[38.854729] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so\n'}
+[38.856140] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/__init__.py\n'}
+[38.857243] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.858845] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[38.861769] (-) TimerEvent: {}
+[38.962408] (-) TimerEvent: {}
+[39.015387] (rigidbody_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs'...\n"}
+[39.016830] (rigidbody_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/__init__.py'...\n"}
+[39.017872] (rigidbody_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg'...\n"}
+[39.018745] (rigidbody_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/__init__.py'...\n"}
+[39.019733] (rigidbody_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body.py'...\n"}
+[39.020789] (rigidbody_msgs) StdoutLine: {'line': b"Compiling '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_robot_cmd.py'...\n"}
+[39.041142] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[39.043888] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[39.045419] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[39.048190] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[39.049651] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[39.052325] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[39.053453] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_py.so\n'}
+[39.056154] (rigidbody_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_py.so" to ""\n'}
+[39.056677] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RigidBody.idl\n'}
+[39.057062] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RobotCmd.idl\n'}
+[39.058157] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RigidBody.msg\n'}
+[39.058630] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RobotCmd.msg\n'}
+[39.059763] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/package_run_dependencies/rigidbody_msgs\n'}
+[39.060321] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/parent_prefix_path/rigidbody_msgs\n'}
+[39.060743] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/ament_prefix_path.sh\n'}
+[39.061181] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/ament_prefix_path.dsv\n'}
+[39.062394] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/path.sh\n'}
+[39.062829] (-) TimerEvent: {}
+[39.063191] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/path.dsv\n'}
+[39.064321] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.bash\n'}
+[39.064885] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.sh\n'}
+[39.065289] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.zsh\n'}
+[39.065694] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.dsv\n'}
+[39.066728] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.dsv\n'}
+[39.068106] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/packages/rigidbody_msgs\n'}
+[39.068885] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cExport.cmake\n'}
+[39.069333] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[39.070184] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[39.070638] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[39.071462] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cppExport.cmake\n'}
+[39.072412] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[39.072871] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[39.073775] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[39.074212] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[39.075017] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cExport.cmake\n'}
+[39.075444] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[39.076358] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[39.076920] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[39.077653] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[39.078097] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[39.078965] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_pyExport.cmake\n'}
+[39.079390] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[39.079820] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[39.081308] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[39.081788] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[39.082178] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[39.082577] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[39.082984] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[39.083441] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[39.083838] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgsConfig.cmake\n'}
+[39.084340] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgsConfig-version.cmake\n'}
+[39.084775] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.xml\n'}
+[39.091287] (rigidbody_msgs) CommandEnded: {'returncode': 0}
+[39.164440] (-) TimerEvent: {}
+[39.265126] (-) TimerEvent: {}
+[39.365795] (-) TimerEvent: {}
+[39.466886] (-) TimerEvent: {}
+[39.567679] (-) TimerEvent: {}
+[39.668389] (rigidbody_msgs) JobEnded: {'identifier': 'rigidbody_msgs', 'rc': 0}
+[39.676164] (-) TimerEvent: {}
+[39.677254] (optiastaros2) JobStarted: {'identifier': 'optiastaros2'}
+[39.776336] (-) TimerEvent: {}
+[39.876991] (-) TimerEvent: {}
+[39.977731] (-) TimerEvent: {}
+[40.100037] (-) TimerEvent: {}
+[40.200753] (-) TimerEvent: {}
+[40.301414] (-) TimerEvent: {}
+[40.402177] (-) TimerEvent: {}
+[40.502787] (-) TimerEvent: {}
+[40.603403] (-) TimerEvent: {}
+[40.704088] (-) TimerEvent: {}
+[40.804991] (-) TimerEvent: {}
+[40.906170] (-) TimerEvent: {}
+[41.006849] (-) TimerEvent: {}
+[41.107595] (-) TimerEvent: {}
+[41.208293] (-) TimerEvent: {}
+[41.309027] (-) TimerEvent: {}
+[41.409809] (-) TimerEvent: {}
+[41.510439] (-) TimerEvent: {}
+[41.611036] (-) TimerEvent: {}
+[41.711643] (-) TimerEvent: {}
+[41.812300] (-) TimerEvent: {}
+[41.912977] (-) TimerEvent: {}
+[42.013917] (-) TimerEvent: {}
+[42.114739] (-) TimerEvent: {}
+[42.215626] (-) TimerEvent: {}
+[42.316151] (optiastaros2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/optiastaros2', 'build', '--build-base', '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build', 'install', '--record', '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.39 59493 22', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_DE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/optiAstaRos2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'PWD': '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2', 'SSH_CONNECTION': '192.168.1.39 59493 192.168.1.104 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs'}, 'shell': False}
+[42.320711] (-) TimerEvent: {}
+[42.421352] (-) TimerEvent: {}
+[42.522055] (-) TimerEvent: {}
+[42.622706] (-) TimerEvent: {}
+[42.723380] (-) TimerEvent: {}
+[42.824058] (-) TimerEvent: {}
+[42.924678] (-) TimerEvent: {}
+[43.025261] (-) TimerEvent: {}
+[43.125868] (-) TimerEvent: {}
+[43.226710] (-) TimerEvent: {}
+[43.327403] (-) TimerEvent: {}
+[43.330831] (optiastaros2) StdoutLine: {'line': b'running egg_info\n'}
+[43.333395] (optiastaros2) StdoutLine: {'line': b'writing ../../build/optiastaros2/optiastaros2.egg-info/PKG-INFO\n'}
+[43.334473] (optiastaros2) StdoutLine: {'line': b'writing dependency_links to ../../build/optiastaros2/optiastaros2.egg-info/dependency_links.txt\n'}
+[43.335319] (optiastaros2) StdoutLine: {'line': b'writing entry points to ../../build/optiastaros2/optiastaros2.egg-info/entry_points.txt\n'}
+[43.336111] (optiastaros2) StdoutLine: {'line': b'writing requirements to ../../build/optiastaros2/optiastaros2.egg-info/requires.txt\n'}
+[43.336644] (optiastaros2) StdoutLine: {'line': b'writing top-level names to ../../build/optiastaros2/optiastaros2.egg-info/top_level.txt\n'}
+[43.345198] (optiastaros2) StdoutLine: {'line': b"reading manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'\n"}
+[43.349127] (optiastaros2) StdoutLine: {'line': b"writing manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'\n"}
+[43.349713] (optiastaros2) StdoutLine: {'line': b'running build\n'}
+[43.350205] (optiastaros2) StdoutLine: {'line': b'running build_py\n'}
+[43.352635] (optiastaros2) StdoutLine: {'line': b'running install\n'}
+[43.353311] (optiastaros2) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[43.353937] (optiastaros2) StderrLine: {'line': b'  warnings.warn(\n'}
+[43.354494] (optiastaros2) StdoutLine: {'line': b'running install_lib\n'}
+[43.361330] (optiastaros2) StdoutLine: {'line': b'running install_data\n'}
+[43.363817] (optiastaros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[43.369974] (optiastaros2) StdoutLine: {'line': b"removing '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[43.371694] (optiastaros2) StdoutLine: {'line': b'Copying ../../build/optiastaros2/optiastaros2.egg-info to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info\n'}
+[43.376982] (optiastaros2) StdoutLine: {'line': b'running install_scripts\n'}
+[43.427588] (-) TimerEvent: {}
+[43.460659] (optiastaros2) StdoutLine: {'line': b'Installing controller_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2\n'}
+[43.461571] (optiastaros2) StdoutLine: {'line': b'Installing pubdata_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2\n'}
+[43.463446] (optiastaros2) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log'\n"}
+[43.527934] (-) TimerEvent: {}
+[43.583304] (optiastaros2) CommandEnded: {'returncode': 0}
+[43.623970] (optiastaros2) JobEnded: {'identifier': 'optiastaros2', 'rc': 0}
+[43.627287] (-) EventReactorShutdown: {}

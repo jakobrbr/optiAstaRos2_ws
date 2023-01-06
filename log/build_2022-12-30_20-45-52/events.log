@@ -1,0 +1,247 @@
+[0.000000] (-) TimerEvent: {}
+[0.001676] (rigidbody_msgs) JobQueued: {'identifier': 'rigidbody_msgs', 'dependencies': OrderedDict()}
+[0.002224] (optiastaros2) JobQueued: {'identifier': 'optiastaros2', 'dependencies': OrderedDict([('rigidbody_msgs', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs')])}
+[0.004192] (rigidbody_msgs) JobStarted: {'identifier': 'rigidbody_msgs'}
+[0.054235] (rigidbody_msgs) JobProgress: {'identifier': 'rigidbody_msgs', 'progress': 'cmake'}
+[0.057395] (rigidbody_msgs) JobProgress: {'identifier': 'rigidbody_msgs', 'progress': 'build'}
+[0.060236] (rigidbody_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.1.39 62467 22'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('PWD', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs'), ('SSH_CONNECTION', '192.168.1.39 62467 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble')]), 'shell': False}
+[0.099118] (-) TimerEvent: {}
+[0.199903] (-) TimerEvent: {}
+[0.288448] (rigidbody_msgs) StdoutLine: {'line': b'[  3%] Built target rigidbody_msgs__cpp\n'}
+[0.298606] (rigidbody_msgs) StdoutLine: {'line': b'[ 12%] Built target rigidbody_msgs__rosidl_generator_c\n'}
+[0.300125] (-) TimerEvent: {}
+[0.337794] (rigidbody_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_rigidbody_msgs\n'}
+[0.393974] (rigidbody_msgs) StdoutLine: {'line': b'[ 22%] Built target rigidbody_msgs__rosidl_typesupport_cpp\n'}
+[0.400427] (-) TimerEvent: {}
+[0.409118] (rigidbody_msgs) StdoutLine: {'line': b'[ 32%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.419712] (rigidbody_msgs) StdoutLine: {'line': b'[ 41%] Built target rigidbody_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.456515] (rigidbody_msgs) StdoutLine: {'line': b'[ 51%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.500573] (-) TimerEvent: {}
+[0.508218] (rigidbody_msgs) StdoutLine: {'line': b'[ 61%] Built target rigidbody_msgs__rosidl_typesupport_introspection_c\n'}
+[0.517324] (rigidbody_msgs) StdoutLine: {'line': b'[ 70%] Built target rigidbody_msgs__rosidl_typesupport_c\n'}
+[0.600741] (-) TimerEvent: {}
+[0.606139] (rigidbody_msgs) StdoutLine: {'line': b'[ 70%] Built target rigidbody_msgs\n'}
+[0.698828] (rigidbody_msgs) StdoutLine: {'line': b'[ 74%] Built target rigidbody_msgs__py\n'}
+[0.701002] (-) TimerEvent: {}
+[0.798014] (rigidbody_msgs) StdoutLine: {'line': b'[ 80%] Built target rigidbody_msgs__rosidl_generator_py\n'}
+[0.801167] (-) TimerEvent: {}
+[0.902837] (-) TimerEvent: {}
+[0.911464] (rigidbody_msgs) StdoutLine: {'line': b'[ 87%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.916062] (rigidbody_msgs) StdoutLine: {'line': b'[ 93%] Built target rigidbody_msgs__rosidl_typesupport_c__pyext\n'}
+[0.919058] (rigidbody_msgs) StdoutLine: {'line': b'[100%] Built target rigidbody_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.002936] (-) TimerEvent: {}
+[1.103541] (-) TimerEvent: {}
+[1.204126] (-) TimerEvent: {}
+[1.304784] (-) TimerEvent: {}
+[1.405367] (-) TimerEvent: {}
+[1.505951] (-) TimerEvent: {}
+[1.572013] (rigidbody_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.575355] (rigidbody_msgs) StdoutLine: {'line': b'writing rigidbody_msgs.egg-info/PKG-INFO\n'}
+[1.576536] (rigidbody_msgs) StdoutLine: {'line': b'writing dependency_links to rigidbody_msgs.egg-info/dependency_links.txt\n'}
+[1.577446] (rigidbody_msgs) StdoutLine: {'line': b'writing top-level names to rigidbody_msgs.egg-info/top_level.txt\n'}
+[1.587242] (rigidbody_msgs) StdoutLine: {'line': b"reading manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'\n"}
+[1.589815] (rigidbody_msgs) StdoutLine: {'line': b"writing manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'\n"}
+[1.606195] (-) TimerEvent: {}
+[1.707308] (-) TimerEvent: {}
+[1.719057] (rigidbody_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rigidbody_msgs_egg\n'}
+[1.761695] (rigidbody_msgs) CommandEnded: {'returncode': 0}
+[1.807512] (-) TimerEvent: {}
+[1.908251] (-) TimerEvent: {}
+[2.008907] (-) TimerEvent: {}
+[2.103587] (rigidbody_msgs) JobProgress: {'identifier': 'rigidbody_msgs', 'progress': 'install'}
+[2.109062] (-) TimerEvent: {}
+[2.142006] (rigidbody_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs'], 'cwd': '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.1.39 62467 22'), ('LC_TIME', 'de_DE.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'de_DE.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '17'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'de_DE.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'de_DE.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'de_DE.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'de_DE.UTF-8'), ('LC_IDENTIFICATION', 'de_DE.UTF-8'), ('PWD', '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs'), ('SSH_CONNECTION', '192.168.1.39 62467 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'de_DE.UTF-8'), ('LC_PAPER', 'de_DE.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble')]), 'shell': False}
+[2.172957] (rigidbody_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.173714] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/rosidl_interfaces/rigidbody_msgs\n'}
+[2.174082] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[2.174525] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[2.175038] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rigid_body.h\n'}
+[2.175348] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.175698] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[2.176091] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__functions.c\n'}
+[2.176515] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__functions.h\n'}
+[2.176920] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__struct.h\n'}
+[2.177318] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.h\n'}
+[2.177654] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/library_path.sh\n'}
+[2.177928] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/library_path.dsv\n'}
+[2.178456] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_c.so\n'}
+[2.179599] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[2.180104] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[2.181031] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.181471] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[2.181829] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h\n'}
+[2.183028] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.184173] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[2.184656] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[2.185042] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rigid_body.hpp\n'}
+[2.185394] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[2.185814] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__traits.hpp\n'}
+[2.186180] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__builder.hpp\n'}
+[2.186638] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__struct.hpp\n'}
+[2.187053] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[2.187335] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[2.187741] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.188059] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[2.188526] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.188878] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/dds_fastrtps\n'}
+[2.189932] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.191118] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[2.191537] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[2.191923] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.192287] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[2.192719] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h\n'}
+[2.193151] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.c\n'}
+[2.194184] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.195962] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_c.so\n'}
+[2.197047] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs\n'}
+[2.197486] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg\n'}
+[2.197883] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail\n'}
+[2.198291] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.198694] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp\n'}
+[2.199862] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.201830] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_cpp.so\n'}
+[2.202936] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/pythonpath.sh\n'}
+[2.203361] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/pythonpath.dsv\n'}
+[2.203752] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info\n'}
+[2.204131] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.205515] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.206784] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.208012] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.209168] (-) TimerEvent: {}
+[2.209903] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs\n'}
+[2.210435] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.210874] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.211261] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.211631] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg\n'}
+[2.211998] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body_s.c\n'}
+[2.212446] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body.py\n'}
+[2.212887] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/__init__.py\n'}
+[2.213253] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.213583] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so\n'}
+[2.213975] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/__init__.py\n'}
+[2.214309] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.214635] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.309343] (-) TimerEvent: {}
+[2.352803] (rigidbody_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs'...\n"}
+[2.354048] (rigidbody_msgs) StdoutLine: {'line': b"Listing '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg'...\n"}
+[2.376248] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.378509] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.380660] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.382651] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_py.so\n'}
+[2.383884] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RigidBody.idl\n'}
+[2.384429] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RigidBody.msg\n'}
+[2.384993] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/package_run_dependencies/rigidbody_msgs\n'}
+[2.385431] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/parent_prefix_path/rigidbody_msgs\n'}
+[2.385860] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/ament_prefix_path.sh\n'}
+[2.386283] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/ament_prefix_path.dsv\n'}
+[2.386676] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/path.sh\n'}
+[2.387073] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/path.dsv\n'}
+[2.387551] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.bash\n'}
+[2.387971] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.sh\n'}
+[2.388456] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.zsh\n'}
+[2.388983] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.dsv\n'}
+[2.389389] (rigidbody_msgs) StdoutLine: {'line': b'-- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.dsv\n'}
+[2.390656] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/packages/rigidbody_msgs\n'}
+[2.391512] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cExport.cmake\n'}
+[2.391995] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.393112] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.393702] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.394516] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.395425] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.395898] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.396773] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.397258] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.398054] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.398607] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.399344] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.399806] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.400742] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.401226] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.401983] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.402407] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.402829] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.403228] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.403743] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.404139] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.404616] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.405079] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.405565] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.405957] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgsConfig.cmake\n'}
+[2.406351] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgsConfig-version.cmake\n'}
+[2.406751] (rigidbody_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.xml\n'}
+[2.409571] (-) TimerEvent: {}
+[2.413357] (rigidbody_msgs) CommandEnded: {'returncode': 0}
+[2.509836] (-) TimerEvent: {}
+[2.610850] (-) TimerEvent: {}
+[2.711505] (-) TimerEvent: {}
+[2.812168] (-) TimerEvent: {}
+[2.887434] (rigidbody_msgs) JobEnded: {'identifier': 'rigidbody_msgs', 'rc': 0}
+[2.895722] (optiastaros2) JobStarted: {'identifier': 'optiastaros2'}
+[2.912377] (-) TimerEvent: {}
+[3.015421] (-) TimerEvent: {}
+[3.116140] (-) TimerEvent: {}
+[3.216800] (-) TimerEvent: {}
+[3.317445] (-) TimerEvent: {}
+[3.418052] (-) TimerEvent: {}
+[3.518643] (-) TimerEvent: {}
+[3.619309] (-) TimerEvent: {}
+[3.719897] (-) TimerEvent: {}
+[3.820545] (-) TimerEvent: {}
+[3.921150] (-) TimerEvent: {}
+[4.021883] (-) TimerEvent: {}
+[4.122919] (-) TimerEvent: {}
+[4.223582] (-) TimerEvent: {}
+[4.324257] (-) TimerEvent: {}
+[4.424949] (-) TimerEvent: {}
+[4.525879] (-) TimerEvent: {}
+[4.626526] (-) TimerEvent: {}
+[4.727144] (-) TimerEvent: {}
+[4.827766] (-) TimerEvent: {}
+[4.928442] (-) TimerEvent: {}
+[5.029073] (-) TimerEvent: {}
+[5.129672] (-) TimerEvent: {}
+[5.230287] (-) TimerEvent: {}
+[5.330982] (-) TimerEvent: {}
+[5.431773] (-) TimerEvent: {}
+[5.500085] (optiastaros2) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/optiastaros2', 'build', '--build-base', '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build', 'install', '--record', '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.39 62467 22', 'LC_TIME': 'de_DE.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:/usr/local/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'de_DE.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/optiAstaRos2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '17', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'de_DE.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'de_DE.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'PWD': '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2', 'SSH_CONNECTION': '192.168.1.39 62467 192.168.1.104 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'de_DE.UTF-8', 'LC_PAPER': 'de_DE.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs'}, 'shell': False}
+[5.531910] (-) TimerEvent: {}
+[5.632621] (-) TimerEvent: {}
+[5.733336] (-) TimerEvent: {}
+[5.834027] (-) TimerEvent: {}
+[5.934656] (-) TimerEvent: {}
+[6.035258] (-) TimerEvent: {}
+[6.135853] (-) TimerEvent: {}
+[6.236431] (-) TimerEvent: {}
+[6.337020] (-) TimerEvent: {}
+[6.437607] (-) TimerEvent: {}
+[6.521313] (optiastaros2) StdoutLine: {'line': b'running egg_info\n'}
+[6.523911] (optiastaros2) StdoutLine: {'line': b'writing ../../build/optiastaros2/optiastaros2.egg-info/PKG-INFO\n'}
+[6.525038] (optiastaros2) StdoutLine: {'line': b'writing dependency_links to ../../build/optiastaros2/optiastaros2.egg-info/dependency_links.txt\n'}
+[6.525948] (optiastaros2) StdoutLine: {'line': b'writing entry points to ../../build/optiastaros2/optiastaros2.egg-info/entry_points.txt\n'}
+[6.526608] (optiastaros2) StdoutLine: {'line': b'writing requirements to ../../build/optiastaros2/optiastaros2.egg-info/requires.txt\n'}
+[6.527116] (optiastaros2) StdoutLine: {'line': b'writing top-level names to ../../build/optiastaros2/optiastaros2.egg-info/top_level.txt\n'}
+[6.535787] (optiastaros2) StdoutLine: {'line': b"reading manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'\n"}
+[6.537733] (-) TimerEvent: {}
+[6.539778] (optiastaros2) StdoutLine: {'line': b"writing manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'\n"}
+[6.540474] (optiastaros2) StdoutLine: {'line': b'running build\n'}
+[6.540954] (optiastaros2) StdoutLine: {'line': b'running build_py\n'}
+[6.541370] (optiastaros2) StdoutLine: {'line': b'copying optiastaros2/controller_node.py -> /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build/lib/optiastaros2\n'}
+[6.543473] (optiastaros2) StdoutLine: {'line': b'running install\n'}
+[6.544135] (optiastaros2) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.544739] (optiastaros2) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.545367] (optiastaros2) StdoutLine: {'line': b'running install_lib\n'}
+[6.548522] (optiastaros2) StdoutLine: {'line': b'copying /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build/lib/optiastaros2/controller_node.py -> /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2\n'}
+[6.551635] (optiastaros2) StdoutLine: {'line': b'byte-compiling /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2/controller_node.py to controller_node.cpython-310.pyc\n'}
+[6.554343] (optiastaros2) StdoutLine: {'line': b'running install_data\n'}
+[6.556935] (optiastaros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.563016] (optiastaros2) StdoutLine: {'line': b"removing '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.564773] (optiastaros2) StdoutLine: {'line': b'Copying ../../build/optiastaros2/optiastaros2.egg-info to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info\n'}
+[6.570024] (optiastaros2) StdoutLine: {'line': b'running install_scripts\n'}
+[6.637882] (-) TimerEvent: {}
+[6.648441] (optiastaros2) StdoutLine: {'line': b'Installing controller_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2\n'}
+[6.649363] (optiastaros2) StdoutLine: {'line': b'Installing pubdata_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2\n'}
+[6.651113] (optiastaros2) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log'\n"}
+[6.738137] (-) TimerEvent: {}
+[6.771220] (optiastaros2) CommandEnded: {'returncode': 0}
+[6.813185] (optiastaros2) JobEnded: {'identifier': 'optiastaros2', 'rc': 0}
+[6.816271] (-) EventReactorShutdown: {}

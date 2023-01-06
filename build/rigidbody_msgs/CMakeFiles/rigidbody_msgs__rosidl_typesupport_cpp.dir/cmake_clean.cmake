@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp.o"
   "CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp.o.d"
+  "CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/robot_cmd__type_support.cpp.o"
+  "CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rigidbody_msgs/msg/robot_cmd__type_support.cpp.o.d"
   "librigidbody_msgs__rosidl_typesupport_cpp.pdb"
   "librigidbody_msgs__rosidl_typesupport_cpp.so"
   "rosidl_typesupport_cpp/rigidbody_msgs/msg/rigid_body__type_support.cpp"
+  "rosidl_typesupport_cpp/rigidbody_msgs/msg/robot_cmd__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

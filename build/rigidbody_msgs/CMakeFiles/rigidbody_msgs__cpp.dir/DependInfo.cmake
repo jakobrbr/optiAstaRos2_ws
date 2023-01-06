@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__builder.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
   "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
   "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__traits.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
+  "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__builder.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
+  "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__struct.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
+  "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__traits.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
+  "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/robot_cmd.hpp" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp"
   )
 
 

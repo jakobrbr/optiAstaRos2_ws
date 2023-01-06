@@ -78,6 +78,7 @@ rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosid
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/rigidbody_msgs/msg/RigidBody.idl
+rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: rosidl_adapter/rigidbody_msgs/msg/RobotCmd.idl
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -140,8 +141,14 @@ rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosid
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ introspection for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_introspection_cpp__arguments.json
 
+rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_introspection_cpp.hpp: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_introspection_cpp.hpp
+
 rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp
+
+rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp
 
 CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.o: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make
 CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.o: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp
@@ -157,14 +164,30 @@ CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_types
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp -o CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.s
 
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o -MF CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o.d -o CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o -c /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp
+
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp > CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.i
+
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp -o CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.s
+
 # Object files for target rigidbody_msgs__rosidl_typesupport_introspection_cpp
 rigidbody_msgs__rosidl_typesupport_introspection_cpp_OBJECTS = \
-"CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.o"
+"CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.o" \
+"CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o"
 
 # External object files for target rigidbody_msgs__rosidl_typesupport_introspection_cpp
 rigidbody_msgs__rosidl_typesupport_introspection_cpp_EXTERNAL_OBJECTS =
 
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp.o
+librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp.o
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/build.make
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
@@ -174,7 +197,7 @@ librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: /opt/ros/humble/lib/librcutils.so
 librigidbody_msgs__rosidl_typesupport_introspection_cpp.so: CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library librigidbody_msgs__rosidl_typesupport_introspection_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library librigidbody_msgs__rosidl_typesupport_introspection_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -187,6 +210,8 @@ CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/clean:
 
 CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
 CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__rosidl_typesupport_introspection_cpp.hpp
+CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/depend: rosidl_typesupport_introspection_cpp/rigidbody_msgs/msg/detail/robot_cmd__type_support.cpp
 	cd /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/depend
 

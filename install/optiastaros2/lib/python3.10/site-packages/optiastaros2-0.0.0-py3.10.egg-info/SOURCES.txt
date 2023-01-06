@@ -10,7 +10,10 @@ setup.py
 ../../build/optiastaros2/optiastaros2.egg-info/zip-safe
 optiastaros2/NatNetClient.py
 optiastaros2/__init__.py
+optiastaros2/controller_node.py
+optiastaros2/generateRobotPath.py
 optiastaros2/pubdata_node.py
+optiastaros2/purePursuit.py
 resource/optiastaros2
 test/test_copyright.py
 test/test_flake8.py

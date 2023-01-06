@@ -1,0 +1,199 @@
+[2.067s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build'][0m
+[2.068s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff96b92050>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff975ed390>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff975ed390>>)[0m
+[2.202s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[2.203s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[2.203s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[2.203s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[2.204s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[2.250s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[2.250s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/ubuntu/optiAstaRos2_ws'
+[2.251s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.252s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[2.252s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[2.252s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[2.253s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[2.253s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[2.253s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[2.254s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[2.254s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[2.314s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['cmake', 'python']
+[2.315s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'cmake'
+[2.315s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python'
+[2.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['python_setup_py']
+[2.316s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'python_setup_py'
+[2.317s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.318s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) by extension 'ignore'
+[2.318s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(build) ignored
+[2.319s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.320s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) by extension 'ignore'
+[2.320s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(install) ignored
+[2.322s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.322s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) by extension 'ignore'
+[2.323s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(log) ignored
+[2.323s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.324s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore'
+[2.324s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ignore_ament_install'
+[2.325s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_pkg']
+[2.325s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_pkg'
+[2.325s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['colcon_meta']
+[2.326s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'colcon_meta'
+[2.326s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['ros']
+[2.326s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'ros'
+[2.327s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['cmake', 'python']
+[2.327s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'cmake'
+[2.327s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python'
+[2.328s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extensions ['python_setup_py']
+[2.328s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src) by extension 'python_setup_py'
+[2.329s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extensions ['ignore', 'ignore_ament_install']
+[2.330s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extension 'ignore'
+[2.330s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extension 'ignore_ament_install'
+[2.330s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extensions ['colcon_pkg']
+[2.331s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extension 'colcon_pkg'
+[2.331s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extensions ['colcon_meta']
+[2.331s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extension 'colcon_meta'
+[2.332s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extensions ['ros']
+[2.332s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/optiastaros2) by extension 'ros'
+[2.345s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/optiastaros2' with type 'ros.ament_python' and name 'optiastaros2'[0m
+[2.346s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.347s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extension 'ignore'
+[2.348s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extension 'ignore_ament_install'
+[2.348s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extensions ['colcon_pkg']
+[2.349s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extension 'colcon_pkg'
+[2.349s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extensions ['colcon_meta']
+[2.349s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extension 'colcon_meta'
+[2.350s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extensions ['ros']
+[2.350s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(src/rigidbody_msgs) by extension 'ros'
+[2.353s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage 'src/rigidbody_msgs' with type 'ros.ament_cmake' and name 'rigidbody_msgs'[0m
+[2.354s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[2.354s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[2.354s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[2.355s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[2.355s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[2.458s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[2.459s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[2.477s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 3 installed packages in /home/ubuntu/optiAstaRos2_ws/install[0m
+[2.489s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 270 installed packages in /opt/ros/humble[0m
+[2.496s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[2.886s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'cmake_args' from command line to 'None'
+[2.887s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'cmake_target' from command line to 'None'
+[2.887s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.887s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[2.887s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[2.888s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[2.888s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[2.888s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[2.888s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'rigidbody_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.888s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'rigidbody_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs', 'merge_install': False, 'path': '/home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs', 'symlink_install': False, 'test_result_base': None}[0m
+[2.893s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'cmake_args' from command line to 'None'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'cmake_target' from command line to 'None'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.894s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'optiastaros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.895s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'optiastaros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2', 'merge_install': False, 'path': '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2', 'symlink_install': False, 'test_result_base': None}[0m
+[2.898s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[2.917s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[2.918s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs' with build type 'ament_cmake'
+[2.918s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs'
+[2.944s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.945s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.945s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[3.000s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4[0m
+[6.970s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4[0m
+[7.711s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs[0m
+[8.099s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(rigidbody_msgs)
+[8.112s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs[0m
+[8.128s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs' for CMake module files
+[8.133s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs' for CMake config files
+[8.136s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('rigidbody_msgs', 'cmake_prefix_path')
+[8.142s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/cmake_prefix_path.ps1'
+[8.146s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/cmake_prefix_path.dsv'
+[8.149s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/cmake_prefix_path.sh'
+[8.155s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib'
+[8.156s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('rigidbody_msgs', 'ld_library_path_lib')
+[8.163s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/ld_library_path_lib.ps1'
+[8.165s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/ld_library_path_lib.dsv'
+[8.167s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/ld_library_path_lib.sh'
+[8.170s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/bin'
+[8.171s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/pkgconfig/rigidbody_msgs.pc'
+[8.172s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/python3.10/site-packages'
+[8.173s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/bin'
+[8.180s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.ps1'
+[8.185s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.dsv'
+[8.188s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.sh'
+[8.193s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.bash'
+[8.197s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.zsh'
+[8.201s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/colcon-core/packages/rigidbody_msgs)
+[8.863s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(rigidbody_msgs)
+[8.877s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs' for CMake module files
+[8.885s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs' for CMake config files
+[8.889s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('rigidbody_msgs', 'cmake_prefix_path')
+[8.898s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/cmake_prefix_path.ps1'
+[8.903s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/cmake_prefix_path.dsv'
+[8.906s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/cmake_prefix_path.sh'
+[8.913s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib'
+[8.913s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('rigidbody_msgs', 'ld_library_path_lib')
+[8.920s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/ld_library_path_lib.ps1'
+[8.925s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/ld_library_path_lib.dsv'
+[8.930s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/hook/ld_library_path_lib.sh'
+[8.934s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/bin'
+[8.935s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/pkgconfig/rigidbody_msgs.pc'
+[8.937s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/python3.10/site-packages'
+[8.939s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/bin'
+[8.948s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.ps1'
+[8.953s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.dsv'
+[8.956s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.sh'
+[8.961s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.bash'
+[8.965s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.zsh'
+[8.968s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/colcon-core/packages/rigidbody_msgs)
+[8.972s] [34mcolcon.colcon_ros.task.ament_python.build[0m [1;30mINFO[0m Building ROS package in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2' with build type 'ament_python'
+[8.972s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('optiastaros2', 'ament_prefix_path')
+[8.982s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/hook/ament_prefix_path.ps1'
+[8.987s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/hook/ament_prefix_path.dsv'
+[8.990s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/hook/ament_prefix_path.sh'
+[9.004s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.004s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[11.098s] [34mcolcon.colcon_core.task.python.build[0m [1;30mINFO[0m Building Python package in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2'
+[11.105s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.105s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[13.229s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2': PYTHONPATH=/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optiastaros2 build --build-base /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build install --record /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log --single-version-externally-managed[0m
+[15.129s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2' for CMake module files
+[15.132s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2' returned '0': PYTHONPATH=/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optiastaros2 build --build-base /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build install --record /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log --single-version-externally-managed[0m
+[15.134s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2' for CMake config files
+[15.139s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib'
+[15.140s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/bin'
+[15.140s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/pkgconfig/optiastaros2.pc'
+[15.142s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages'
+[15.143s] [34mcolcon.colcon_core.shell[0m [1;30mLevel 1[0m create_environment_hook('optiastaros2', 'pythonpath')
+[15.149s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/hook/pythonpath.ps1'
+[15.152s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment descriptor '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/hook/pythonpath.dsv'
+[15.155s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating environment hook '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/hook/pythonpath.sh'
+[15.159s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/bin'
+[15.159s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(optiastaros2)
+[15.166s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/package.ps1'
+[15.170s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/package.dsv'
+[15.173s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/package.sh'
+[15.176s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/package.bash'
+[15.178s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/optiastaros2/package.zsh'
+[15.181s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/share/colcon-core/packages/optiastaros2)
+[15.182s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[15.184s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[15.185s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '0'[0m
+[15.185s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[15.244s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.244s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.245s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[15.307s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[15.314s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ubuntu/optiAstaRos2_ws/install/local_setup.ps1'
+[15.322s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/ubuntu/optiAstaRos2_ws/install/_local_setup_util_ps1.py'
+[15.330s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ubuntu/optiAstaRos2_ws/install/setup.ps1'
+[15.340s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ubuntu/optiAstaRos2_ws/install/local_setup.sh'
+[15.344s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/ubuntu/optiAstaRos2_ws/install/_local_setup_util_sh.py'
+[15.349s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ubuntu/optiAstaRos2_ws/install/setup.sh'
+[15.357s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ubuntu/optiAstaRos2_ws/install/local_setup.bash'
+[15.360s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ubuntu/optiAstaRos2_ws/install/setup.bash'
+[15.368s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/ubuntu/optiAstaRos2_ws/install/local_setup.zsh'
+[15.370s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/ubuntu/optiAstaRos2_ws/install/setup.zsh'

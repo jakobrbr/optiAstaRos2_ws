@@ -3,7 +3,8 @@
   "output_dir": "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs:msg/RigidBody.idl"
+    "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs:msg/RigidBody.idl",
+    "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs:msg/RobotCmd.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -81,6 +82,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs/msg/RigidBody.idl",
+    "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs/msg/RobotCmd.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

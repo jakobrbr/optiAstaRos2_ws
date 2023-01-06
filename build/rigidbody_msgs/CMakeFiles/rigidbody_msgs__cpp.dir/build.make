@@ -70,6 +70,10 @@ CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_bo
 CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__builder.hpp
 CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp
 CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__traits.hpp
+CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/robot_cmd.hpp
+CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__builder.hpp
+CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__struct.hpp
+CMakeFiles/rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__traits.hpp
 
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/share/ro
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: rosidl_adapter/rigidbody_msgs/msg/RigidBody.idl
+rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: rosidl_adapter/rigidbody_msgs/msg/RobotCmd.idl
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -158,11 +163,27 @@ rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp: rosidl_ge
 rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__traits.hpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__traits.hpp
 
+rosidl_generator_cpp/rigidbody_msgs/msg/robot_cmd.hpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rigidbody_msgs/msg/robot_cmd.hpp
+
+rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__builder.hpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__builder.hpp
+
+rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__struct.hpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__struct.hpp
+
+rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__traits.hpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__traits.hpp
+
 rigidbody_msgs__cpp: CMakeFiles/rigidbody_msgs__cpp
 rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__builder.hpp
 rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__struct.hpp
 rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/rigid_body__traits.hpp
+rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__builder.hpp
+rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__struct.hpp
+rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/detail/robot_cmd__traits.hpp
 rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/rigid_body.hpp
+rigidbody_msgs__cpp: rosidl_generator_cpp/rigidbody_msgs/msg/robot_cmd.hpp
 rigidbody_msgs__cpp: CMakeFiles/rigidbody_msgs__cpp.dir/build.make
 .PHONY : rigidbody_msgs__cpp
 

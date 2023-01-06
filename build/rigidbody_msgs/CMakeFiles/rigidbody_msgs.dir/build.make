@@ -67,6 +67,7 @@ include CMakeFiles/rigidbody_msgs.dir/compiler_depend.make
 include CMakeFiles/rigidbody_msgs.dir/progress.make
 
 CMakeFiles/rigidbody_msgs: /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs/msg/RigidBody.msg
+CMakeFiles/rigidbody_msgs: /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs/msg/RobotCmd.msg
 CMakeFiles/rigidbody_msgs: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/rigidbody_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/rigidbody_msgs: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl

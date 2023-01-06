@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/__init__.py" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body.py" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd.py" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c" "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

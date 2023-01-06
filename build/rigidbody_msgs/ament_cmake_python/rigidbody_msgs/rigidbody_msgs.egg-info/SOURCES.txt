@@ -6,3 +6,4 @@ rigidbody_msgs.egg-info/dependency_links.txt
 rigidbody_msgs.egg-info/top_level.txt
 rigidbody_msgs/msg/__init__.py
 rigidbody_msgs/msg/_rigid_body.py
+rigidbody_msgs/msg/_robot_cmd.py

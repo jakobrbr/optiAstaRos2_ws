@@ -247,8 +247,13 @@ CMakeFiles/rigidbody_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/r
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
-  rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h
+  rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h \
+  rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.h \
+  rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__struct.h \
+  rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.h
 
+
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
@@ -288,11 +293,15 @@ rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__type_support.h:
 
 /usr/include/python3.10/pythread.h:
 
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__struct.h:
+
 /usr/include/python3.10/pyerrors.h:
 
 /usr/include/python3.10/codecs.h:
 
 /usr/include/python3.10/namespaceobject.h:
+
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.h:
 
 /usr/include/python3.10/cpython/ceval.h:
 

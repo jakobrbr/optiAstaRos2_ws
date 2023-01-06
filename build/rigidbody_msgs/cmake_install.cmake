@@ -360,7 +360,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rigidbody_msgs/msg" TYPE FILE FILES "/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs/msg/RobotCmd.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rigidbody_msgs/msg" TYPE FILE FILES "/home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs/msg/RigidBody.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rigidbody_msgs/msg" TYPE FILE FILES "/home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs/msg/RobotCmd.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

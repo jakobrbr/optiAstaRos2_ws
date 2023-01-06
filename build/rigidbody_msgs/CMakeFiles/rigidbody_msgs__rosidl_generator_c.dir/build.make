@@ -83,6 +83,7 @@ rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: /opt/ros/humble/share/rosidl
 rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: rosidl_adapter/rigidbody_msgs/msg/RigidBody.idl
+rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: rosidl_adapter/rigidbody_msgs/msg/RobotCmd.idl
 rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -154,8 +155,23 @@ rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__struct.h: rosidl_genera
 rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__type_support.h: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__type_support.h
 
+rosidl_generator_c/rigidbody_msgs/msg/robot_cmd.h: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/robot_cmd.h
+
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.h: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.h
+
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__struct.h: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__struct.h
+
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.h: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.h
+
 rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c
+
+rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c
 
 CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o: rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c
@@ -171,14 +187,30 @@ CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_m
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c -o CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.s
 
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o: rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o -MF CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o.d -o CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o -c /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c
+
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c > CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.i
+
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c -o CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.s
+
 # Object files for target rigidbody_msgs__rosidl_generator_c
 rigidbody_msgs__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o"
+"CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o" \
+"CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o"
 
 # External object files for target rigidbody_msgs__rosidl_generator_c
 rigidbody_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 librigidbody_msgs__rosidl_generator_c.so: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.c.o
+librigidbody_msgs__rosidl_generator_c.so: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c.o
 librigidbody_msgs__rosidl_generator_c.so: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/build.make
 librigidbody_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
 librigidbody_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
@@ -186,7 +218,7 @@ librigidbody_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfa
 librigidbody_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 librigidbody_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 librigidbody_msgs__rosidl_generator_c.so: CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library librigidbody_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library librigidbody_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -201,7 +233,12 @@ CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rig
 CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h
 CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__struct.h
 CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__type_support.h
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.c
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.h
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__struct.h
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.h
 CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/rigid_body.h
+CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/rigidbody_msgs/msg/robot_cmd.h
 	cd /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/src/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/depend
 

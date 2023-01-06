@@ -83,14 +83,30 @@ CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c -o CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c.s
 
+CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o: CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/flags.make
+CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o: rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c
+CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o: CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o -MF CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o.d -o CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o -c /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c
+
+CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c > CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.i
+
+CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c -o CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.s
+
 # Object files for target rigidbody_msgs__rosidl_generator_py
 rigidbody_msgs__rosidl_generator_py_OBJECTS = \
-"CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c.o"
+"CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c.o" \
+"CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o"
 
 # External object files for target rigidbody_msgs__rosidl_generator_py
 rigidbody_msgs__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c.o
+rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c.o
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/build.make
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: librigidbody_msgs__rosidl_typesupport_c.so
@@ -108,7 +124,7 @@ rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: /o
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so: CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

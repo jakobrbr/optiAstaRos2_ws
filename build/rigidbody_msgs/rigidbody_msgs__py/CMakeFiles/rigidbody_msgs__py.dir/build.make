@@ -70,8 +70,10 @@ rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_
 rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_introspection_c.c
 rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c
 rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_rigid_body.py
+rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd.py
 rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/__init__.py
 rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c
+rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c
 
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +89,7 @@ rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rigidbody_msgs/msg/RigidBody.idl
+rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rigidbody_msgs/msg/RobotCmd.idl
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -158,11 +161,17 @@ rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c: 
 rosidl_generator_py/rigidbody_msgs/msg/_rigid_body.py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rigidbody_msgs/msg/_rigid_body.py
 
+rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd.py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd.py
+
 rosidl_generator_py/rigidbody_msgs/msg/__init__.py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rigidbody_msgs/msg/__init__.py
 
 rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c
+
+rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c
 
 rigidbody_msgs__py: rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py
 rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c
@@ -171,6 +180,8 @@ rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/_rigidbody_msgs_s.ep.rosi
 rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/__init__.py
 rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_rigid_body.py
 rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_rigid_body_s.c
+rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd.py
+rigidbody_msgs__py: rosidl_generator_py/rigidbody_msgs/msg/_robot_cmd_s.c
 rigidbody_msgs__py: rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py.dir/build.make
 .PHONY : rigidbody_msgs__py
 

@@ -1,2 +1,4 @@
 msg/RigidBody.idl
 msg/RigidBody.msg
+msg/RobotCmd.idl
+msg/RobotCmd.msg

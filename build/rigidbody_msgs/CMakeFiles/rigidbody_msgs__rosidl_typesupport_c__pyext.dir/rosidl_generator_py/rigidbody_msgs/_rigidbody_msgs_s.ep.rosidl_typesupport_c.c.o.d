@@ -207,4 +207,7 @@ CMakeFiles/rigidbody_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/r
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
- /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h
+ /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/rigid_body__functions.h \
+ /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__type_support.h \
+ /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__struct.h \
+ /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_generator_c/rigidbody_msgs/msg/detail/robot_cmd__functions.h

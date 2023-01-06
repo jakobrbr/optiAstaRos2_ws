@@ -1,0 +1,210 @@
+[0.060s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4
+[0.106s] gmake: Warning: File 'Makefile' has modification time 4745 s in the future
+[0.191s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 4745 s in the future
+[0.200s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__cpp.dir/progress.make' has modification time 4745 s in the future
+[0.203s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/flags.make' has modification time 4745 s in the future
+[0.240s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.245s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.248s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__cpp.dir/progress.make' has modification time 4745 s in the future
+[0.249s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.254s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_generator_c.dir/flags.make' has modification time 4745 s in the future
+[0.257s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.282s] [  3%] Built target rigidbody_msgs__cpp
+[0.291s] [ 12%] Built target rigidbody_msgs__rosidl_generator_c
+[0.293s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_copy_rigidbody_msgs.dir/progress.make' has modification time 4745 s in the future
+[0.302s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 4745 s in the future
+[0.330s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.337s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_copy_rigidbody_msgs.dir/progress.make' has modification time 4745 s in the future
+[0.342s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.352s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_cpp.dir/flags.make' has modification time 4745 s in the future
+[0.357s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.378s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.390s] [ 22%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_cpp
+[0.403s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 4745 s in the future
+[0.412s] [ 22%] Built target ament_cmake_python_copy_rigidbody_msgs
+[0.424s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 4745 s in the future
+[0.445s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.456s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_cpp.dir/flags.make' has modification time 4745 s in the future
+[0.461s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.469s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.481s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c.dir/flags.make' has modification time 4745 s in the future
+[0.487s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.507s] [ 32%] Built target rigidbody_msgs__rosidl_typesupport_introspection_cpp
+[0.520s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 4745 s in the future
+[0.532s] [ 41%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_c
+[0.548s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_c.dir/flags.make' has modification time 4745 s in the future
+[0.562s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.572s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c.dir/flags.make' has modification time 4745 s in the future
+[0.575s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.589s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.599s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_c.dir/flags.make' has modification time 4745 s in the future
+[0.602s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.612s] [ 51%] Built target rigidbody_msgs__rosidl_typesupport_introspection_c
+[0.623s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_build_rigidbody_msgs_egg.dir/progress.make' has modification time 4745 s in the future
+[0.640s] [ 61%] Built target rigidbody_msgs__rosidl_typesupport_c
+[0.654s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/flags.make' has modification time 4745 s in the future
+[0.664s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.671s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_build_rigidbody_msgs_egg.dir/progress.make' has modification time 4745 s in the future
+[0.698s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.711s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_cpp.dir/flags.make' has modification time 4745 s in the future
+[0.717s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.754s] [ 70%] Built target rigidbody_msgs__rosidl_typesupport_cpp
+[0.766s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs.dir/progress.make' has modification time 4745 s in the future
+[0.807s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.819s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs.dir/progress.make' has modification time 4745 s in the future
+[0.820s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.855s] [ 70%] Built target rigidbody_msgs
+[0.865s] gmake[2]: Warning: File 'rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py.dir/progress.make' has modification time 4745 s in the future
+[0.907s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.915s] gmake[2]: Warning: File 'rigidbody_msgs__py/CMakeFiles/rigidbody_msgs__py.dir/progress.make' has modification time 4745 s in the future
+[0.917s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.954s] [ 74%] Built target rigidbody_msgs__py
+[0.966s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/flags.make' has modification time 4744 s in the future
+[1.009s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.019s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_generator_py.dir/flags.make' has modification time 4744 s in the future
+[1.025s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.062s] [ 80%] Built target rigidbody_msgs__rosidl_generator_py
+[1.075s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make' has modification time 4744 s in the future
+[1.117s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.127s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/flags.make' has modification time 4744 s in the future
+[1.132s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.171s] [ 87%] Built target rigidbody_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.182s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_c__pyext.dir/flags.make' has modification time 4744 s in the future
+[1.221s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.230s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_c__pyext.dir/flags.make' has modification time 4744 s in the future
+[1.235s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.268s] [ 93%] Built target rigidbody_msgs__rosidl_typesupport_c__pyext
+[1.281s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c__pyext.dir/flags.make' has modification time 4744 s in the future
+[1.317s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.326s] gmake[2]: Warning: File 'CMakeFiles/rigidbody_msgs__rosidl_typesupport_introspection_c__pyext.dir/flags.make' has modification time 4744 s in the future
+[1.331s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.365s] [100%] Built target rigidbody_msgs__rosidl_typesupport_introspection_c__pyext
+[1.822s] running egg_info
+[1.825s] writing rigidbody_msgs.egg-info/PKG-INFO
+[1.826s] writing dependency_links to rigidbody_msgs.egg-info/dependency_links.txt
+[1.827s] writing top-level names to rigidbody_msgs.egg-info/top_level.txt
+[1.837s] reading manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'
+[1.839s] writing manifest file 'rigidbody_msgs.egg-info/SOURCES.txt'
+[1.934s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.968s] [100%] Built target ament_cmake_python_build_rigidbody_msgs_egg
+[1.971s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.004s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[2.010s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs -- -j4 -l4
+[2.392s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs
+[2.423s] -- Install configuration: ""
+[2.424s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/rosidl_interfaces/rigidbody_msgs
+[2.424s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs
+[2.424s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg
+[2.425s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rigid_body.h
+[2.425s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.425s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail
+[2.426s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__functions.c
+[2.426s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__functions.h
+[2.426s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__struct.h
+[2.427s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.h
+[2.427s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/library_path.sh
+[2.428s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/library_path.dsv
+[2.428s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_c.so
+[2.429s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs
+[2.430s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg
+[2.430s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.431s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail
+[2.431s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h
+[2.432s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_c.so
+[2.434s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs
+[2.434s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg
+[2.434s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rigid_body.hpp
+[2.435s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail
+[2.435s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__traits.hpp
+[2.435s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__builder.hpp
+[2.436s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__struct.hpp
+[2.436s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs
+[2.437s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg
+[2.437s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.437s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail
+[2.438s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp
+[2.438s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/dds_fastrtps
+[2.439s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.440s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs
+[2.441s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg
+[2.441s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.441s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail
+[2.442s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+[2.442s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.c
+[2.443s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_c.so
+[2.445s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_c.so
+[2.446s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs
+[2.447s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg
+[2.447s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail
+[2.447s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+[2.448s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/include/rigidbody_msgs/rigidbody_msgs/msg/detail/rigid_body__type_support.cpp
+[2.449s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_introspection_cpp.so
+[2.451s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_typesupport_cpp.so
+[2.452s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/pythonpath.sh
+[2.452s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/pythonpath.dsv
+[2.453s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info
+[2.453s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.454s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.456s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.457s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.458s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs
+[2.459s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.459s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.460s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[2.460s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg
+[2.460s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body_s.c
+[2.461s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/_rigid_body.py
+[2.461s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg/__init__.py
+[2.462s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/_rigidbody_msgs_s.ep.rosidl_typesupport_c.c
+[2.462s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/librigidbody_msgs__rosidl_generator_py.so
+[2.462s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/__init__.py
+[2.463s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[2.463s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[2.602s] Listing '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs'...
+[2.603s] Listing '/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/msg'...
+[2.625s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[2.627s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[2.629s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages/rigidbody_msgs/rigidbody_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[2.631s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib/librigidbody_msgs__rosidl_generator_py.so
+[2.633s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RigidBody.idl
+[2.633s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/msg/RigidBody.msg
+[2.633s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/package_run_dependencies/rigidbody_msgs
+[2.634s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/parent_prefix_path/rigidbody_msgs
+[2.634s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/ament_prefix_path.sh
+[2.635s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/ament_prefix_path.dsv
+[2.635s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/path.sh
+[2.635s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/environment/path.dsv
+[2.636s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.bash
+[2.636s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.sh
+[2.637s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.zsh
+[2.637s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/local_setup.dsv
+[2.637s] -- Installing: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.dsv
+[2.638s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/ament_index/resource_index/packages/rigidbody_msgs
+[2.639s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cExport.cmake
+[2.640s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.641s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.641s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.642s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_cppExport.cmake
+[2.643s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.643s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.644s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.645s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.645s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cExport.cmake
+[2.646s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.647s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.647s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.648s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cppExport.cmake
+[2.649s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.649s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_pyExport.cmake
+[2.650s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/export_rigidbody_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.650s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake-extras.cmake
+[2.651s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.651s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.652s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.652s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.652s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.653s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.653s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgsConfig.cmake
+[2.654s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/cmake/rigidbody_msgsConfig-version.cmake
+[2.654s] -- Up-to-date: /home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/share/rigidbody_msgs/package.xml
+[2.663s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs

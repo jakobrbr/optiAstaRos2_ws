@@ -1,3 +1,4 @@
 [console_scripts]
+controller_node = optiastaros2.controller_node:main
 pubdata_node = optiastaros2.pubdata_node:main
 

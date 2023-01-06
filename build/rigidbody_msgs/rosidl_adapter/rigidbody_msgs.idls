@@ -1,1 +1,2 @@
 /home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs:msg/RigidBody.idl
+/home/ubuntu/optiAstaRos2_ws/build/rigidbody_msgs/rosidl_adapter/rigidbody_msgs:msg/RobotCmd.idl

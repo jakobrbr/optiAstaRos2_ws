@@ -1,0 +1,27 @@
+[2.570s] Invoking command in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2': AMENT_PREFIX_PATH=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs LD_LIBRARY_PATH=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optiastaros2 build --build-base /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build install --record /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log --single-version-externally-managed
+[3.581s] running egg_info
+[3.583s] writing ../../build/optiastaros2/optiastaros2.egg-info/PKG-INFO
+[3.585s] writing dependency_links to ../../build/optiastaros2/optiastaros2.egg-info/dependency_links.txt
+[3.585s] writing entry points to ../../build/optiastaros2/optiastaros2.egg-info/entry_points.txt
+[3.586s] writing requirements to ../../build/optiastaros2/optiastaros2.egg-info/requires.txt
+[3.587s] writing top-level names to ../../build/optiastaros2/optiastaros2.egg-info/top_level.txt
+[3.595s] reading manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'
+[3.599s] writing manifest file '../../build/optiastaros2/optiastaros2.egg-info/SOURCES.txt'
+[3.600s] running build
+[3.600s] running build_py
+[3.601s] copying optiastaros2/controller_node.py -> /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build/lib/optiastaros2
+[3.604s] running install
+[3.604s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.605s]   warnings.warn(
+[3.605s] running install_lib
+[3.609s] copying /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build/lib/optiastaros2/controller_node.py -> /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2
+[3.613s] byte-compiling /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2/controller_node.py to controller_node.cpython-310.pyc
+[3.617s] running install_data
+[3.620s] running install_egg_info
+[3.626s] removing '/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info' (and everything under it)
+[3.628s] Copying ../../build/optiastaros2/optiastaros2.egg-info to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages/optiastaros2-0.0.0-py3.10.egg-info
+[3.633s] running install_scripts
+[3.711s] Installing controller_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2
+[3.712s] Installing pubdata_node script to /home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/optiastaros2
+[3.714s] writing list of installed files to '/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log'
+[3.836s] Invoked command in '/home/ubuntu/optiAstaRos2_ws/src/optiastaros2' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs LD_LIBRARY_PATH=/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/optiAstaRos2_ws/build/optiastaros2/prefix_override:/home/ubuntu/optiAstaRos2_ws/install/optiastaros2/lib/python3.10/site-packages:/home/ubuntu/optiAstaRos2_ws/install/rigidbody_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optiastaros2 build --build-base /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/build install --record /home/ubuntu/optiAstaRos2_ws/build/optiastaros2/install.log --single-version-externally-managed
