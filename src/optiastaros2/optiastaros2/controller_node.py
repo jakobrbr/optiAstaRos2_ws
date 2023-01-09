@@ -7,9 +7,9 @@ import numpy as np
 import pandas as pd
 import sys
 from xml.dom import minidom
+import time
 from purePursuit import pure_pursuit, proportional_velocity_controller, pure_pursuit_turn_speed
 import generateRobotPath
-import time
 
 # Notes/to do:
     # Try changing the queue sizes to something bigger (10) if there are still issues. (We tried setting to queue size 1 => only care about newest)
