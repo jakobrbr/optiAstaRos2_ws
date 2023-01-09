@@ -125,6 +125,7 @@ class ControllerNode(Node):
                     # update last angle
                     self.last_angle = self.angle
         # test print
+        print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
         #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 

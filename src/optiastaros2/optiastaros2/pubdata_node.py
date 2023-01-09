@@ -50,6 +50,7 @@ class PublishDataNode(Node):
                 #msg.rigid_body_name = i
                 publisher.publish(msg)
 
+
         #msg = RigidBody()
         #for i in id_dict.keys():
             #pos,rot = id_dict[i]
