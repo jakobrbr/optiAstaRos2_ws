@@ -64,7 +64,7 @@ class ControllerNode(Node):
             self.set_publishers.append(publisher)
         # end of init for 1 robot
 
-        
+
         # initialize arrays
         self.msg_array = [None]*8 # kunne også være en array med 8 nuller
         self.currentPos = [None]*8 # should become array of tuples 
@@ -127,7 +127,7 @@ class ControllerNode(Node):
         #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
-""""
+"""
     # This is the callback function where we should sub and pub for 8 robots, rewrite this so it works!
     def pose_callback(self, msg: RigidBody):
         # this function is called whenever we get data from optitrack
@@ -173,7 +173,7 @@ class ControllerNode(Node):
                     #last_angle[j] = angle[j] # Sets the new angle, the optitrack system should do this part in the futures
         # test print
         #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
-""""
+"""
 
 
 def main(args=None):
