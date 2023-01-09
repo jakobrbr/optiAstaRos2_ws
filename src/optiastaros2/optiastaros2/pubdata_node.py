@@ -48,18 +48,18 @@ class PublishDataNode(Node):
                 # set message values, multiply with 100 to get in cm
                 # remember that the ground plane in asta is (x,z)!
                 msg.pose.x = pos[0]*100
-                msg.pose.y = pos[1]*100
+                #msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
                 #msg.rot.x = rot[0]
-                #msg.rot.y = rot[1]
+                msg.rot.y = rot[1]
                 #msg.rot.z = rot[2]
                 #msg.rigid_body_name = i
 
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Robot0: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
+                    print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                 if str(i) == "1":
-                    print("Robot1: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
+                    print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                 publisher.publish(msg)
 
 
