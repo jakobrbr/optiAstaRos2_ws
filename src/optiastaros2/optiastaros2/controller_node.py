@@ -124,13 +124,13 @@ class ControllerNode(Node):
                     cmd.angular = self.angle[j]
                     #cmd.rigid_body_name = msg.rigid_body_name # we dont need to publish the name
                     publisher.publish(cmd)
-                print("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+                #print("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
                 # update last angle
                 self.last_angle = self.angle
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-        #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+        self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
 """
