@@ -41,6 +41,7 @@ import generateRobotPath
     # saml 8 pcb'er og vis at kommunikationen er hurtig nok, brug to robotter til at demonstrere synkronitet
 
     # test branch?: publish commands using the Twist message
+    # send stop command to robot before we shut the nodes off, otherwise it will continue
 
 class ControllerNode(Node):
 
