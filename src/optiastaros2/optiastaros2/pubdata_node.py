@@ -25,7 +25,9 @@ class PublishDataNode(Node):
         #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot6/data", 200)
         #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot7/data", 200)
         #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot8/data", 200)
-
+        streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
+        streamingClient.rigidBodyListener = self.receiveRigidBodyFrame
+        streamingClient.run()
         self.timer_ = self.create_timer(0.005, self.send_data)
         self.get_logger().info("NatNet data publisher node has been started")
 
@@ -39,10 +41,6 @@ class PublishDataNode(Node):
         #print("rot: {0}".format(rot))
 
     def send_data(self):
-        streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
-        streamingClient.rigidBodyListener = self.receiveRigidBodyFrame
-        streamingClient.run()
-
         for i, publisher in enumerate(self.set_publishers):
             msg = RigidBody()
             if str(i) in self.id_dict.keys():
