@@ -85,7 +85,7 @@ class ControllerNode(Node):
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=0.1))
 
         self.start_time = np.floor(time.time())
-        self.lap_time = np.floor(time.time()) + 60
+        self.lap_time = np.floor(time.time()) + 180
 
         self.get_logger().info("Controller node has been started")
 
