@@ -37,7 +37,7 @@ class PublishDataNode(Node):
 
     def send_data(self):
         streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
-        streamingClient.rigidBodyListener = receiveRigidBodyFrame
+        streamingClient.rigidBodyListener = self.receiveRigidBodyFrame
         streamingClient.run()
 
         for i, publisher in enumerate(self.set_publishers):
