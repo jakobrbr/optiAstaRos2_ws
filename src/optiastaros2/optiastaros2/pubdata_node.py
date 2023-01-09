@@ -49,7 +49,7 @@ class PublishDataNode(Node):
                 #msg.rot.z = rot[2]
                 #msg.rigid_body_name = i
                 if str(i) == "0":
-                    print("Sending x and y: " + msg.pose.x + " " + msg.pose.y)
+                    print("Sending x and y: " + str(msg.pose.x) + " " + str(msg.pose.y))
                 publisher.publish(msg)
 
 
