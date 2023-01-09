@@ -47,6 +47,7 @@ class PublishDataNode(Node):
                 pos,rot = self.id_dict[str(i)]
                 # set message values, multiply with 100 to get in cm
                 # remember that the ground plane in asta is (x,z)!
+                # rotation is in quaternion
                 msg.pose.x = pos[0]*100
                 #msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
@@ -57,7 +58,8 @@ class PublishDataNode(Node):
 
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
+                    #print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
+                    print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
                 if str(i) == "1":
                     print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                 publisher.publish(msg)
