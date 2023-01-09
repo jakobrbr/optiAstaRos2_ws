@@ -43,6 +43,8 @@ import generateRobotPath
     # test branch?: publish commands using the Twist message
     # send stop command to robot before we shut the nodes off, otherwise it will continue
 
+    # limit publishing speed, so we dont update so often
+
 class ControllerNode(Node):
 
     def __init__(self):
@@ -82,7 +84,7 @@ class ControllerNode(Node):
         svg_str = minidom.parseString(svg_path)
 
         # generate path from svg file
-        self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=0.1))
+        self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
 
         self.start_time = np.floor(time.time())
         self.lap_time = np.floor(time.time()) + 180
