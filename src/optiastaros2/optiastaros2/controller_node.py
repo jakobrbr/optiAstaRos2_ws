@@ -125,7 +125,7 @@ class ControllerNode(Node):
                     # update last angle
                     self.last_angle = self.angle
         # test print
-        #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+        self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
 """
