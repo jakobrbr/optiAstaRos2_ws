@@ -52,13 +52,11 @@ class PublishDataNode(Node):
                 msg.pose.x = pos[0]*100
                 #msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
-
+                # convert from quaternion to radians:
                 t2 = +2.0 * (rot[3] * rot[1] - rot[2] * rot[0])
                 t2 = +1.0 if t2 > +1.0 else t2
                 t2 = -1.0 if t2 < -1.0 else t2
                 msg.rot.y = math.asin(t2)
-
-                #msg.rot.y = rot[1] / math.sqrt(1 - rot[3]*rot[3]) # convert quaternion to radians
                 #msg.rigid_body_name = i
 
                 # debug for robot0:
