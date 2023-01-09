@@ -30,7 +30,7 @@ def velocity_controller(current_position, path, system_start_time, path_total_ti
 # takes a position the robot is currently and a path as input (a touple and a list of touples)
 # and outputs the angle for pointing the robot at the next waypoint
 def pure_pursuit(current_pos, path,current_heading, max_angular_velocity=1,lookahead_distance=5):
-    current_heading = np.deg2rad(current_heading)
+    #current_heading = np.deg2rad(current_heading)
     # finds the index of the closest point
     diff = np.subtract(path, current_pos)
     distance_diff = np.linalg.norm(diff, axis=1)
