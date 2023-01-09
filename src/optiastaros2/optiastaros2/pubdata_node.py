@@ -41,8 +41,9 @@ class PublishDataNode(Node):
             msg = RigidBody()
             if str(i) in id_dict.keys():
                 pos,rot = id_dict[str(i)]
-                msg.pose.x = pos[0]
-                msg.pose.y = pos[1]
+                # set message values, multiply with 10 to get in cm
+                msg.pose.x = pos[0]*10
+                msg.pose.y = pos[1]*10
                 #msg.pose.z = pos[2]
                 #msg.rot.x = rot[0]
                 #msg.rot.y = rot[1]
