@@ -33,7 +33,10 @@ class PublishDataNode(Node):
         #id_dict[str(id)] = [position,rotation] # update the position and orientation of rigid body
         self.id_dict = {(str(id)):[position,rotation]} # update the position and orientation of robot
         # Optitrack client
-        #pos,rot = id_dict[str(id)]
+        pos,rot = self.id_dict[str(id)]
+        print("id: %s" % str(id))
+        print("pos: {0}".format(pos))
+        print("rot: {0}".format(rot))
 
     def send_data(self):
         streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
