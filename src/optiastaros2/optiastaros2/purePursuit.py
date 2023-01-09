@@ -55,7 +55,7 @@ def pure_pursuit(current_pos, path,current_heading, max_angular_velocity=1,looka
     
     # Calculate the angular velocity based on the difference between the current heading and the desired heading
     heading_diff = desired_heading - current_heading
-    angular_velocity = np.clip(heading_diff, -max_angular_velocity, max_angular_velocity)
+    angular_velocity = heading_diff
 
     return angular_velocity
 
