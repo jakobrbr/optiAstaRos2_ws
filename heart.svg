@@ -3,8 +3,8 @@
 
 <svg
    version="1.1"
-   width="130"
-   height="130"
+   width="300"
+   height="300"
    id="svg2"
    sodipodi:docname="heart.svg"
    inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
@@ -25,11 +25,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="1.8153846"
-     inkscape:cx="-20.932204"
-     inkscape:cy="65.000001"
-     inkscape:window-width="1309"
-     inkscape:window-height="456"
+     inkscape:zoom="1.0990879"
+     inkscape:cx="242.47378"
+     inkscape:cy="201.07582"
+     inkscape:window-width="1512"
+     inkscape:window-height="916"
      inkscape:window-x="0"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
@@ -42,7 +42,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -50,14 +49,7 @@
      id="defs8" />
   <path
      stroke="#ff0000"
-     d="m 65,101.37931 c -6,10 -16,17 -28,17 -17,0 -30,-13 -30,-29.999999 0,-33 18,-38 58,-76 40,38 58,43 58,76 0,16.999999 -13,29.999999 -30,29.999999 -12,0 -22,-7 -28,-17 z"
+     d="m 150.57014,250.29279 c -15.24318,27.62529 -40.64849,46.96298 -71.134861,46.96298 -43.189028,0 -76.2159292,-35.91287 -76.2159292,-82.87585 0,-91.16343 45.7295562,-104.97607 147.3507902,-209.9521345 101.62125,104.9760645 147.3508,118.7887045 147.3508,209.9521345 0,46.96298 -33.02691,82.87585 -76.21593,82.87585 -30.48637,0 -55.89168,-19.33769 -71.13487,-46.96298 z"
      id="path4"
-     style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2" />
-  <line
-     x1="65"
-     y1="101"
-     x2="80"
-     y2="100"
-     style="stroke:#0000ff;stroke-width:2"
-     id="line11" />
+     style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:5.29841" />
 </svg>
