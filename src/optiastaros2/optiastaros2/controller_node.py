@@ -126,7 +126,7 @@ class ControllerNode(Node):
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-        #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+        self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
 """
