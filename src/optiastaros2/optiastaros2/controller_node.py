@@ -102,7 +102,7 @@ class ControllerNode(Node):
                 currentHeading = msg.rot.y # current roation around y axis
 
                 # calculate angle
-                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, 1, lookahead_distance=1)
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, 1, lookahead_distance = 40)
                 #Purify ang array from NaN values
                 if np.isnan(self.angle[j]) == 1:
                     self.angle[j] = 0
