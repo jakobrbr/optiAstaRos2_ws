@@ -43,7 +43,7 @@ class PublishDataNode(Node):
                 pos,rot = id_dict[str(i)]
                 # set message values, multiply with 100 to get in cm
                 msg.pose.x = pos[0]*100
-                msg.pose.y = pos[1]*100
+                msg.pose.y = pos[2]*100 # number 2 is actually the z axis, the ground plane in asta is x-z
                 #msg.pose.z = pos[2]
                 #msg.rot.x = rot[0]
                 #msg.rot.y = rot[1]
