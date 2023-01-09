@@ -93,9 +93,10 @@ class ControllerNode(Node):
     # This is the temporary callback function that only works for one robot, uncomment for more robots
     def pose_callback(self, msg: RigidBody):
         # this function is called whenever we get data from optitrack
-
+        print("top")
         # Apply pure pursuit algorithm to get target angle and velocity values for each robot
         for j in range(0,len(self.targetPosArr)):
+            print(str(len(self.targetPosArr)))
             if self.targetPosArr[j]:
                     # update current position of robot 'j'
 
@@ -125,7 +126,8 @@ class ControllerNode(Node):
                     # update last angle
                     self.last_angle = self.angle
         # test print
-        print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
+        #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
+        print("bottom")
         #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
