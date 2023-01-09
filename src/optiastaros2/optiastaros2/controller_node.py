@@ -8,7 +8,7 @@ import pandas as pd
 import sys
 from xml.dom import minidom
 import time
-from purePursuit import pure_pursuit, proportional_velocity_controller, pure_pursuit_turn_speed
+from purePursuit import pure_pursuit, velocity_controller, pure_pursuit_turn_speed
 import generateRobotPath
 
 # Notes/to do:
@@ -109,7 +109,7 @@ class ControllerNode(Node):
                     #print("current posistion : {}".format(turt[j].pos))
                     #print("target position : {}".format(targetPosArr[0][j+1]))
 
-                    self.velocity[j] = proportional_velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
+                    self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
                     self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
                     #print("velocity : {}".format(velocity[j]))
