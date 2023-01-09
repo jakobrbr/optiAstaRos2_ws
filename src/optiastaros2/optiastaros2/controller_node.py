@@ -100,9 +100,9 @@ class ControllerNode(Node):
 
                 self.currentPos[j] = (msg.pose.x, msg.pose.z) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
                 currentHeading = msg.rot.y # current roation around y axis
-                
+
                 # calculate angle
-                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, 1, lookahead_distance=20)
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, 1, lookahead_distance=80)
                 #Purify ang array from NaN values
                 if np.isnan(self.angle[j]) == 1:
                     self.angle[j] = 0
