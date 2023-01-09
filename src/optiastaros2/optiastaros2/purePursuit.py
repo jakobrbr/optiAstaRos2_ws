@@ -1,7 +1,7 @@
 import numpy as np
 import time 
 
-def proportional_velocity_controller(current_position, path, system_start_time, path_total_time, kp=0.5):
+def velocity_controller(current_position, path, system_start_time, path_total_time, kp=0.5):
     current_time = np.floor(time.time())
     
     diff = np.subtract(path, current_position)
