@@ -93,41 +93,43 @@ class ControllerNode(Node):
     # This is the temporary callback function that only works for one robot, uncomment for more robots
     def pose_callback(self, msg: RigidBody):
         # this function is called whenever we get data from optitrack
-        print("top")
+        print("top of callback")
         # Apply pure pursuit algorithm to get target angle and velocity values for each robot
         for j in range(0,len(self.targetPosArr)):
-            print(str(len(self.targetPosArr)))
+            print("top of for loop")
             if self.targetPosArr[j]:
-                    # update current position of robot 'j'
+                # update current position of robot 'j'
 
-                    self.currentPos[j] = (msg.pose.x, msg.pose.y) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
+                self.currentPos[j] = (msg.pose.x, msg.pose.y) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
 
-                    # calculate angle
-                    self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
-                    #Purify ang array from NaN values
-                    if np.isnan(self.angle[j]) == 1:
-                        self.angle[j] = 0
+                # calculate angle
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
+                #Purify ang array from NaN values
+                if np.isnan(self.angle[j]) == 1:
+                    self.angle[j] = 0
                     #print("angle : {}".format(angle[j]))
                     #print("current posistion : {}".format(turt[j].pos))
                     #print("target position : {}".format(targetPosArr[0][j+1]))
 
-                    self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
-                    self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
+                self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
+                self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
-                    #print("velocity : {}".format(velocity[j]))
+                #print("velocity : {}".format(velocity[j]))
 
-                    for i, publisher in enumerate(self.set_publishers):
-                        cmd = RobotCmd()
-                        cmd.linear = self.velocity[j]
-                        cmd.angular = self.angle[j]
-                        #cmd.rigid_body_name = msg.rigid_body_name # we dont need to publish the name
-                        publisher.publish(cmd)
-                    print("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
-                    # update last angle
-                    self.last_angle = self.angle
+                for i, publisher in enumerate(self.set_publishers):
+                    cmd = RobotCmd()
+                    cmd.linear = self.velocity[j]
+                    cmd.angular = self.angle[j]
+                    #cmd.rigid_body_name = msg.rigid_body_name # we dont need to publish the name
+                    publisher.publish(cmd)
+                #print("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+                # update last angle
+                self.last_angle = self.angle
+                print("bottom of for loop")
+
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-        print("bottom")
+        print("bottom of callback")
         #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
 
 
