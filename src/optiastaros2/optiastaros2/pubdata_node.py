@@ -55,8 +55,8 @@ class PublishDataNode(Node):
                 #msg.rigid_body_name = i
 
                 # debug for robot0:
-                #if str(i) == "0":
-                    #print("Sending x and y: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
+                if str(i) == "0":
+                    print("Sending x and y: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
                 publisher.publish(msg)
 
 
