@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 import timeit
+import math
 from rclpy.node import Node
 from rigidbody_msgs.msg import RigidBody
 #from geometry_msgs.msg import Pose2D
@@ -51,15 +52,12 @@ class PublishDataNode(Node):
                 msg.pose.x = pos[0]*100
                 #msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
-                #msg.rot.x = rot[0]
-                msg.rot.y = rot[1]
-                #msg.rot.z = rot[2]
+                msg.rot.y = rot[1] / math.sqrt(1 - rot[3]*rot[3]) # convert quaternion to radians
                 #msg.rigid_body_name = i
 
                 # debug for robot0:
                 if str(i) == "0":
-                    #print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
-                    print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
+                    print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                 if str(i) == "1":
                     print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                 publisher.publish(msg)
