@@ -64,6 +64,7 @@ class ControllerNode(Node):
             self.set_publishers.append(publisher)
         # end of init for 1 robot
 
+        
         # initialize arrays
         self.msg_array = [None]*8 # kunne også være en array med 8 nuller
         self.currentPos = [None]*8 # should become array of tuples 
