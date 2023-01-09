@@ -1,7 +1,7 @@
 import numpy as np
 import time 
 
-def velocity_controller(current_position, path, system_start_time, path_total_time, kp=1):
+def proportional_velocity_controller(current_position, path, system_start_time, path_total_time, kp=0.5):
     current_time = np.floor(time.time())
     
     diff = np.subtract(path, current_position)
@@ -11,10 +11,13 @@ def velocity_controller(current_position, path, system_start_time, path_total_ti
     # Calculate the remaining time to the target
     point_time = len(path) / (path_total_time - system_start_time)
     target_desired_index = int((current_time - system_start_time) * point_time)
-    
+    print("target index : {}".format(target_desired_index))
+    print("closest index : {}".format(closest_target_index))
+
     # print(system_start_time)
     
     error = target_desired_index - closest_target_index
+    print("errpr : {}".format(error))
     # Calculate the error as a weighted sum of the distance and remaining time
     velocity = error * kp
     if velocity < 0:
@@ -32,9 +35,7 @@ def pure_pursuit(current_pos, path,lookahead_distance=5):
     diff = np.subtract(path, current_pos)
     distance_diff = np.linalg.norm(diff, axis=1)
 
-    # finds the all the angles between the points
-    angle_diff = find_angles(current_pos,path)
-    target_index = np.argmin(np.multiply(distance_diff,angle_diff))
+    target_index = np.argmin((distance_diff))
     # Apply the window to the path
     # start_index = max(0, target_index - window_size)
     # end_index = min(len(path) - 1, target_index + window_size)
@@ -55,7 +56,6 @@ def pure_pursuit(current_pos, path,lookahead_distance=5):
     # Calculate the desired heading based on the position of the lookahead point
     lookahead_pos = path[lookahead_index]
     desired_heading = np.arctan2(lookahead_pos[1] - current_pos[1], lookahead_pos[0] - current_pos[0])
-    print("goal: " + str(lookahead_pos) + ", pos: " + str(current_pos))
 
     return desired_heading
 
@@ -90,13 +90,14 @@ def mapFromTo(x,a,b,c,d):
    return y
 
 def find_angles(tuple1, tuple_list):
-    array1 = np.array(tuple1)
+    point1 = np.array(tuple1)
     array_list = [np.array(t) for t in tuple_list]
     angles = []
-    for array2 in array_list:
-        dot_product = np.dot(array1, array2)
-        length1 = np.linalg.norm(array1)
-        length2 = np.linalg.norm(array2)
-        angle = np.arccos(dot_product / (length1 * length2))
-        angles.append(angle + 1)
+    for point2 in array_list:
+        dot_product = np.dot(point1, point2)
+        length1 = np.linalg.norm(point1)
+        length2 = np.linalg.norm(point2)
+        angle = np.arccos(dot_product / (length1*length2))
+        angles.append(np.radians(angle)+1)
+    print(angles)
     return angles
