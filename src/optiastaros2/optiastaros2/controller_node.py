@@ -101,7 +101,7 @@ class ControllerNode(Node):
                 self.currentPos[j] = (msg.pose.x, msg.pose.z) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
 
                 # calculate angle
-                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=20)
                 #Purify ang array from NaN values
                 if np.isnan(self.angle[j]) == 1:
                     self.angle[j] = 0
@@ -110,7 +110,7 @@ class ControllerNode(Node):
                     #print("target position : {}".format(targetPosArr[0][j+1]))
 
                 #self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
-                self.velocity[j] = 0.3 # constant low velocity
+                self.velocity[j] = 0.3 # constant low velocity, maybe set to 1 again
                 self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
                 #print("velocity : {}".format(velocity[j]))
