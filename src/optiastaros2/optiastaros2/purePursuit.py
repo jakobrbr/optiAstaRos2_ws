@@ -55,6 +55,7 @@ def pure_pursuit(current_pos, path,lookahead_distance=5):
     # Calculate the desired heading based on the position of the lookahead point
     lookahead_pos = path[lookahead_index]
     desired_heading = np.arctan2(lookahead_pos[1] - current_pos[1], lookahead_pos[0] - current_pos[0])
+    print("goal: " + str(lookahead_pos) + ", pos: " + str(current_pos))
 
     return desired_heading
 
