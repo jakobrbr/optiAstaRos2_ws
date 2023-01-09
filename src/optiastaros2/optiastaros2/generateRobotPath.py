@@ -6,7 +6,7 @@ from xml.dom import minidom
 from matplotlib import pyplot as plt
 from cycler import cycler
 
-color_dict = { 'red' : 0, 'blue' : 1, 'yellow' : 2, 'green' : 3, 'orange' : 4, 'indigo' : 5, 'teal' : 6, 'steelblue' : 7}
+color_dict = { '#ff0000' : 0, '#0000ff' : 1, '#ffff00' : 2, '#00ff00' : 3, 'orange' : 4, 'indigo' : 5, 'teal' : 6, 'steelblue' : 7}
 
 # Parse an SVG path and return the coordinates of a point
 # at a given distance along the path
@@ -35,7 +35,6 @@ def pointsFromPath(path, density, scale):
 # Generate a sequence of points from an SVG document
 # with a given density and scale
 def pointsFromDoc(doc, density=5, scale=1):
-    route_points = []
     stop_points = []
     orientation_vectors = []
     path_arr = [[],[],[],[],[],[],[],[]]
@@ -58,28 +57,32 @@ def pointsFromDoc(doc, density=5, scale=1):
         y1 = lines.getAttribute('y1')
         x2 = lines.getAttribute('x2')
         y2 = lines.getAttribute('y2')
-        orientation_vector = (int(x2),int(y2))
-        stop_point = (int(x1),int(y1))
+        orientation_vector = ((x2),(y2))
+        stop_point = ((x1),(y1))
         orientation_vectors.append(orientation_vector)
         stop_points.append(stop_point)
     return path_arr, stop_points, orientation_vectors
 
 # Convert an SVG path to a sequence of coordinates
 # and return them as numpy arrays
+#-------------------------------------------------------
+
+# Print function for printing the generated path in matplot, useful for debugging.
+# The function runs in main() when you run the script. 
 def print_test(test_svg):
     svg_file_path = test_svg
     with open(svg_file_path, "r") as f:
         # Read the contents of the file into a string variable
         svg_path = f.read()
     doc = minidom.parseString(svg_path)
-    route, stop, orientation= pointsFromDoc(doc,density=0.1, scale=1)
+    route, stop, orientation= pointsFromDoc(doc,density=5, scale=1)
 
     plt.subplots()
     for i in range(0,len(route)):
         plt.rc('axes', prop_cycle=(cycler('color', ['r', 'g', 'b'])))
         print(len(route[i]))
         if route[i]:
-            x,y = zip(*route[i])
+            x,y = zip(*set(route[i]))
             plt.scatter(x,y, s=10, marker='x', label='way points ' + str(i))
     if stop != [] and orientation != []:
         plt.scatter(*zip(*stop),s=10,c='r', marker='o', label='stop points')
@@ -88,4 +91,9 @@ def print_test(test_svg):
     plt.xlabel('x-axis')
     plt.ylabel('y-axis')
     plt.show()
-#print_test("RobotRouteGen/SvgTest/star.svg")
+def main():
+    # Printes the generated plot
+    print_test("PythonPurePursuit/Lancier.svg")
+
+if __name__ == "__main__":
+    main()
