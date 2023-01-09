@@ -59,7 +59,9 @@ class PublishDataNode(Node):
 
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Sending x and y: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
+                    print("Robot0: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
+                if str(i) == "1":
+                    print("Robot1: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
                 publisher.publish(msg)
 
 
