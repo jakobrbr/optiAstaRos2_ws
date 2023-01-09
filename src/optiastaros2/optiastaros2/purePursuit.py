@@ -1,61 +1,56 @@
 import numpy as np
+import time 
 
-class PID_controller:
-    def __init__(self,kp,ki,kd, kt):
-        self.kp = kp
-        self.ki = ki
-        self.kd = kd
-        self.kt = kt # Time catch-up gain
-        self.previous_error = 0
-        self.integral = 0
+def proportional_velocity_controller(current_position, path, system_start_time, path_total_time, kp=1):
+    current_time = np.floor(time.time())
+    
+    diff = np.subtract(path, current_position)
+    distance_diff = np.linalg.norm(diff, axis=1)
+    closest_target_index = np.argmin(distance_diff)
 
-    def update(self, current_position, target_position, current_time, target_time=1,update_time=0.1,breakforce = 0.1):
+    # Calculate the remaining time to the target
+    point_time = len(path) / (path_total_time - system_start_time)
+    target_desired_index = int((current_time - system_start_time) * point_time)
+    
+    # print(system_start_time)
+    
+    error = target_desired_index - closest_target_index
+    # Calculate the error as a weighted sum of the distance and remaining time
+    velocity = error * kp
+    if velocity < 0:
+        velocity = 0
+    return velocity
 
-            error = np.argmin(np.linalg.norm(np.subtract(target_position,current_position))) # Calculate the error
-            elapsed_time = current_time - target_time # Calculate the elapsed time
 
-            p_position = self.kp * error # Proportional term
-
-            self.integral += error * update_time
-            i_position = self.ki * self.integral # Integral term
-
-            derivative = (error - self.previous_error) / update_time
-            d_position = self.kd * derivative # Derivative term
-
-            t = self.kt * elapsed_time # Time elapsed term
-
-            self.previous_error = error # Save the error for the next iteration
-            
-            desired_velocity = (p_position + i_position + d_position + t) # sum the gains to obtain the desired velocity
-            
-            if error < 0:
-                desired_velocity *= breakforce
-            if error == 0:
-                desired_velocity = 0
-            return desired_velocity
-
-# Use inside the main loop like like so :
-# Generate outout:
-#   output = controller.update(current_position, target_position, current_time, target_time, dt)
-# Check if target_pos has been reached:
-#  if abs(current_position - target_position) < 0.01: Break
 # ------------------------------------------------------------------
 
 # takes a position the robot is currently and a path as input (a touple and a list of touples)
 # and outputs the angle for pointing the robot at the next waypoint
-def pure_pursuit(current_pos, path,lookahead_distance=1):
-    # Find the closest point on the path to the current position
+def pure_pursuit(current_pos, path,lookahead_distance=5):
+
+    # finds the index of the closest point
     diff = np.subtract(path, current_pos)
-    distances = np.linalg.norm(diff, axis=1)
-    target_index = np.argmin(distances)
+    distance_diff = np.linalg.norm(diff, axis=1)
+
+    # finds the all the angles between the points
+    angle_diff = find_angles(current_pos,path)
+    target_index = np.argmin(np.multiply(distance_diff,angle_diff))
+    # Apply the window to the path
+    # start_index = max(0, target_index - window_size)
+    # end_index = min(len(path) - 1, target_index + window_size)
+    # path = path[start_index:end_index + 1]
 
     # Find the lookahead point on the path
     lookahead_index = target_index
     lookahead_distance_remaining = lookahead_distance
+
     while lookahead_distance_remaining > 0 and lookahead_index < len(path) - 1:
         diff = np.subtract(path[lookahead_index], path[lookahead_index + 1])
         lookahead_distance_remaining -= np.linalg.norm(diff)
         lookahead_index += 1
+
+    # Make sure the lookahead index is within the bounds of the path array
+    lookahead_index = min(lookahead_index, len(path) - 1)
 
     # Calculate the desired heading based on the position of the lookahead point
     lookahead_pos = path[lookahead_index]
@@ -92,3 +87,15 @@ def pure_pursuit_turn_speed(current_angle,previous_angle):
 def mapFromTo(x,a,b,c,d):
    y=(x-a)/(b-a)*(d-c)+c
    return y
+
+def find_angles(tuple1, tuple_list):
+    array1 = np.array(tuple1)
+    array_list = [np.array(t) for t in tuple_list]
+    angles = []
+    for array2 in array_list:
+        dot_product = np.dot(array1, array2)
+        length1 = np.linalg.norm(array1)
+        length2 = np.linalg.norm(array2)
+        angle = np.arccos(dot_product / (length1 * length2))
+        angles.append(angle + 1)
+    return angles

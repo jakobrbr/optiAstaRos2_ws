@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import sys
 from xml.dom import minidom
-from purePursuit import pure_pursuit, pure_pursuit_turn_speed, PID_controller
+from purePursuit import pure_pursuit, proportional_velocity_controller, pure_pursuit_turn_speed
 import generateRobotPath
 import time
 
@@ -40,26 +40,40 @@ import time
     # vi kan muligvis først teste om det virker med flere når vi er i optitrack
     # saml 8 pcb'er og vis at kommunikationen er hurtig nok, brug to robotter til at demonstrere synkronitet
 
+    # test branch?: publish commands using the Twist message
+
 class ControllerNode(Node):
 
     def __init__(self):
         super().__init__("controller_node")
-        # create a subscriber for each robot data topic
-        self.sub_array = []
-        self.msg_array = [None]*8 # kunne også være en array med 8 nuller
-        self.currentPos = [None]*8
-        for i in range(8):
+
+        """
+        # init new pub and sub for 8 robots, uncomment for 1 robot:
+
+        self.sub_array = [] 
+        for i in range(8): # create 8 subscribers, one for each robot data topic
             self.sub_array.append(self.create_subscription(RigidBody, "/robot{}/data".format(i), self.pose_callback, i)) # hvorfor er der et i til sidst??
         
-        # create publishers to topic "/cmd_vel"
         self.set_publishers = []
-        for i in range(8):
-            publisher = self.create_publisher(RobotCmd, "robot{}/cmd_vel".format(i), 10)
+        for i in range(8): # create 8 publishers to topic "/cmd_vel"
+            publisher = self.create_publisher(RobotCmd, "/robot{}/cmd_vel".format(i), 10)
             self.set_publishers.append(publisher)
+        
+        # end of 8 robot init
+        """
 
-        # old sub and pub:
-        #self.controller_node_ = self.create_subscription(RigidBody, "/robot1/data", self.pose_callback, 1)
-        #self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/cmd_vel", 1)
+        # old sub and pub for 1 robot, uncomment for 8 robots:
+        self.controller_node_ = self.create_subscription(RigidBody, "/robot0/data", self.pose_callback, 1)
+        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/robot0/cmd_vel", 1)
+        # end of init for 1 robot
+
+        # initialize arrays
+        self.msg_array = [None]*8 # kunne også være en array med 8 nuller
+        self.currentPos = [None]*8 # should become array of tuples 
+        self.last_angle = [0,0,0,0,0,0,0,0]
+        self.angle = [0,0,0,0,0,0,0,0]
+        self.velocity = [0,0,0,0,0,0,0,0]
+
         
         # import svg file
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
@@ -67,27 +81,17 @@ class ControllerNode(Node):
             # Read the contents of the file into a string variable
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
+
         # generate path from svg file
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1))
-        # initialize arrays
-        self.last_angle = [0,0,0,0,0,0,0,0]
-        #self.currentPos = [0,0,0,0,0,0,0,0]
-        self.angle = [0,0,0,0,0,0,0,0]
-        self.velocity = [0,0,0,0,0,0,0,0]
 
-        # debug messages:
-        # convert list of tuples to dataframe of floats
-        #targetPosDF = pd.DataFrame(targetPosArr, columns=['x', 'y'])
-        #print(len(self.targetPosArr)) # length is 9
-        #print(len(self.targetPosArr[0])) # length is 32
-        #col1 = self.targetPosArr[0]
-        #print(col1)
-        #print(col1[0])
-        #print(targetPosDF)
+        self.start_time = np.floor(time.time())
+        self.lap_time = np.floor(time.time()) + 60
 
         self.get_logger().info("Controller node has been started")
 
 
+    # This is the temporary callback function that only works for one robot, uncomment for more robots
     def pose_callback(self, msg: RigidBody):
         # this function is called whenever we get data from optitrack
 
@@ -95,9 +99,8 @@ class ControllerNode(Node):
         for j in range(0,len(self.targetPosArr)):
             if self.targetPosArr[j]:
                     # update current position of robot 'j'
-                    self.msg_array[j] = msg.data
-                    self.currentPos[j] = (self.msg_array[j],)
-                    #self.currentPos[j] = (msg.pose.x, msg.pose.y)
+
+                    self.currentPos[j] = (msg.pose.x, msg.pose.y) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
 
                     # calculate angle
                     self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
@@ -108,7 +111,7 @@ class ControllerNode(Node):
                     #print("current posistion : {}".format(turt[j].pos))
                     #print("target position : {}".format(targetPosArr[0][j+1]))
 
-                    self.velocity[j] = 3 #controller.update(currentPos[j], targetPosArr[j], current_time, target_time) # for constant velocity set: velocyty = 1 
+                    self.velocity[j] = proportional_velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time) # for constant velocity set: velocyty = 1 
                     self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
                     #print("velocity : {}".format(velocity[j]))
@@ -118,7 +121,50 @@ class ControllerNode(Node):
                         cmd = RobotCmd()
                         cmd.linear = self.velocity[j]
                         cmd.angular = self.angle[j]
-                        cmd.rigid_body_name = msg.rigid_body_name
+                        #cmd.rigid_body_name = msg.rigid_body_name # we dont need to publish the name
+                        publisher.publish(cmd)
+
+                    # update last angle
+                    self.last_angle = self.angle
+        # test print
+        #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+
+
+""""
+    # This is the callback function where we should sub and pub for 8 robots, rewrite this so it works!
+    def pose_callback(self, msg: RigidBody):
+        # this function is called whenever we get data from optitrack
+
+        # Apply pure pursuit algorithm to get target angle and velocity values for each robot
+        for j in range(0,len(self.targetPosArr)):
+            if self.targetPosArr[j]:
+                    # update current position of robot 'j'
+                    # msg array is an array of two elements; x and y??
+                    self.msg_array[j] = self.sub_array[j] # sådan her??
+                    self.currentPos[j] = (self.msg_array[j],)
+
+                    self.currentPos[j] = (msg.pose.x, msg.pose.y) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
+
+                    # calculate angle
+                    self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
+                    #Purify ang array from NaN values
+                    if np.isnan(self.angle[j]) == 1:
+                        self.angle[j] = 0
+                    #print("angle : {}".format(angle[j]))
+                    #print("current posistion : {}".format(turt[j].pos))
+                    #print("target position : {}".format(targetPosArr[0][j+1]))
+
+                    self.velocity[j] = proportional_velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time) # for constant velocity set: velocyty = 1 
+                    self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
+
+                    #print("velocity : {}".format(velocity[j]))
+
+                    # set target values and publish to each robot
+                    for i, publisher in enumerate(self.set_publishers):
+                        cmd = RobotCmd()
+                        cmd.linear = self.velocity[j]
+                        cmd.angular = self.angle[j]
+                        #cmd.rigid_body_name = msg.rigid_body_name # we dont need to publish the name
                         publisher.publish(cmd)
 
                     # update last angle
@@ -127,6 +173,7 @@ class ControllerNode(Node):
                     #last_angle[j] = angle[j] # Sets the new angle, the optitrack system should do this part in the futures
         # test print
         #self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+""""
 
 
 def main(args=None):
