@@ -48,23 +48,20 @@ class ControllerNode(Node):
         super().__init__("controller_node")
 
         """
-        # init new pub and sub for 8 robots, uncomment for 1 robot:
-
+        # init new sub for 8 robots, uncomment for 1 robot:
         self.sub_array = [] 
         for i in range(8): # create 8 subscribers, one for each robot data topic
             self.sub_array.append(self.create_subscription(RigidBody, "/robot{}/data".format(i), self.pose_callback, i)) # hvorfor er der et i til sidst??
-        
+        # end of 8 robot sub init
+        """
+        # old sub for 1 robot, uncomment for 8 robots:
+        self.controller_node_ = self.create_subscription(RigidBody, "/robot0/data", self.pose_callback, 1)
+
+        # new pub for 8 robots
         self.set_publishers = []
         for i in range(8): # create 8 publishers to topic "/cmd_vel"
             publisher = self.create_publisher(RobotCmd, "/robot{}/cmd_vel".format(i), 10)
             self.set_publishers.append(publisher)
-        
-        # end of 8 robot init
-        """
-
-        # old sub and pub for 1 robot, uncomment for 8 robots:
-        self.controller_node_ = self.create_subscription(RigidBody, "/robot0/data", self.pose_callback, 1)
-        self.cmd_publisher_node_ = self.create_publisher(RobotCmd, "/robot0/cmd_vel", 1)
         # end of init for 1 robot
 
         # initialize arrays
@@ -116,7 +113,6 @@ class ControllerNode(Node):
 
                     #print("velocity : {}".format(velocity[j]))
 
-                    # set target values and publish to each robot
                     for i, publisher in enumerate(self.set_publishers):
                         cmd = RobotCmd()
                         cmd.linear = self.velocity[j]
@@ -160,12 +156,15 @@ class ControllerNode(Node):
                     #print("velocity : {}".format(velocity[j]))
 
                     # set target values and publish to each robot
+                        # we should use the i somehow when we publish, right??
                     for i, publisher in enumerate(self.set_publishers):
                         cmd = RobotCmd()
                         cmd.linear = self.velocity[j]
                         cmd.angular = self.angle[j]
                         #cmd.rigid_body_name = msg.rigid_body_name # we dont need to publish the name
                         publisher.publish(cmd)
+                    
+                    # try to use the same thing in the subscriber as we do here in the subscriber^^ something like "subscriber.subscrive(msg)" --------------
 
                     # update last angle
                     self.last_angle = self.angle
