@@ -42,15 +42,18 @@ class PublishDataNode(Node):
             if str(i) in id_dict.keys():
                 pos,rot = id_dict[str(i)]
                 # set message values, multiply with 100 to get in cm
+                # remember that the ground plane in asta is (x,z)!
                 msg.pose.x = pos[0]*100
-                msg.pose.y = pos[1]*100 # number 2 is actually the z axis, the ground plane in asta is x-z
+                msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
                 #msg.rot.x = rot[0]
                 #msg.rot.y = rot[1]
                 #msg.rot.z = rot[2]
                 #msg.rigid_body_name = i
-                if str(i) == "0":
-                    print("Sending x and y: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
+
+                # debug for robot0:
+                #if str(i) == "0":
+                    #print("Sending x and y: " + str(msg.pose.x) + " " + str(msg.pose.y) + " " + str(msg.pose.z))
                 publisher.publish(msg)
 
 

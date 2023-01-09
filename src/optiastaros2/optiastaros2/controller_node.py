@@ -98,7 +98,7 @@ class ControllerNode(Node):
             if self.targetPosArr[j]:
                 # update current position of robot 'j'
 
-                self.currentPos[j] = (msg.pose.x, msg.pose.y) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
+                self.currentPos[j] = (msg.pose.x, msg.pose.z) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
 
                 # calculate angle
                 self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], lookahead_distance=5)
