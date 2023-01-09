@@ -5,10 +5,6 @@ from rclpy.node import Node
 from rigidbody_msgs.msg import RigidBody
 #from geometry_msgs.msg import Pose2D
 from NatNetClient import NatNetClient
-id_dict = dict() # dictionary for positions of rigid bodies
-
-def receiveRigidBodyFrame(id, position, rotation):
-    id_dict[str(id)] = [position,rotation] # update the position and orientation of rigid body
 
 class PublishDataNode(Node):
 
@@ -16,6 +12,7 @@ class PublishDataNode(Node):
         super().__init__("pubdata_node")
         # create 8 publishers, publishing to different topics
         self.set_publishers = []
+        self.id_dict = dict() # dictionary for positions of rigid bodies
         for i in range(8):
             publisher = self.create_publisher(RigidBody, "robot{}/data".format(i), 10)
             self.set_publishers.append(publisher)
@@ -32,6 +29,12 @@ class PublishDataNode(Node):
         self.timer_ = self.create_timer(0.005, self.send_data)
         self.get_logger().info("NatNet data publisher node has been started")
 
+    def receiveRigidBodyFrame(self, id, position, rotation):
+        #id_dict[str(id)] = [position,rotation] # update the position and orientation of rigid body
+        self.id_dict = {(str(id)):[position,rotation]} # update the position and orientation of robot
+        # Optitrack client
+        #pos,rot = id_dict[str(id)]
+
     def send_data(self):
         streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
         streamingClient.rigidBodyListener = receiveRigidBodyFrame
@@ -39,8 +42,8 @@ class PublishDataNode(Node):
 
         for i, publisher in enumerate(self.set_publishers):
             msg = RigidBody()
-            if str(i) in id_dict.keys():
-                pos,rot = id_dict[str(i)]
+            if str(i) in self.id_dict.keys():
+                pos,rot = self.id_dict[str(i)]
                 # set message values, multiply with 100 to get in cm
                 # remember that the ground plane in asta is (x,z)!
                 msg.pose.x = pos[0]*100
