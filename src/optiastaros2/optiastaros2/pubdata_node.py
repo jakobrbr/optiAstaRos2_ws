@@ -45,27 +45,25 @@ class PublishDataNode(Node):
         for i, publisher in enumerate(self.set_publishers):
             msg = RigidBody()
             if str(i) in self.id_dict.keys():
+                # the ground plane in asta is (x,z)
+                # and we are given axis rotation in quaternion
+
                 pos,rot = self.id_dict[str(i)]
-                # set message values, multiply with 100 to get in cm
-                # remember that the ground plane in asta is (x,z)!
-                # rotation is in quaternion
+
+                # set positions to publish (multiply w. 100 to get in cm):
                 msg.pose.x = pos[0]*100
                 #msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
-                # convert from quaternion to radians:
-                t2 = +2.0 * (rot[3] * rot[1] - rot[2] * rot[0])
-                t2 = +1.0 if t2 > +1.0 else t2
-                t2 = -1.0 if t2 < -1.0 else t2
-                msg.rot.y = math.asin(t2)
                 #msg.rigid_body_name = i
 
-                y_angle = math.atan2(2*(rot[3]*rot[1]+rot[0]*rot[2]), 1-2*(rot[1]*rot[1]+rot[0]*rot[0]))
+                # convert from quaternions to radians and set y-rotation:
+                msg.rot.y = math.atan2(2*(rot[3]*rot[1]+rot[0]*rot[2]), 1-2*(rot[1]*rot[1]+rot[0]*rot[0]))
 
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Robot0 (x,z,rot,deg,newY,newdeg): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(math.degrees(msg.rot.y)) + " " + str(y_angle) + " " + str(math.degrees(y_angle)))
+                    print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                     #print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
-                if str(i) == "1":
+                elif str(i) == "1":
                     print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
                 publisher.publish(msg)
 
