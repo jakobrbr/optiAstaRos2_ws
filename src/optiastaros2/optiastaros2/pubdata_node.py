@@ -59,9 +59,11 @@ class PublishDataNode(Node):
                 msg.rot.y = math.asin(t2)
                 #msg.rigid_body_name = i
 
+                y_angle = math.atan2(2*(rot[3]*rot[1]+rot[0]*rot[2]), 1-2*(rot[1]*rot[1]+rot[0]*rot[0]))
+
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Robot0 (x,z,rot,deg): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(math.degrees(msg.rot.y)))
+                    print("Robot0 (x,z,rot,deg,test): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(math.degrees(msg.rot.y)) + " " + str(y_angle))
                     #print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
                 if str(i) == "1":
                     print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
