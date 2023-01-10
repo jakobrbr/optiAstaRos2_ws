@@ -29,7 +29,7 @@ class PublishDataNode(Node):
         streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
         streamingClient.rigidBodyListener = self.receiveRigidBodyFrame
         streamingClient.run()
-        self.timer_ = self.create_timer(0.05, self.send_data) #0.001
+        self.timer_ = self.create_timer(0.5, self.send_data) #0.001
         self.get_logger().info("NatNet data publisher node has been started")
 
     def receiveRigidBodyFrame(self, id, position, rotation):
