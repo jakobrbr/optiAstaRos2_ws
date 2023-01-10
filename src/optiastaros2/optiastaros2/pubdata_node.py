@@ -61,7 +61,7 @@ class PublishDataNode(Node):
 
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
+                    print("Robot0 (x,z,rot,deg): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(math.degrees(msg.rot.y)))
                     #print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
                 if str(i) == "1":
                     print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
