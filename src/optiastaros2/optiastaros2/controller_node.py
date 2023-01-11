@@ -50,6 +50,7 @@ import generateRobotPath
     # add function to microros to light up blue and green leds on pcb
 
     # which queue size to use? use the same on everything?
+    # pwm frequency and resolution fits with out clock cycle of xx mhz?
 
 class ControllerNode(Node):
 
@@ -152,7 +153,7 @@ class ControllerNode(Node):
         pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
         pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
         #self.get_logger().info("Left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
-        print(str(cmd.linear) + " " + str(cmd.angular))
+        print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
 
 
 
