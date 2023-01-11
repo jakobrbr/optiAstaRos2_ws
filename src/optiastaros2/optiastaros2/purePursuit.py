@@ -56,7 +56,7 @@ def pure_pursuit(current_pos, path,current_heading,lookahead_distance=5):
     heading_diff = desired_heading - current_heading
     angular_velocity = heading_diff
 
-    print("current pos " + str(current_pos) + " closest point " + str(path[lookahead_index]) + " lookahead " + str(lookahead_pos))
+    print("closest point " + str(path[lookahead_index]) + " lookahead " + str(lookahead_pos) + " current pos " + str(current_pos))
     # maybe also print distance and when we get new poitn
 
     return angular_velocity
