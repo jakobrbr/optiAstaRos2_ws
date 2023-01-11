@@ -152,8 +152,8 @@ class ControllerNode(Node):
         wR = (cmd.linear - cmd.angular)/2
         pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
         pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
-        #self.get_logger().info("Left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
-        print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
+        self.get_logger().info("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular) + " left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
+        #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
 
 
 
