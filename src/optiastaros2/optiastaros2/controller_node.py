@@ -132,6 +132,8 @@ class ControllerNode(Node):
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
+        R = 7.5
+        L = 23
         norm_vel = np.clip(cmd.linear, 0, 1)
         norm_a = np.clip(cmd.angular, 0, 1)
         wL2 = (norm_vel + (norm_a*L))/(2*R)
