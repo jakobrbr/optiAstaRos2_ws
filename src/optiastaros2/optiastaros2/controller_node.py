@@ -157,7 +157,7 @@ class ControllerNode(Node):
         #print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular) + " left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
         #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
         #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
-        print(".")
+        #print(".")
 
 
 
