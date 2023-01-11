@@ -93,6 +93,8 @@ class ControllerNode(Node):
 
         self.get_logger().info("Controller node has been started")
 
+    def map_value(val, in_min, in_max, out_min, out_max):
+        val = ( (val - in_min) / (in_max - in_min) ) * (out_max - out_min) + out_min
 
     # This is the temporary callback function that only works for one robot, uncomment for more robots
     def pose_callback(self, msg: RigidBody):
@@ -134,13 +136,17 @@ class ControllerNode(Node):
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
         R = 7.5
         L = 23
+        MAX_PWM = 1000
+        MIN_PWM = 600
         norm_vel = np.clip(cmd.linear, 0, 1)
         norm_a = np.clip(cmd.angular, -1, 1)
         wL2 = (norm_vel + (norm_a*L))/(2*R)
         wR2 = (norm_vel - (norm_a*L))/(2*R)
         wL = (cmd.linear + cmd.angular)/2
         wR = (cmd.linear - cmd.angular)/2
-        self.get_logger().info("Left and right speed" + str(wL) + " " + str(wR) + str(wL2) + " " + str(wR2))
+        pwm_left = self.map_value(abs(wL2),0,1,MIN_PWM,MAX_PWM)
+        pwm_right = self.map_value(abs(wR2),0,1,MIN_PWM,MAX_PWM)
+        self.get_logger().info("Left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
 
 
 
