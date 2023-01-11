@@ -109,7 +109,7 @@ class ControllerNode(Node):
                 currentHeading = msg.rot.z # current rotation around the axis
 
                 # calculate angle
-                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, max_angular_velocity=1, lookahead_distance = 4) # lookahead is in indeces
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, max_angular_velocity=1, lookahead_distance = 1) # lookahead is in indeces
                 #Purify ang array from NaN values
                 if np.isnan(self.angle[j]) == 1:
                     self.angle[j] = 0
@@ -118,7 +118,7 @@ class ControllerNode(Node):
                     #print("target position : {}".format(targetPosArr[0][j+1]))
 
                 #self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
-                self.velocity[j] = 0.5 # constant low velocity, maybe set to 1 again or 0.3
+                self.velocity[j] = 0.2 # constant low velocity, maybe set to 1 again or 0.3
                 #self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
                 #print("velocity : {}".format(velocity[j]))
