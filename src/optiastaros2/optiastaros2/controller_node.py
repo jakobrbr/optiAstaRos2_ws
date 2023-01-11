@@ -143,11 +143,11 @@ class ControllerNode(Node):
         R = 7.5
         L = 23
         MAX_PWM = 1000
-        MIN_PWM = 550
+        MIN_PWM = 600
         norm_vel = np.clip(cmd.linear, 0, 1)
         norm_a = np.clip(cmd.angular, -1, 1)
-        wL2 = (norm_vel - (norm_a*L))/(2*R)
-        wR2 = (norm_vel + (norm_a*L))/(2*R)
+        wL2 = (norm_vel + (norm_a*L))/(2*R)
+        wR2 = (norm_vel - (norm_a*L))/(2*R)
         wL = (cmd.linear + cmd.angular)/2
         wR = (cmd.linear - cmd.angular)/2
         pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
