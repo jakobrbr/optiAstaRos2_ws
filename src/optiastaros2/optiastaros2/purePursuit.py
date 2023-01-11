@@ -56,6 +56,8 @@ def pure_pursuit(current_pos, path,current_heading,lookahead_distance=5):
     heading_diff = desired_heading - current_heading
     angular_velocity = heading_diff
 
+    print("current pos " + str(current_pos) + " closest point " + str(path[lookahead_index]) + " lookahead " + str(lookahead_pos) + " " )
+
     return angular_velocity
 
 def pure_pursuit_turn_speed(current_angle,previous_angle):
