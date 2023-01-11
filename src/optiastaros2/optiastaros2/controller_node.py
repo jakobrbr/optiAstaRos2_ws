@@ -94,7 +94,7 @@ class ControllerNode(Node):
         self.get_logger().info("Controller node has been started")
 
     def map_value(self, val, in_min, in_max, out_min, out_max):
-        return( (val - in_min) / (in_max - in_min) ) * (out_max - out_min) + out_min
+        return(( (val - in_min) / (in_max - in_min) ) * (out_max - out_min) + out_min)
 
     # This is the temporary callback function that only works for one robot, uncomment for more robots
     def pose_callback(self, msg: RigidBody):
