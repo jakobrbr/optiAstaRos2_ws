@@ -45,23 +45,25 @@ class PublishDataNode(Node):
         for i, publisher in enumerate(self.set_publishers):
             msg = RigidBody()
             if str(i) in self.id_dict.keys():
-                # the ground plane in asta is (x,z)
+                # the ground plane in asta is either (x,y) or (x,z) depending on motive settings,
                 # and we are given axis rotation in quaternion
 
                 pos,rot = self.id_dict[str(i)]
 
                 # set positions to publish (multiply w. 100 to get in cm):
                 msg.pose.x = pos[0]*100
-                #msg.pose.y = pos[1]*100
+                msg.pose.y = pos[1]*100
                 msg.pose.z = pos[2]*100
                 #msg.rigid_body_name = i
 
-                # convert from quaternions to radians and set y-rotation:
+                # convert from quaternions to radians and set z and y rotation (depending on motive settings):
                 msg.rot.y = math.atan2(2*(rot[3]*rot[1]+rot[0]*rot[2]), 1-2*(rot[1]*rot[1]+rot[0]*rot[0]))
+                msg.rot.z = math.atan2(2*(rot[3]*rot[2]+rot[0]*rot[1]), 1-2*(rot[2]*rot[2]+rot[0]*rot[0]))
+
 
                 # debug for robot0:
                 if str(i) == "0":
-                    print("Robot0 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
+                    print("Robot0 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
                     #print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
                 elif str(i) == "1":
                     print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))

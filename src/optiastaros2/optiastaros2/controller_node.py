@@ -45,6 +45,8 @@ import generateRobotPath
 
     # limit publishing speed, so we dont update so often
 
+    # check if the scaling between lin vel and ang vel is wrong (check units) - maybe set higher lin vel or multtply with something
+
 class ControllerNode(Node):
 
     def __init__(self):
@@ -100,8 +102,8 @@ class ControllerNode(Node):
             if self.targetPosArr[j]:
                 # update current position of robot 'j'
 
-                self.currentPos[j] = (msg.pose.x, msg.pose.z) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
-                currentHeading = msg.rot.y # current roation around y axis
+                self.currentPos[j] = (msg.pose.x, msg.pose.y) # this array of tuples (8x2) should contain the coordinates of all 8 robots 
+                currentHeading = msg.rot.z # current rotation around the axis
 
                 # calculate angle
                 self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, max_angular_velocity=1, lookahead_distance = 4) # lookahead is in indeces
