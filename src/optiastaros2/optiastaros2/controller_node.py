@@ -47,6 +47,8 @@ import generateRobotPath
 
     # check if the scaling between lin vel and ang vel is wrong (check units) - maybe set higher lin vel or multtply with something
 
+    # add function to microros to light up blue and green leds on pcb
+
 class ControllerNode(Node):
 
     def __init__(self):
