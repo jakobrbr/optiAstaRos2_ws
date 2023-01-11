@@ -132,9 +132,13 @@ class ControllerNode(Node):
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
+        norm_vel = np.clip(cmd.linear, 0, 1)
+        norm_a = np.clip(cmd.angular, 0, 1)
+        wL2 = (norm_vel + (norm_a*L))/(2*R)
+        wR2 = (norm_vel - (norm_a*L))/(2*R)
         wL = (cmd.linear + cmd.angular)/2
         wR = (cmd.linear - cmd.angular)/2
-        self.get_logger().info("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
+        self.get_logger().info("Left and right speed" + str(wL) + " " + str(wR) + str(wL2) + " " + str(wR2))
 
 
 
