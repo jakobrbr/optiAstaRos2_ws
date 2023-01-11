@@ -93,7 +93,7 @@ class ControllerNode(Node):
 
         self.get_logger().info("Controller node has been started")
 
-    def map_value(val, in_min, in_max, out_min, out_max):
+    def map_value(self, val, in_min, in_max, out_min, out_max):
         val = ( (val - in_min) / (in_max - in_min) ) * (out_max - out_min) + out_min
 
     # This is the temporary callback function that only works for one robot, uncomment for more robots
@@ -144,8 +144,8 @@ class ControllerNode(Node):
         wR2 = (norm_vel - (norm_a*L))/(2*R)
         wL = (cmd.linear + cmd.angular)/2
         wR = (cmd.linear - cmd.angular)/2
-        pwm_left = self.map_value(abs(wL2),0,1,MIN_PWM,MAX_PWM)
-        pwm_right = self.map_value(abs(wR2),0,1,MIN_PWM,MAX_PWM)
+        pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
+        pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
         self.get_logger().info("Left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
 
 
