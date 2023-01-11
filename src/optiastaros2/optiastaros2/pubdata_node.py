@@ -15,7 +15,7 @@ class PublishDataNode(Node):
         self.set_publishers = []
         self.id_dict = dict() # dictionary for positions of rigid bodies
         for i in range(8):
-            publisher = self.create_publisher(RigidBody, "robot{}/data".format(i), 10)
+            publisher = self.create_publisher(RigidBody, "robot{}/data".format(i), 1)
             self.set_publishers.append(publisher)
             self.get_logger().info("Created publisher #{}".format(i))
 

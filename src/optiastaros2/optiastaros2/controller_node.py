@@ -49,6 +49,8 @@ import generateRobotPath
 
     # add function to microros to light up blue and green leds on pcb
 
+    # which queue size to use? use the same on everything?
+
 class ControllerNode(Node):
 
     def __init__(self):
@@ -67,7 +69,7 @@ class ControllerNode(Node):
         # new pub for 8 robots
         self.set_publishers = []
         for i in range(8): # create 8 publishers to topic "/cmd_vel"
-            publisher = self.create_publisher(RobotCmd, "/robot{}/cmd_vel".format(i), 10)
+            publisher = self.create_publisher(RobotCmd, "/robot{}/cmd_vel".format(i), 1)
             self.set_publishers.append(publisher)
         # end of init for 1 robot
 
