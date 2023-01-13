@@ -14,6 +14,8 @@ class LatencyTester(Node):
         timer_period = 0.1  # s
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.sent_time = None
+        self.sum = 0
+        self.samples = 0
 
     def timer_callback(self):
         msg = Int32()
@@ -24,6 +26,9 @@ class LatencyTester(Node):
     def latency_callback(self, msgnew: Int32):
         receive_time = self.get_clock().now().nanoseconds
         latency = receive_time - self.sent_time
+        self.samples += 1
+        
+
         self.get_logger().info("Recieved message: " + str(msgnew.data) + " Latency: {} ns".format(latency))
 
 def main(args=None):
