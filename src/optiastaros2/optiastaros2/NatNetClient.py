@@ -14,7 +14,7 @@ DoubleValue = struct.Struct('<d')
 
 
 class NatNetClient:
-  def __init__(self, ver=(3, 0, 0, 0), server_ip="192.168.1.104", quiet=True):
+  def __init__(self, ver=(3, 0, 0, 0), server_ip="10.59.9.235", quiet=True): # the server ip is the ip of the raspberry pi
     self.__natNetStreamVersion = ver
     self.serverIPAddress = server_ip
     self.multicastAddress = "239.255.42.99"
