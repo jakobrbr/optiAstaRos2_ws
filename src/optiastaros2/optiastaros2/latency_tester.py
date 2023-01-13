@@ -24,7 +24,7 @@ class LatencyTester(Node):
     def latency_callback(self, msgnew: Int32):
         receive_time = self.get_clock().now().nanoseconds
         latency = receive_time - self.sent_time
-        self.get_logger().info("Recieved message: " + msgnew.data + " Latency: {} ns".format(latency))
+        self.get_logger().info("Recieved message: " + str(msgnew.data) + " Latency: {} ns".format(latency))
 
 def main(args=None):
     rclpy.init(args=args)
