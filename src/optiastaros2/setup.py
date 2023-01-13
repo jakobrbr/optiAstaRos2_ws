@@ -24,7 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'pubdata_node = optiastaros2.pubdata_node:main',
-            'controller_node = optiastaros2.controller_node:main'
+            'controller_node = optiastaros2.controller_node:main',
+            'latency_tester = optiastaros2.latency_tester:main'
         ],
     },
 )

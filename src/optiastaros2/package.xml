@@ -3,7 +3,7 @@
 <package format="3">
   <name>optiastaros2</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS2 package for using OptiTrack at DTU ASTA without the NatNet SDK.</description>
   <maintainer email="jakobrb@outlook.dk">ubuntu</maintainer>
   <license>TODO: License declaration</license>
 
