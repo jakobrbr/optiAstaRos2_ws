@@ -125,7 +125,9 @@ class ControllerNode(Node):
                     #print("target position : {}".format(targetPosArr[0][j+1]))
 
                 #self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
-                self.velocity[j] = 0.3 # constant low velocity, maybe set to 1 again or 0.3
+
+                self.velocity[j] = 0.3 # constant low linear velocity, maybe set to 1 again or 0.3
+
                 #self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
                 #print("velocity : {}".format(velocity[j]))
@@ -142,8 +144,8 @@ class ControllerNode(Node):
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-        R = 7.5
-        L = 23
+        R = 0.075
+        L = 0.23
         MAX_PWM = 1000
         MIN_PWM = 600
         norm_vel = np.clip(cmd.linear, 0, 1)
