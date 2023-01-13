@@ -150,8 +150,8 @@ class ControllerNode(Node):
         MIN_PWM = 600
         norm_vel = np.clip(cmd.linear, 0, 1)
         norm_a = np.clip(cmd.angular, -1, 1)
-        wL2 = (norm_vel - (norm_a*L))/(2*R)
-        wR2 = (norm_vel + (norm_a*L))/(2*R)
+        wL2 = (2*norm_vel - (norm_a*L))/(2*R)
+        wR2 = (2*norm_vel + (norm_a*L))/(2*R)
 
         wL = (cmd.linear + cmd.angular)/2
         wR = (cmd.linear - cmd.angular)/2
