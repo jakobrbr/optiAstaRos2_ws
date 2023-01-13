@@ -52,6 +52,8 @@ import generateRobotPath
     # which queue size to use? use the same on everything?
     # pwm frequency and resolution fits with out clock cycle of xx mhz?
 
+    # sæt framerate i motive op?
+
 class ControllerNode(Node):
 
     def __init__(self):
