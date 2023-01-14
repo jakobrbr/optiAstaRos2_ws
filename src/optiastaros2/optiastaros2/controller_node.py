@@ -88,14 +88,13 @@ class ControllerNode(Node):
 
         
         # import svg file
-        """
+        
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
         with open(svg_file_path, "r") as f:
             # Read the contents of the file into a string variable
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
-        """
-        svg_str = "heart.svg"
+        
 
 
         # generate path from svg file
