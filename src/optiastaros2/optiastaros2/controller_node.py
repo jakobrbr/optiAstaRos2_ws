@@ -88,11 +88,16 @@ class ControllerNode(Node):
 
         
         # import svg file
+        """
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
         with open(svg_file_path, "r") as f:
             # Read the contents of the file into a string variable
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
+        """
+
+        svg_str = "heart.svg"
+
 
         # generate path from svg file
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1)) # set density and scale of path
@@ -118,7 +123,7 @@ class ControllerNode(Node):
                 currentHeading = msg.rot.z # current rotation around the axis
 
                 # calculate angle
-                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, lookahead_distance = 1) # lookahead is in indeces
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, lookahead_distance = 2) # lookahead is in indeces
                 #Purify ang array from NaN values
                 if np.isnan(self.angle[j]) == 1:
                     self.angle[j] = 0
