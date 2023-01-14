@@ -66,11 +66,11 @@ class ControllerNode(Node):
         super().__init__("controller_node")
 
         
-        # init new sub for 8 robots, uncomment for 1 robot:
-        self.sub_array = [] 
-        for i in range(8): # create 8 subscribers, one for each robot data topic
-            self.sub_array.append(self.create_subscription(RigidBody, "/robot{}/data".format(i), self.robot{}_callback.format{i}, 1)) # hvorfor er der et i til sidst??
-        # end of 8 robot sub init
+        # init sub for 8 robots:
+        self.create_subscription(RigidBody, "/robot0/data".format(i), self.robot0_callback, 1)
+        self.create_subscription(RigidBody, "/robot1/data".format(i), self.robot1_callback, 1)
+        self.create_subscription(RigidBody, "/robot2/data".format(i), self.robot2_callback, 1)
+
         
         # old sub for 1 robot, uncomment for 8 robots:
         #self.controller_node_ = self.create_subscription(RigidBody, "/robot0/data", self.pose_callback, 1)
