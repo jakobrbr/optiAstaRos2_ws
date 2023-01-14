@@ -135,7 +135,7 @@ class ControllerNode(Node):
                 #self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
 
 
-                self.velocity[j] = 0.5 # constant low linear velocity, maybe set to 1 again or 0.5
+                self.velocity[j] = 0.75 # constant low linear velocity, maybe set to 1 again or 0.5
 
 
                 #self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
