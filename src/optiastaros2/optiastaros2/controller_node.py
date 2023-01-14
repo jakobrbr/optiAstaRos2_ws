@@ -163,10 +163,10 @@ class ControllerNode(Node):
 
         pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
         pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
-        #print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular) + " left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
+        print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular))
         #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
         #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
-        print("running")
+        #print("running")
 
 
 
