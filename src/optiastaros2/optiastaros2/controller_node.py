@@ -64,7 +64,6 @@ class ControllerNode(Node):
 
     def __init__(self):
         super().__init__("controller_node")
-
         
         # init sub for 8 robots:
         self.create_subscription(RigidBody, "/robot0/data", self.robot0_callback, 1)
