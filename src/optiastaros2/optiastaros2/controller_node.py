@@ -169,7 +169,7 @@ class ControllerNode(Node):
                     angle = 0
 
                 # set publisher and publish the commands (we dont need to publish the name)
-                publisher = self.set_publisher[n]
+                publisher = self.set_publishers[n]
                 cmd = RobotCmd()
                 cmd.linear = velocity
                 cmd.angular = angle
@@ -193,7 +193,7 @@ class ControllerNode(Node):
                     angle = 0
 
                 # set publisher and publish the commands (we dont need to publish the name)
-                publisher = self.set_publisher[n]
+                publisher = self.set_publishers[n]
                 cmd = RobotCmd()
                 cmd.linear = velocity
                 cmd.angular = angle
