@@ -95,8 +95,7 @@ class ControllerNode(Node):
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
         """
-        svg_path = "heart.svg"
-        svg_str = minidom.parseString(svg_path)
+        svg_str = "heart.svg"
 
 
         # generate path from svg file
