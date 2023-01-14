@@ -72,7 +72,7 @@ class PublishDataNode(Node):
                     print("Robot0 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
                     #print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
                 elif str(i) == "1":
-                    print("Robot1 (x,z,rot): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y))
+                    print("Robot1 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
                 publisher.publish(msg)
 
 
