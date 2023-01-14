@@ -54,6 +54,8 @@ import generateRobotPath
 
     # sæt framerate i motive op?
 
+    # nyt batteri i den gule?
+
 class ControllerNode(Node):
 
     def __init__(self):
@@ -144,10 +146,10 @@ class ControllerNode(Node):
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-        R = 0.075
-        L = 0.23
-        MAX_PWM = 1000
-        MIN_PWM = 600
+        R = 0.075 # m
+        L = 0.23 # m
+        MAX_PWM = 900
+        MIN_PWM = 650
         norm_vel = np.clip(cmd.linear, 0, 1)
         norm_a = np.clip(cmd.angular, -1, 1)
         wL2 = (2*norm_vel - (norm_a*L))/(2*R)

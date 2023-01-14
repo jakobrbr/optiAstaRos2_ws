@@ -30,7 +30,7 @@ class LatencyTester(Node):
         self.samples += 1
         self.sum += latency
         avg = self.sum/self.samples
-        self.get_logger().info("Recieved message: " + str(msgnew.data) + " Latency: {} ns".format(latency) + " avgerage: " + str(avg))
+        self.get_logger().info("Recieved message: " + str(msgnew.data) + ", Latency: {} ns".format(latency) + ", Running average: " + str(avg))
 
 def main(args=None):
     rclpy.init(args=args)
