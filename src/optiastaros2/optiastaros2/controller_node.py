@@ -95,8 +95,8 @@ class ControllerNode(Node):
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
         """
-
-        svg_str = "heart.svg"
+        svg_path = "heart.svg"
+        svg_str = minidom.parseString(svg_path)
 
 
         # generate path from svg file
@@ -168,7 +168,7 @@ class ControllerNode(Node):
         #print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular) + " left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
         #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
         #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
-        #print(".")
+        print("running")
 
 
 
