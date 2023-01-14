@@ -174,6 +174,7 @@ class ControllerNode(Node):
                 cmd.linear = velocity
                 cmd.angular = angle
                 publisher.publish(cmd)
+                print("running 0")
     
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
@@ -201,27 +202,29 @@ class ControllerNode(Node):
 
 
 
-        # test print
-        #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-        R = 0.075 # m
-        L = 0.23 # m
-        MAX_PWM = 900
-        MIN_PWM = 650
-        norm_vel = np.clip(cmd.linear, 0, 1)
-        norm_a = np.clip(cmd.angular, -1, 1)
-        wL2 = (2*norm_vel - (norm_a*L))/(2*R)
-        wR2 = (2*norm_vel + (norm_a*L))/(2*R)
+    """
+    # test print
+    #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
+    R = 0.075 # m
+    L = 0.23 # m
+    MAX_PWM = 900
+    MIN_PWM = 650
+    norm_vel = np.clip(cmd.linear, 0, 1)
+    norm_a = np.clip(cmd.angular, -1, 1)
+    wL2 = (2*norm_vel - (norm_a*L))/(2*R)
+    wR2 = (2*norm_vel + (norm_a*L))/(2*R)
 
-        wL = (cmd.linear + cmd.angular)/2
-        wR = (cmd.linear - cmd.angular)/2
+    wL = (cmd.linear + cmd.angular)/2
+    wR = (cmd.linear - cmd.angular)/2
 
-        pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
-        pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
-        print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular))
+    pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
+    pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
+    print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular))
 
-        #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
-        #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
-        #print("running")
+    #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
+    #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
+    #print("running")
+    """
 
 
 
