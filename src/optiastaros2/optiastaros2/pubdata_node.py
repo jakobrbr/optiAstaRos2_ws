@@ -67,13 +67,13 @@ class PublishDataNode(Node):
                 # debug for robot0:
                 #print("Robot0 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
 
-                # debug for robot0:
-                if str(i) == "0":
+                publisher.publish(msg)
+
+            if str(i) == "0":
                     print("Robot0 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
                     #print("quat: " + str(rot[0]) + str(rot[1]) + str(rot[2]) + str(rot[3]))
-                elif str(i) == "1":
+            elif str(i) == "1":
                     print("Robot1 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
-                publisher.publish(msg)
 
 
         #msg = RigidBody()
