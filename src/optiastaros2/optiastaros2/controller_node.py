@@ -65,15 +65,15 @@ class ControllerNode(Node):
     def __init__(self):
         super().__init__("controller_node")
 
-        """
+        
         # init new sub for 8 robots, uncomment for 1 robot:
         self.sub_array = [] 
         for i in range(8): # create 8 subscribers, one for each robot data topic
-            self.sub_array.append(self.create_subscription(RigidBody, "/robot{}/data".format(i), self.pose_callback, i)) # hvorfor er der et i til sidst??
+            self.sub_array.append(self.create_subscription(RigidBody, "/robot{}/data".format(i), self.robot{}_callback.format{i}, 1)) # hvorfor er der et i til sidst??
         # end of 8 robot sub init
-        """
+        
         # old sub for 1 robot, uncomment for 8 robots:
-        self.controller_node_ = self.create_subscription(RigidBody, "/robot0/data", self.pose_callback, 1)
+        #self.controller_node_ = self.create_subscription(RigidBody, "/robot0/data", self.pose_callback, 1)
 
         # new pub for 8 robots
         self.set_publishers = []
@@ -151,6 +151,32 @@ class ControllerNode(Node):
                 #print("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
                 # update last angle
                 self.last_angle = self.angle
+    
+    def robot0_callback(self, msg: RigidBody):
+        n = 0 # this is the callback for robot 0
+        lookahead_distance = 5 # lookahead # of indeces
+        velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
+
+        if self.targetPosArr[n]: # maybe not needed to check
+                # update current position of robot 'n'
+                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
+                currentHeading = msg.rot.z # current rotation around the axis
+
+                # calculate angle
+                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
+
+                #Purify ang array from NaN values
+                if np.isnan(angle) == 1:
+                    angle = 0
+
+                # set publisher and publish the commands (we dont need to publish the name)
+                publisher = self.set_publisher[n]
+                cmd = RobotCmd()
+                cmd.linear = velocity
+                cmd.angular = angle
+                publisher.publish(cmd)
+
+
 
         # test print
         #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
@@ -173,6 +199,7 @@ class ControllerNode(Node):
         #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
         #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
         #print("running")
+
 
 
 
