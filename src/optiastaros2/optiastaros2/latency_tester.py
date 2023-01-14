@@ -26,6 +26,7 @@ class LatencyTester(Node):
     def latency_callback(self, msgnew: Int32):
         receive_time = self.get_clock().now().nanoseconds
         latency = receive_time - self.sent_time
+        
         # calculate running sum:
         self.samples += 1
         self.sum += latency
