@@ -35,10 +35,16 @@ def pointsFromPath(path, density, scale):
 # Generate a sequence of points from an SVG document
 # with a given density and scale
 def pointsFromDoc(doc, density=5, scale=1):
+    
     stop_points = []
     orientation_vectors = []
     path_arr = [[],[],[],[],[],[],[],[]]
     # Searches the svg file for paths to generate waypoints from
+    svg_element = doc.documentElement
+    # get the width and height attributes
+    width = svg_element.getAttribute('width')
+    height = svg_element.getAttribute('height')
+    size = (int(width)/2,int(height)/2)
     for element in doc.getElementsByTagName("path"):
         # Append the colour of the path to seperate the paths for different robots
         style = element.getAttribute("stroke")
@@ -61,6 +67,8 @@ def pointsFromDoc(doc, density=5, scale=1):
         stop_point = ((x1),(y1))
         orientation_vectors.append(orientation_vector)
         stop_points.append(stop_point)
+    for j in range(0,len(path_arr)):
+        path_arr[j] = list(map(lambda x, y: tuple(a-b for a,b in zip(x,y)), path_arr[j], [size] * len(path_arr[j])))
     return path_arr, stop_points, orientation_vectors
 
 # Convert an SVG path to a sequence of coordinates
@@ -75,7 +83,7 @@ def print_test(test_svg):
         # Read the contents of the file into a string variable
         svg_path = f.read()
     doc = minidom.parseString(svg_path)
-    route, stop, orientation= pointsFromDoc(doc,density=5, scale=1)
+    route, stop, orientation= pointsFromDoc(doc,density=0.1, scale=1)
 
     plt.subplots()
     for i in range(0,len(route)):
@@ -93,7 +101,7 @@ def print_test(test_svg):
     plt.show()
 def main():
     # Printes the generated plot
-    print_test("PythonPurePursuit/Lancier.svg")
+    print_test("PythonPurePursuit/heart.svg")
 
 if __name__ == "__main__":
     main()
