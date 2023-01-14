@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   width="600"
+   height="600"
+   id="svg2"
+   sodipodi:docname="ring.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.2424596"
+     inkscape:cx="229.78615"
+     inkscape:cy="294.57699"
+     inkscape:window-width="1512"
+     inkscape:window-height="916"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <path
+      stroke="#ff0000"
+     style="fill:none;stroke:#fc0000;stroke-width:7.77834;stroke-opacity:1"
+     d="M 58.36611,480.65776 C 30.139301,480.14651 3.8605833,476.60792 9.6914511,423.171 V 216.62561 c -3.53689,-42.57023 10.4736699,-66.90313 52.5513989,-62.06536 164.35989,0 307.2392,0.37999 475.29866,0.37999 34.7527,-5.48341 56.08241,9.41568 52.5514,62.06536 v 206.54539 c -1.6486,28.66028 3.88741,62.00216 -48.67466,57.48677 -161.01738,-0.12659 -322.03477,-0.25334 -483.05214,-0.38 z"
+     id="path896-7"
+     sodipodi:nodetypes="ccccccccc" />
+</svg>
