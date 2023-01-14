@@ -17,28 +17,25 @@ class PublishDataNode(Node):
         super().__init__("pubdata_node")
         # create 8 publishers, publishing to different topics
         self.set_publishers = []
-        self.id_dict = dict() # dictionary for positions of rigid bodies
         for i in range(8):
             publisher = self.create_publisher(RigidBody, "robot{}/data".format(i), 1)
             self.set_publishers.append(publisher)
             self.get_logger().info("Created publisher #{}".format(i))
+        
+        self.id_dict = dict() # dictionary for positions of rigid bodies
 
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot1/data", 200)
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot3/data", 200)
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot4/data", 200)
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot5/data", 200)
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot6/data", 200)
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot7/data", 200)
-        #self.cmd_vel_pub_ = self.create_publisher(RigidBody, "robot8/data", 200)
         streamingClient = NatNetClient(ver=(3, 0, 0, 0), quiet=True)
         streamingClient.rigidBodyListener = self.receiveRigidBodyFrame
         streamingClient.run()
-        self.timer_ = self.create_timer(0.01, self.send_data) # motive is 180 fps -> 0.0056 s
+
+        timer_period = 0.01 # motive is 180 fps -> 0.0056 s
+        self.timer_ = self.create_timer(timer_period, self.send_data)
         self.get_logger().info("NatNet data publisher node has been started")
 
     def receiveRigidBodyFrame(self, id, position, rotation):
         #id_dict[str(id)] = [position,rotation] # update the position and orientation of rigid body
-        self.id_dict = {(str(id)):[position,rotation]} # update the position and orientation of robot
+        #self.id_dict = {(str(id)):[position,rotation]} # update the position and orientation of robot
+        self.id_dict[str(id)] = [position,rotation] # update the position and orientation of all robots
         # Optitrack client
         #pos,rot = self.id_dict[str(id)]
         #print("id: %s" % str(id))
