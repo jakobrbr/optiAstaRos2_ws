@@ -118,7 +118,7 @@ class ControllerNode(Node):
                 currentHeading = msg.rot.z # current rotation around the axis
 
                 # calculate angle
-                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, lookahead_distance = 2) # lookahead is in indeces
+                self.angle[j] = pure_pursuit(self.currentPos[j],self.targetPosArr[j], currentHeading, lookahead_distance = 1) # lookahead is in indeces
                 #Purify ang array from NaN values
                 if np.isnan(self.angle[j]) == 1:
                     self.angle[j] = 0
@@ -128,7 +128,7 @@ class ControllerNode(Node):
 
                 #self.velocity[j] = velocity_controller(self.currentPos[j],self.targetPosArr[j],self.start_time,self.lap_time, 1) # for constant velocity set: velocyty = 1 
 
-                self.velocity[j] = 0.2 # constant low linear velocity, maybe set to 1 again or 0.3
+                self.velocity[j] = 0.3 # constant low linear velocity, maybe set to 1 again or 0.3
 
                 #self.velocity[j] *= pure_pursuit_turn_speed(self.last_angle[j],self.angle[j]) # turn controller
 
@@ -161,7 +161,7 @@ class ControllerNode(Node):
         pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
         pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
         #print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular) + " left and right pwm: " + str(pwm_left) + " " + str(pwm_right))
-        print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
+        #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
         #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
         #print(".")
 
