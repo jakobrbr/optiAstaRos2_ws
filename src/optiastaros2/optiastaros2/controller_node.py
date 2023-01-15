@@ -67,7 +67,7 @@ class ControllerNode(Node):
         
         # init sub for 8 robots:
         self.create_subscription(RigidBody, "/robot0/data", self.robot0_callback, 5)
-        self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 5)
+        #self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 5)
         #self.create_subscription(RigidBody, "/robot2/data", self.robot2_callback, 1)
         # repeat for all 8 robots
 
@@ -138,6 +138,7 @@ class ControllerNode(Node):
             self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
     
+    """
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
@@ -162,7 +163,7 @@ class ControllerNode(Node):
             cmd.angular = angle
             self.get_logger().info("robot 1: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
-
+    """
 
 
     """
