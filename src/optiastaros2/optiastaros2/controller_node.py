@@ -117,7 +117,7 @@ class ControllerNode(Node):
         n = 0 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
         velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
-
+        print("running")
         if self.targetPosArr[n]: # maybe not needed to check
             # update current position of robot 'n'
             currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
@@ -135,7 +135,7 @@ class ControllerNode(Node):
             cmd = RobotCmd()
             cmd.linear = velocity
             cmd.angular = angle
-            self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
+            #self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
     
     def robot1_callback(self, msg: RigidBody):
