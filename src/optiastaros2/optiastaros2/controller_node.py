@@ -69,6 +69,7 @@ class ControllerNode(Node):
         self.create_subscription(RigidBody, "/robot0/data", self.robot0_callback, 1)
         self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 1)
         #self.create_subscription(RigidBody, "/robot2/data", self.robot2_callback, 1)
+        # repeat for all 8 robots
 
         
         # old sub for 1 robot, uncomment for 8 robots:

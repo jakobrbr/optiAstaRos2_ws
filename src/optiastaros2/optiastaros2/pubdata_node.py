@@ -33,14 +33,7 @@ class PublishDataNode(Node):
         self.get_logger().info("NatNet data publisher node has been started")
 
     def receiveRigidBodyFrame(self, id, position, rotation):
-        #id_dict[str(id)] = [position,rotation] # update the position and orientation of rigid body
-        #self.id_dict = {(str(id)):[position,rotation]} # update the position and orientation of robot
         self.id_dict[str(id)] = [position,rotation] # update the position and orientation of all robots
-        # Optitrack client
-        #pos,rot = self.id_dict[str(id)]
-        #print("id: %s" % str(id))
-        #print("pos: {0}".format(pos))
-        #print("rot: {0}".format(rot))
 
     def send_data(self):
         for i, publisher in enumerate(self.set_publishers):
