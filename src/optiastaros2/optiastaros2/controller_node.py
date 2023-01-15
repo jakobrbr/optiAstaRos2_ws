@@ -160,7 +160,7 @@ class ControllerNode(Node):
             cmd = RobotCmd()
             cmd.linear = velocity
             cmd.angular = angle
-            self.get_logger().info("robot 1: ang vel" + str(cmd.angular))
+            #self.get_logger().info("robot 1: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
 
 
