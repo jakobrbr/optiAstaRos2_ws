@@ -135,8 +135,8 @@ class ControllerNode(Node):
             cmd = RobotCmd()
             cmd.linear = velocity
             cmd.angular = angle
+            print("robot 0: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
-        print("robot 0: ang vel" + str(cmd.angular))
     
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
@@ -160,8 +160,8 @@ class ControllerNode(Node):
             cmd = RobotCmd()
             cmd.linear = velocity
             cmd.angular = angle
+            print("robot 1: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
-        print("robot 1: ang vel" + str(cmd.angular))
 
 
 
