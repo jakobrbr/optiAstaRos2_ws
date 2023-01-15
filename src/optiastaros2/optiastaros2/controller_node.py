@@ -119,24 +119,24 @@ class ControllerNode(Node):
         velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
 
         if self.targetPosArr[n]: # maybe not needed to check
-                # update current position of robot 'n'
-                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
-                currentHeading = msg.rot.z # current rotation around the axis
+            # update current position of robot 'n'
+            currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
+            currentHeading = msg.rot.z # current rotation around the axis
 
-                # calculate angle
-                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
+            # calculate angle
+            angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
 
-                #Purify ang array from NaN values
-                if np.isnan(angle) == 1:
-                    angle = 0
+            #Purify ang array from NaN values
+            if np.isnan(angle) == 1:
+                angle = 0
 
-                # set publisher and publish the commands (we dont need to publish the name)
-                publisher = self.set_publishers[n]
-                cmd = RobotCmd()
-                cmd.linear = velocity
-                cmd.angular = angle
-                publisher.publish(cmd)
-                print("robot 0: ang vel" + str(cmd.angular))
+            # set publisher and publish the commands (we dont need to publish the name)
+            publisher = self.set_publishers[n]
+            cmd = RobotCmd()
+            cmd.linear = velocity
+            cmd.angular = angle
+            publisher.publish(cmd)
+        print("robot 0: ang vel" + str(cmd.angular))
     
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
@@ -144,24 +144,24 @@ class ControllerNode(Node):
         velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
 
         if self.targetPosArr[n]: # maybe not needed to check
-                # update current position of robot 'n'
-                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
-                currentHeading = msg.rot.z # current rotation around the axis
+            # update current position of robot 'n'
+            currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
+            currentHeading = msg.rot.z # current rotation around the axis
 
-                # calculate angle
-                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
+            # calculate angle
+            angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
 
-                #Purify ang array from NaN values
-                if np.isnan(angle) == 1:
-                    angle = 0
+            #Purify ang array from NaN values
+            if np.isnan(angle) == 1:
+                angle = 0
 
-                # set publisher and publish the commands (we dont need to publish the name)
-                publisher = self.set_publishers[n]
-                cmd = RobotCmd()
-                cmd.linear = velocity
-                cmd.angular = angle
-                publisher.publish(cmd)
-                print("robot 1: ang vel" + str(cmd.angular))
+            # set publisher and publish the commands (we dont need to publish the name)
+            publisher = self.set_publishers[n]
+            cmd = RobotCmd()
+            cmd.linear = velocity
+            cmd.angular = angle
+            publisher.publish(cmd)
+        print("robot 1: ang vel" + str(cmd.angular))
 
 
 
