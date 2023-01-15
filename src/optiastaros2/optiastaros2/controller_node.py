@@ -82,7 +82,7 @@ class ControllerNode(Node):
             self.set_publishers.append(publisher)
         # end of init for 1 robot
 
-
+        # delete these arrays, not used
         # initialize arrays
         self.msg_array = [None]*8 # kunne også være en array med 8 nuller
         self.currentPos = [None]*8 # should become array of tuples 
@@ -112,7 +112,85 @@ class ControllerNode(Node):
     def map_value(self, val, in_min, in_max, out_min, out_max):
         #return (( (val - in_min) / (in_max - in_min) ) * (out_max - out_min) + out_min)
         return ((val - in_min) * (out_max - out_min) / (in_max - in_min) + out_min)
+    
+    def robot0_callback(self, msg: RigidBody):
+        n = 0 # this is the callback for robot n
+        lookahead_distance = 1 # lookahead, in number of indeces
+        velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
 
+        if self.targetPosArr[n]: # maybe not needed to check
+                # update current position of robot 'n'
+                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
+                currentHeading = msg.rot.z # current rotation around the axis
+
+                # calculate angle
+                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
+
+                #Purify ang array from NaN values
+                if np.isnan(angle) == 1:
+                    angle = 0
+
+                # set publisher and publish the commands (we dont need to publish the name)
+                publisher = self.set_publishers[n]
+                cmd = RobotCmd()
+                cmd.linear = velocity
+                cmd.angular = angle
+                publisher.publish(cmd)
+                print("robot 0: ang vel" + str(cmd.angular))
+    
+    def robot1_callback(self, msg: RigidBody):
+        n = 1 # this is the callback for robot n
+        lookahead_distance = 1 # lookahead, in number of indeces
+        velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
+
+        if self.targetPosArr[n]: # maybe not needed to check
+                # update current position of robot 'n'
+                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
+                currentHeading = msg.rot.z # current rotation around the axis
+
+                # calculate angle
+                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
+
+                #Purify ang array from NaN values
+                if np.isnan(angle) == 1:
+                    angle = 0
+
+                # set publisher and publish the commands (we dont need to publish the name)
+                publisher = self.set_publishers[n]
+                cmd = RobotCmd()
+                cmd.linear = velocity
+                cmd.angular = angle
+                publisher.publish(cmd)
+                print("robot 1: ang vel" + str(cmd.angular))
+
+
+
+    """
+    # test print
+    #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
+    R = 0.075 # m
+    L = 0.23 # m
+    MAX_PWM = 900
+    MIN_PWM = 650
+    norm_vel = np.clip(cmd.linear, 0, 1)
+    norm_a = np.clip(cmd.angular, -1, 1)
+    wL2 = (2*norm_vel - (norm_a*L))/(2*R)
+    wR2 = (2*norm_vel + (norm_a*L))/(2*R)
+
+    wL = (cmd.linear + cmd.angular)/2
+    wR = (cmd.linear - cmd.angular)/2
+
+    pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
+    pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
+    print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular))
+
+    #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
+    #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
+    #print("running")
+    """
+
+
+"""
     # This is the temporary callback function that only works for one robot, uncomment for more robots
     def pose_callback(self, msg: RigidBody):
         # this function is called whenever we get data from optitrack
@@ -151,82 +229,7 @@ class ControllerNode(Node):
                 #print("vel and angle:" + str(cmd.linear) + " " + str(cmd.angular))
                 # update last angle
                 self.last_angle = self.angle
-    
-    def robot0_callback(self, msg: RigidBody):
-        n = 0 # this is the callback for robot n
-        lookahead_distance = 5 # lookahead # of indeces
-        velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
-        print("running 0")
-        if self.targetPosArr[n]: # maybe not needed to check
-                # update current position of robot 'n'
-                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
-                currentHeading = msg.rot.z # current rotation around the axis
-
-                # calculate angle
-                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
-
-                #Purify ang array from NaN values
-                if np.isnan(angle) == 1:
-                    angle = 0
-
-                # set publisher and publish the commands (we dont need to publish the name)
-                publisher = self.set_publishers[n]
-                cmd = RobotCmd()
-                cmd.linear = velocity
-                cmd.angular = angle
-                publisher.publish(cmd)
-    
-    def robot1_callback(self, msg: RigidBody):
-        n = 1 # this is the callback for robot n
-        lookahead_distance = 5 # lookahead # of indeces
-        velocity = 1.0 # constant low linear velocity, maybe set to 1 again or 0.5
-        print("running 1")
-        if self.targetPosArr[n]: # maybe not needed to check
-                # update current position of robot 'n'
-                currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
-                currentHeading = msg.rot.z # current rotation around the axis
-
-                # calculate angle
-                angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
-
-                #Purify ang array from NaN values
-                if np.isnan(angle) == 1:
-                    angle = 0
-
-                # set publisher and publish the commands (we dont need to publish the name)
-                publisher = self.set_publishers[n]
-                cmd = RobotCmd()
-                cmd.linear = velocity
-                cmd.angular = angle
-                publisher.publish(cmd)
-
-
-
-    """
-    # test print
-    #print("natnet data (x,y): " + str(msg.pose.x) + str(msg.pose.y))
-    R = 0.075 # m
-    L = 0.23 # m
-    MAX_PWM = 900
-    MIN_PWM = 650
-    norm_vel = np.clip(cmd.linear, 0, 1)
-    norm_a = np.clip(cmd.angular, -1, 1)
-    wL2 = (2*norm_vel - (norm_a*L))/(2*R)
-    wR2 = (2*norm_vel + (norm_a*L))/(2*R)
-
-    wL = (cmd.linear + cmd.angular)/2
-    wR = (cmd.linear - cmd.angular)/2
-
-    pwm_left = self.map_value(abs(wL2), 0, 1, MIN_PWM, MAX_PWM)
-    pwm_right = self.map_value(abs(wR2), 0, 1, MIN_PWM, MAX_PWM)
-    print("linear and angular: " + str(cmd.linear) + " " + str(cmd.angular))
-
-    #print("robot0: left right pwm " + str(pwm_left) + " " + str(pwm_right) + " heading " + str(currentHeading) + " angle difference " + str(self.angle[0]))
-    #print("lin: " + str(cmd.linear) + " ang: " + str(cmd.angular) + " pwmL: " + str(pwm_left) + " pwmR: " + str(pwm_right))
-    #print("running")
-    """
-
-
+"""
 
 
 """
