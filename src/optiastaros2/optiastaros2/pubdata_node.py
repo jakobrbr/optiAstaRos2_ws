@@ -54,9 +54,6 @@ class PublishDataNode(Node):
                 msg.rot.y = math.atan2(2*(rot[3]*rot[1]+rot[0]*rot[2]), 1-2*(rot[1]*rot[1]+rot[0]*rot[0]))
                 msg.rot.z = math.atan2(2*(rot[3]*rot[2]+rot[0]*rot[1]), 1-2*(rot[2]*rot[2]+rot[0]*rot[0]))
 
-                # debug for robot0:
-                #print("Robot0 (x,z,roty,rotz): " + str(msg.pose.x) + " " + str(msg.pose.z) + " " + str(msg.rot.y) + " " + str(msg.rot.z))
-
                 publisher.publish(msg)
 
             if str(i) == "0":
