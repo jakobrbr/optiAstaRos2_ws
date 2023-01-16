@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   width="800"
+   height="800"
+   id="svg2"
+   sodipodi:docname="heartoffcenter.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.71867637"
+     inkscape:cx="195.49829"
+     inkscape:cy="406.30249"
+     inkscape:window-width="1512"
+     inkscape:window-height="916"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <path
+     stroke="#ff0000"
+     d="M 388.9605,85.883225 C 363.55635,39.604527 321.21612,7.209463 270.40783,7.209463 c -71.97843,0 -127.02075,60.162295 -127.02075,138.836037 0,152.71964 76.21245,175.85899 245.57342,351.71795 169.36102,-175.85896 245.57344,-198.99831 245.57344,-351.71795 0,-78.673742 -55.04232,-138.836037 -127.02073,-138.836037 -50.80831,0 -93.14854,32.395064 -118.55271,78.673762 z"
+     id="path4"
+     style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:8.85314" />
+</svg>
