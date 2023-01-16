@@ -303,6 +303,7 @@ class ControllerNode(Node):
             self.get_logger().info("robot 7: ang vel" + str(cmd.angular)) # debug
             publisher.publish(cmd)
 """
+"""
     # This is the temporary callback function that only works for one robot
     def pose_callback(self, msg: RigidBody):
         # this function is called whenever we get data from optitrack
