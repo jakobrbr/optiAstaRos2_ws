@@ -60,6 +60,8 @@ import generateRobotPath
     # constrain angular velocity mere
     # mindre 
 
+    # slet build mappen fra github workspace
+
 class ControllerNode(Node):
 
     def __init__(self):
@@ -103,7 +105,7 @@ class ControllerNode(Node):
     def robot0_callback(self, msg: RigidBody):
         n = 0 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
-        velocity = 0.5 # constant low linear velocity, maybe set to 1 again or 0.5
+        velocity = 1 # constant low linear velocity, maybe set to 1 again or 0.5
 
         if self.targetPosArr[n]: # maybe not needed to check
             # update current position of robot 'n'
