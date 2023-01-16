@@ -69,13 +69,13 @@ class ControllerNode(Node):
         
         # init sub for 8 robots:
         self.create_subscription(RigidBody, "/robot0/data", self.robot0_callback, 1)
-        self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 1)
-        self.create_subscription(RigidBody, "/robot2/data", self.robot2_callback, 1)
-        self.create_subscription(RigidBody, "/robot3/data", self.robot3_callback, 1)
-        self.create_subscription(RigidBody, "/robot4/data", self.robot4_callback, 1)
-        self.create_subscription(RigidBody, "/robot5/data", self.robot5_callback, 1)
-        self.create_subscription(RigidBody, "/robot6/data", self.robot6_callback, 1)
-        self.create_subscription(RigidBody, "/robot7/data", self.robot7_callback, 1)
+        #self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 1)
+        #self.create_subscription(RigidBody, "/robot2/data", self.robot2_callback, 1)
+        #self.create_subscription(RigidBody, "/robot3/data", self.robot3_callback, 1)
+        #self.create_subscription(RigidBody, "/robot4/data", self.robot4_callback, 1)
+        #self.create_subscription(RigidBody, "/robot5/data", self.robot5_callback, 1)
+        #self.create_subscription(RigidBody, "/robot6/data", self.robot6_callback, 1)
+        #self.create_subscription(RigidBody, "/robot7/data", self.robot7_callback, 1)
 
         # init pub for 8 robots:
         self.set_publishers = []
