@@ -90,8 +90,10 @@ class ControllerNode(Node):
             svg_path = f.read()
         svg_str = minidom.parseString(svg_path)
         
+
         # generate path from svg file
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=1, scale=0.5)) # set density and scale of path
+        
 
         self.start_time = np.floor(time.time())
         self.lap_time = np.floor(time.time()) + 180
