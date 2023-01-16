@@ -127,7 +127,7 @@ class ControllerNode(Node):
             self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
     
-    
+    """
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
@@ -302,7 +302,6 @@ class ControllerNode(Node):
             cmd.angular = angle
             self.get_logger().info("robot 7: ang vel" + str(cmd.angular)) # debug
             publisher.publish(cmd)
-
 """
     # This is the temporary callback function that only works for one robot
     def pose_callback(self, msg: RigidBody):
