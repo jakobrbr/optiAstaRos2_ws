@@ -83,6 +83,9 @@ class ControllerNode(Node):
             publisher = self.create_publisher(RobotCmd, "/robot{}/cmd_vel".format(i), 1)
             self.set_publishers.append(publisher)
 
+        # init angle buffer array with size 10, create one for each robot used
+        self.angBuffer0 = np.zeros(10)
+
         # import svg file
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
         with open(svg_file_path, "r") as f:
@@ -114,8 +117,12 @@ class ControllerNode(Node):
             currentPos = (msg.pose.x, msg.pose.y) # array of tuples (8x2) should contain the coordinates of all 8 robots 
             currentHeading = msg.rot.z # current rotation around the axis
 
+            # unwrap heading angle
+            self.angBuffer0 = np.append(self.angBuffer0[1:], currentHeading)
+            unwrapped_heading = np.unwrap(self.angBuffer0)
+
             # calculate angle
-            angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
+            angle = pure_pursuit(currentPos, self.targetPosArr[n], unwrapped_heading[-1], lookahead_distance)
 
             #Purify ang array from NaN values
             if np.isnan(angle) == 1:
@@ -125,7 +132,7 @@ class ControllerNode(Node):
             publisher = self.set_publishers[n]
             cmd = RobotCmd()
             cmd.linear = velocity
-            cmd.angular = angle + np.pi
+            cmd.angular = angle
             self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
     
