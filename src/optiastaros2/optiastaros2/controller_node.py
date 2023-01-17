@@ -95,7 +95,7 @@ class ControllerNode(Node):
         
 
         # generate path from svg file
-        self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.05, scale=1)) # set density and scale of path
+        self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.01, scale=1)) # set density and scale of path
 
 
         self.start_time = np.floor(time.time())
