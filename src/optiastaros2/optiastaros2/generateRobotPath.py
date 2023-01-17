@@ -85,6 +85,8 @@ def print_test(test_svg):
     doc = minidom.parseString(svg_path)
     route, stop, orientation= pointsFromDoc(doc,density=0.1, scale=1)
 
+    #print(route)
+
     plt.subplots()
     for i in range(0,len(route)):
         plt.rc('axes', prop_cycle=(cycler('color', ['r', 'g', 'b'])))
@@ -101,7 +103,7 @@ def print_test(test_svg):
     plt.show()
 def main():
     # Printes the generated plot
-    print_test("PythonPurePursuit/heart.svg")
+    print_test("heart.svg")
 
 if __name__ == "__main__":
     main()
