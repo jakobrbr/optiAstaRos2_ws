@@ -85,7 +85,7 @@ def print_test(test_svg):
     doc = minidom.parseString(svg_path)
     route, stop, orientation= pointsFromDoc(doc,density=0.1, scale=1)
 
-    #print(route)
+    print(route)
 
     plt.subplots()
     for i in range(0,len(route)):
