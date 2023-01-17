@@ -87,8 +87,9 @@ class ControllerNode(Node):
         self.angBuffer0 = np.zeros(10)
         self.angBuffer1 = np.zeros(10)
 
-        # init robot last angle
+        # init robot last angle, create one for each robot
         self.last_angle0 = 0
+        self.last_angle1 = 0
 
         # import svg file
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
@@ -102,7 +103,7 @@ class ControllerNode(Node):
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1)) # set density and scale of path
 
         # set time and goal completion time
-        goal = 90 # seconds
+        goal = 35 # seconds
         self.start_time = np.floor(time.time())
         self.lap_time = np.floor(time.time()) + goal
 
@@ -134,7 +135,7 @@ class ControllerNode(Node):
             if np.isnan(angle) == 1:
                 angle = 0
             
-            # for constant velocity set it to a float, like: velocity = 0.5
+            # for constant velocity comment this out and write a number: velocity = 0.5 # the number has to be float
             velocity = velocity_controller(currentPos,self.targetPosArr,self.start_time,self.lap_time)
             velocity *= pure_pursuit_turn_speed(self.last_angle0,angle) # turn controller
 
@@ -151,7 +152,7 @@ class ControllerNode(Node):
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
-        velocity = 0.5 # linear velocity
+        #velocity = 0.5 # linear velocity
 
         if self.targetPosArr[n]:
             # update current position of robot 'n'
@@ -169,6 +170,10 @@ class ControllerNode(Node):
             #Purify ang array from NaN values
             if np.isnan(angle) == 1:
                 angle = 0
+            
+            # for constant velocity comment this out and write a number: velocity = 0.5 # the number has to be float
+            velocity = velocity_controller(currentPos,self.targetPosArr,self.start_time,self.lap_time)
+            velocity *= pure_pursuit_turn_speed(self.last_angle0,angle) # turn controller
 
             # set publisher and publish the commands
             publisher = self.set_publishers[n]
