@@ -120,6 +120,7 @@ class ControllerNode(Node):
             # unwrap heading angle
             self.angBuffer0 = np.append(self.angBuffer0[1:], currentHeading)
             unwrapped_heading = np.unwrap(self.angBuffer0)
+            self.angBuffer0 = unwrapped_heading
 
             # calculate angle
             angle = pure_pursuit(currentPos, self.targetPosArr[n], unwrapped_heading[-1], lookahead_distance)
