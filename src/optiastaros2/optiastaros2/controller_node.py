@@ -125,7 +125,7 @@ class ControllerNode(Node):
             publisher = self.set_publishers[n]
             cmd = RobotCmd()
             cmd.linear = velocity
-            cmd.angular = angle
+            cmd.angular = angle + np.pi
             self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
             publisher.publish(cmd)
     
