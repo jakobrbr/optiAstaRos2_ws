@@ -85,6 +85,10 @@ class ControllerNode(Node):
 
         # init angle buffer array with size 10, create one for each robot used
         self.angBuffer0 = np.zeros(10)
+        self.angBuffer1 = np.zeros(10)
+
+        # init robot last angle
+        self.last_angle0 = 0
 
         # import svg file
         svg_file_path = input("Write path to route svg: (e.g. heart.svg)\n")
@@ -97,9 +101,10 @@ class ControllerNode(Node):
         # generate path from svg file
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1)) # set density and scale of path
 
-
+        # set time and goal completion time
+        goal = 90 # seconds
         self.start_time = np.floor(time.time())
-        self.lap_time = np.floor(time.time()) + 180
+        self.lap_time = np.floor(time.time()) + goal
 
         self.get_logger().info("Controller node has been started")
 
@@ -109,8 +114,8 @@ class ControllerNode(Node):
     
     def robot0_callback(self, msg: RigidBody):
         n = 0 # this is the callback for robot n
-        lookahead_distance = 12 # lookahead, in number of indeces
-        velocity = 0.5 # constant linear velocity (should be float!)
+        lookahead_distance = 1 # lookahead, in number of indeces
+        #velocity = 0.5 # constant linear velocity (should be float!)
 
         if self.targetPosArr[n]: # maybe not needed to check
             # update current position of robot 'n'
@@ -128,6 +133,10 @@ class ControllerNode(Node):
             #Purify ang array from NaN values
             if np.isnan(angle) == 1:
                 angle = 0
+            
+            # for constant velocity set it to a float, like: velocity = 0.5
+            velocity = velocity_controller(currentPos,self.targetPosArr,self.start_time,self.lap_time)
+            velocity *= pure_pursuit_turn_speed(self.last_angle0,angle) # turn controller
 
             # set publisher and publish the commands (we dont need to publish the name)
             publisher = self.set_publishers[n]
@@ -136,6 +145,7 @@ class ControllerNode(Node):
             cmd.angular = angle
             self.get_logger().info("robot 0: ang vel" + str(cmd.angular))
             #self.get_logger().info("robot 0: ang" + str(unwrapped_heading[-1]))
+            self.last_angle0 = angle
             publisher.publish(cmd)
     
     def robot1_callback(self, msg: RigidBody):
@@ -147,6 +157,11 @@ class ControllerNode(Node):
             # update current position of robot 'n'
             currentPos = (msg.pose.x, msg.pose.y)
             currentHeading = msg.rot.z # current rotation around the axis
+
+            # unwrap heading angle
+            self.angBuffer1 = np.append(self.angBuffer1[1:], currentHeading)
+            unwrapped_heading = np.unwrap(self.angBuffer1)
+            self.angBuffer1 = unwrapped_heading
 
             # calculate angle
             angle = pure_pursuit(currentPos, self.targetPosArr[n], currentHeading, lookahead_distance)
