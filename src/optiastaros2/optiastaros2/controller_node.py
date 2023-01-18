@@ -154,6 +154,7 @@ class ControllerNode(Node):
     def robot1_callback(self, msg: RigidBody):
         n = 1 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
+        kp = 0.1
         #velocity = 0.5 # linear velocity
 
         if self.targetPosArr[n]:
@@ -183,6 +184,7 @@ class ControllerNode(Node):
             cmd.linear = velocity
             cmd.angular = angle
             self.get_logger().info("robot 1: ang vel" + str(cmd.angular)) # debug
+            self.last_angle0 = angle
             publisher.publish(cmd)
     
     def robot2_callback(self, msg: RigidBody):
