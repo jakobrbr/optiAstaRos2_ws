@@ -102,7 +102,7 @@ class ControllerNode(Node):
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1)) # set density and scale of path
 
         # set time and goal completion time
-        goal = 35 # seconds
+        goal = 32 # seconds
 
         self.start_time = np.floor(time.time())
         self.lap_time = np.floor(time.time()) + goal
