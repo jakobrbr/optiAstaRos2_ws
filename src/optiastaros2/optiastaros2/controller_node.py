@@ -68,7 +68,7 @@ class ControllerNode(Node):
         
         # init sub for 8 robots:
         self.create_subscription(RigidBody, "/robot0/data", self.robot0_callback, 1)
-        #self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 1)
+        self.create_subscription(RigidBody, "/robot1/data", self.robot1_callback, 1)
         #self.create_subscription(RigidBody, "/robot2/data", self.robot2_callback, 1)
         #self.create_subscription(RigidBody, "/robot3/data", self.robot3_callback, 1)
         #self.create_subscription(RigidBody, "/robot4/data", self.robot4_callback, 1)
@@ -101,8 +101,8 @@ class ControllerNode(Node):
         # generate path from svg file
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1)) # set density and scale of path
 
-        # set time and goal completion time
-        goal = 30 # seconds
+        # set time and goal completion time, could be 35 for Sine
+        goal = 35 # seconds
 
         self.start_time = np.floor(time.time())
         self.lap_time = np.floor(time.time()) + goal
