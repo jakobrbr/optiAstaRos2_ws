@@ -103,7 +103,7 @@ def print_test(test_svg):
     plt.show()
 def main():
     # Printes the generated plot
-    print_test("Sine2.svg")
+    print_test("Sine.svg")
 
 if __name__ == "__main__":
     main()
