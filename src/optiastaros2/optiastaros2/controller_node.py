@@ -135,8 +135,8 @@ class ControllerNode(Node):
                 angle = 0
             
             # for constant velocity comment this out and write a number: velocity = 0.5 # the number has to be float
-            currentPos = np.array(currentPos).reshape(1,2)
-            velocity = velocity_controller(currentPos,self.targetPosArr,self.start_time,self.lap_time)
+            #currentPos = np.array(currentPos).reshape(1,2)
+            velocity = velocity_controller(currentPos,self.targetPosArr[n],self.start_time,self.lap_time)
             velocity *= pure_pursuit_turn_speed(self.last_angle0,angle) # turn controller
 
             # set publisher and publish the commands (we dont need to publish the name)

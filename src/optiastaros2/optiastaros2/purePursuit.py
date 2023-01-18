@@ -4,12 +4,9 @@ import time
 def velocity_controller(current_position, path, system_start_time, path_total_time, kp=0.5):
     current_time = np.floor(time.time())
     
-    # modified for 1 robot:
-    #diff = np.subtract(path, current_position)
-    diff = np.subtract(path, current_position[0]) # extract first tuple
-    distance_diff = np.linalg.norm(diff, axis=0) # changed axis from 1 to 0
-    #closest_target_index = np.argmin(distance_diff)
-    closest_target_index = np.argmin(distance_diff, axis=0)
+    diff = np.subtract(path, current_position)
+    distance_diff = np.linalg.norm(diff, axis=1)
+    closest_target_index = np.argmin(distance_diff)
 
     # Calculate the remaining time to the target
     point_time = len(path) / (path_total_time - system_start_time)
