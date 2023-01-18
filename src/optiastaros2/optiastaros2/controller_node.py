@@ -115,7 +115,7 @@ class ControllerNode(Node):
     
     def robot0_callback(self, msg: RigidBody):
         n = 0 # this is the callback for robot n
-        lookahead_distance = 2 # lookahead, in number of indeces
+        lookahead_distance = 1 # lookahead, in number of indeces
         kp = 0.1
         #velocity = 0.5 # constant linear velocity (should be float!)
 
