@@ -56,7 +56,6 @@ import generateRobotPath
 
     # nyt batteri i den gule?
 
-
     # constrain angular velocity mere
     # mindre 
 
