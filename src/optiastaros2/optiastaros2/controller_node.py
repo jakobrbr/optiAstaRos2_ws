@@ -115,6 +115,7 @@ class ControllerNode(Node):
     def robot0_callback(self, msg: RigidBody):
         n = 0 # this is the callback for robot n
         lookahead_distance = 1 # lookahead, in number of indeces
+        kp = 0.1
         #velocity = 0.5 # constant linear velocity (should be float!)
 
         if self.targetPosArr[n]: # maybe not needed to check
@@ -136,7 +137,7 @@ class ControllerNode(Node):
             
             # for constant velocity comment this out and write a number: velocity = 0.5 # the number has to be float
             #currentPos = np.array(currentPos).reshape(1,2)
-            velocity = velocity_controller(currentPos,self.targetPosArr[n],self.start_time,self.lap_time)
+            velocity = velocity_controller(currentPos,self.targetPosArr[n],self.start_time,self.lap_time,kp)
             velocity *= pure_pursuit_turn_speed(self.last_angle0,angle) # turn controller
 
             # set publisher and publish the commands (we dont need to publish the name)
