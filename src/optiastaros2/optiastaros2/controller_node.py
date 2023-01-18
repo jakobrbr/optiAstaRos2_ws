@@ -102,7 +102,7 @@ class ControllerNode(Node):
         self.targetPosArr, stop_pos, stop_orient = (generateRobotPath.pointsFromDoc(svg_str,density=0.1, scale=1)) # set density and scale of path
 
         # set time and goal completion time
-        goal = 40 # seconds
+        goal = 35 # seconds
 
         self.start_time = np.floor(time.time())
         self.lap_time = np.floor(time.time()) + goal
@@ -115,7 +115,7 @@ class ControllerNode(Node):
     
     def robot0_callback(self, msg: RigidBody):
         n = 0 # this is the callback for robot n
-        lookahead_distance = 1 # lookahead, in number of indeces
+        lookahead_distance = 2 # lookahead, in number of indeces
         kp = 0.2
         #velocity = 0.5 # constant linear velocity (should be float!)
 
