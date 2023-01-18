@@ -20,6 +20,8 @@ def velocity_controller(current_position, path, system_start_time, path_total_ti
     print("errpr : {}".format(error))
     # Calculate the error as a weighted sum of the distance and remaining time
     velocity = error * kp
+
+    # removed this 
     #if velocity < 0:
         #velocity = 0
     return velocity
